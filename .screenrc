@@ -1,0 +1,45 @@
+## set escape key
+escape ^Tt
+
+## set visual bell on/off
+vbell on
+
+## stats bar setting  (Not required for Ubuntu9.04 )
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+
+startup_message off
+
+autodetach on
+
+defscrollback 10240
+
+## mutil windows like Emacs
+bind -c REGION 2 split
+bind -c REGION 1 only
+bind -c REGION 0 remove
+bind  o focus
+bind -c REGION \^ resize
+bind x command -c REGION
+
+## change encoding
+bind ^U encoding utf8
+bind ^E encoding euc
+bind ^J encoding sjis
+
+
+
+## disable s key
+bind s
+
+## create new windows
+screen -t root 
+screen -t home 
+screen -t trunk 
+screen -t app.log 
+screen -t sql 
+screen -t dblog 
+
+
+
+ 
+
