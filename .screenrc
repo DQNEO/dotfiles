@@ -32,13 +32,20 @@ bind ^J encoding sjis
 bind s
 
 ## create new windows
-screen -t root 
+screen -t Emacs
 screen -t home 
 screen -t trunk 
 screen -t app.log 
-screen -t sql 
 screen -t dblog 
+screen -t sql 
 
+## Manual for me
+#  Split window
+#        Split  ~T  S
+#        Only   ~T  Q
+#        Focus  ~T ~I
+#        Focus  ~T  o
+#  
 
 
  
