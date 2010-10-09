@@ -7,6 +7,7 @@ vbell on
 ## stats bar setting  (Not required for Ubuntu9.04 )
 hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
 
+
 startup_message off
 
 autodetach on
@@ -32,12 +33,12 @@ bind ^J encoding sjis
 bind s
 
 ## create new windows
-screen -t Emacs
-screen -t home 
-screen -t trunk 
-screen -t app.log 
-screen -t dblog 
-screen -t sql 
+#screen -t Emacs
+#screen -t home 
+#screen -t trunk 
+#screen -t app.log 
+#screen -t dblog 
+#screen -t sql 
 
 ## Manual for me
 #  Split window
