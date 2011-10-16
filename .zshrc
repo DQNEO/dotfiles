@@ -29,17 +29,22 @@ RPROMPT="[%~]"
 # alias
 alias ls='ls -F --show-control-char --color=always'
 alias ll='ls -laF --show-control-char --color=always'
-alias di='svn di'
 alias st='svn st'
 alias ci='svn ci'
+alias di='svn di -x -b -x -w -x --ignore-eol-style | colordiff '
+alias cdiff='colordiff'
 alias cdi='colordiff | more'
-alias diffmore='svn di -x -b -x -w -x --ignore-eol-style | colordiff | more'
+alias svnx='svn pset svn:executable 1 '
+
+
 alias -g M='| more'
 alias emacs=' printf "\033]2;Emacs\007"; emacs'
+alias sc='screen -rU'
+
 # setting shell variables
 MYNICKNAME=dqneo
-R8T=
 
 
-
-
+if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
+    source ~/perl5/perlbrew/etc/bashrc
+fi
