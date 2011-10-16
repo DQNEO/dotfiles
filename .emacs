@@ -23,10 +23,9 @@
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
-e;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
+;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
 ;; override mark-whole-buffer
 (global-set-key "\C-ch" 'help-command)
-
 
 ;; disable toggle-input-method
 (global-unset-key "\C-\\")
