@@ -33,11 +33,11 @@
 ;; revert-buffer
 (global-set-key "\C-cv" 'revert-buffer)
 ;; run current file
-(defun run-current-file()
+(defun run()
   (interactive)
   (shell-command (concat "./" (file-name-nondirectory (buffer-file-name)))))
 
-(global-set-key  "\C-cr" 'run-current-file)
+(global-set-key  "\C-cr" 'run)
 
 ;; http://tech.kayac.com/archive/emacs.html
 (setq make-backup-files nil)
