@@ -380,3 +380,14 @@
 
 ;;=============== HTML helper mode ===============
 (autoload 'html-helper-mode "html-helper-mode" "Yay HTML" t)
+
+
+;;============ htmlentities-region ==============
+(defun htmlentities-region ()
+  (interactive)
+  (save-excursion
+    (call-process-region (region-beginning) (region-end)
+      "htmlentities.php" t t))) 
+
+;; compare-window
+(global-set-key "\C-cw" 'compare-windows)
