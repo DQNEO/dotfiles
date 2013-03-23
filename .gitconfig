@@ -1,0 +1,13 @@
+[user]
+	name = DQNEOO
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	di = diff
+	brr = branch -r
+[push]
+	default = current
+[color]
+	ui = auto
