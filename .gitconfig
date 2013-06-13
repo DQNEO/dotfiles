@@ -1,5 +1,6 @@
 [user]
 	name = DQNEOO
+        # emailはここには書かない。スパム対策のため。
 [alias]
 	co = checkout
 	ci = commit
