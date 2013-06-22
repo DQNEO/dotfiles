@@ -10,6 +10,7 @@
 	brr = branch -r
 	plf = pull --ff-only
 	pi = cherry-pick
+	cp = cherry-pick
 [push]
 	default = current
 [color]
