@@ -17,3 +17,5 @@
 	default = current
 [color]
 	ui = auto
+[core]
+	pager = lv -c
