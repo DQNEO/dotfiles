@@ -12,6 +12,7 @@
 	plf = pull --ff-only
 	pi = cherry-pick
 	cp = cherry-pick
+	l = log --format='%C(auto)%h %Cgreen%cd%Creset %s'
 [push]
 	default = current
 [color]
