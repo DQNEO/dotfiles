@@ -22,6 +22,10 @@
 	l = log --format='%C(auto)%h %Cgreen%cd%Creset %s'
         rp = rev-parse
         sp = show -p
+
+        #http://blog.blindgaenger.net/advanced_git_aliases.html#show_all_defined_aliases
+        alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+
 [push]
 	default = current
 [color]
