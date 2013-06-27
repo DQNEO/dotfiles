@@ -5,6 +5,7 @@
 [alias]
 	co = checkout
 	ci = commit
+        amend = commit --amend
 	st = status
 	br = branch
 	di = diff
