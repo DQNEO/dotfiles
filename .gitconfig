@@ -3,18 +3,22 @@
 [user]
         # name,emailは.gitconfig.localに書く
 [alias]
+        a = add
 	co = checkout
 	ci = commit
         amend = commit --amend
 	st = status
+        b  = branch
 	br = branch
 	di = diff
+        d  = diff
 	brr = branch -r
 	plf = pull --ff-only
 	pi = cherry-pick
 	cp = cherry-pick
 	l = log --format='%C(auto)%h %Cgreen%cd%Creset %s'
         rp = rev-parse
+        sp = show -p
 [push]
 	default = current
 [color]
