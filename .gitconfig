@@ -1,8 +1,7 @@
 [include]
         path = .gitconfig.local
 [user]
-	name = DQNEO
-        # emailはここには書かない。スパム対策のため。
+        # name,emailは.gitconfig.localに書く
 [alias]
 	co = checkout
 	ci = commit
