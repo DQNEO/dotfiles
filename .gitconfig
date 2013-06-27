@@ -13,6 +13,7 @@
 	pi = cherry-pick
 	cp = cherry-pick
 	l = log --format='%C(auto)%h %Cgreen%cd%Creset %s'
+        rp = rev-parse
 [push]
 	default = current
 [color]
