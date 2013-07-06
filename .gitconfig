@@ -1,7 +1,9 @@
+# name,emailは.gitconfig.localに書く
+#[user]
+#        name  = DQNEO
+#        email = hoge@example.com
 [include]
         path = .gitconfig.local
-[user]
-        # name,emailは.gitconfig.localに書く
 [alias]
         a = add
 	co = checkout
