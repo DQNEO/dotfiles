@@ -26,4 +26,6 @@
 [color]
 	ui = auto
 [core]
-	pager = lv -c
+        # cygwinではlvがちゃんと動かないので。
+        # Linuxでは.gitconfig.localで下記のようにする。
+	#pager = lv -c
