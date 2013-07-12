@@ -1,45 +1,95 @@
+# set locale
+export LANG=ja_JP.utf8
+
 # http://journal.mycom.co.jp/column/zsh/001/index.html
 autoload -U compinit
-compinit 
+compinit
 
-PATH=/usr/local/pgsql/bin:$HOME/bin/:$PATH
+# http://0xcc.net/unimag/3/
+# keybind like Emacs
+bindkey -e
 
+# http://0xcc.net/unimag/3/
+zstyle ':completion:*:default' menu select=1
 
 # customize history
 # http://journal.mycom.co.jp/column/zsh/003/index.html
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=100000
+HISTSIZE=100000
+SAVEHIST=1000000
 #setopt hist_ignore_dups     # ignore duplication command history list
-setopt share_history        # share command history data 
+setopt share_history        # share command history data
 
 # http://0xcc.net/unimag/3/#foottext-6
-setopt extended_history 
+setopt extended_history
 function history-all { history -E 1 }
+function historyall  { history -E 1 }
 
+# http://d.hatena.ne.jp/hayori/20071019/1192785576
+# zshのデフォルトでは改行のない文字列を表示しない。
+# 混乱のもとになるので無効にする。
+unsetopt promptcr
 
-# customize prompt 
-# http://journal.mycom.co.jp/column/zsh/002/index.html
-PROMPT="%n:%/%% "
-RPROMPT="[%~]"
+# ディレクトリ名をうつだけでcdできる。
+# ..で上へあがれて便利。
+setopt auto_cd
 
+# 右側プロンプトはコピペするときに邪魔なのでやめる。
+#RPROMPT="[%~]"
 
+# Path
+PATH=/usr/local/local/bin:$HOME/bin/:$PATH
 
-# alias
+[ -f ~/.awsrc ] && . ~/.awsrc
+## alias
+
+# ls
 alias ls='ls -F --show-control-char --color=always'
 alias ll='ls -laF --show-control-char --color=always'
-alias st='svn st'
-alias ci='svn ci'
-alias di='svn di -x -b -x -w -x --ignore-eol-style | colordiff '
-alias cdiff='colordiff'
-alias cdi='colordiff | more'
-alias svnx='svn pset svn:executable 1 '
 
-
+# pager
 alias -g M='| more'
-alias emacs=' printf "\033]2;Emacs\007"; emacs'
-alias sc='screen -rU'
+
+# aliases for Git
+# http://qiita.com/items/1f01aa09ccf148542f21
+# http://qiita.com/items/6ebcce530d9530293fec
+alias  st='git status --short --branch'
+alias gst='git status --short --branch'
+alias ga='git add'
+alias gb='git branch'
+alias gci='git commit'
+alias gdi='git diff'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gbr='git branch'
+alias gl='git l'
+alias gl1='git l -1'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gf='git fetch'
+alias gr='git rebase'
+alias gp='pr && git push'
+alias gpl='git pull --ff-only'
+alias gpul='git pull --ff-only'
+alias amend='git commit --amend'
+alias amendc='git commit --amend --reuse-message=HEAD'
+alias prune='git remote prune origin'
+alias gs='git stash'
+alias gsl='git stash list'
+# alias的に使う関数群
+gcm () { git commit -m "$*" }
+gsp () { git stash pop stash@{"$*"} }
+
+# colordiff
+alias cdi='colordiff'
+alias cdf='colordiff'
+alias -g C='| colordiff'
+
+# nkf
+alias -g E='| nkf -Ew'
+
+alias -g ECM='E C M'
 
 # setting shell variables
 MYNICKNAME=dqneo
@@ -48,3 +98,25 @@ MYNICKNAME=dqneo
 if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
     source ~/perl5/perlbrew/etc/bashrc
 fi
+
+# for Git
+# http://d.hatena.ne.jp/mollifier/20100906/p1
+# http://d.hatena.ne.jp/mollifier/20090814/p1
+autoload -Uz is-at-least
+
+autoload -Uz vcs_info
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    psvar[1]=$vcs_info_msg_0_
+}
+
+
+# プロンプトの色付けは下記記事がわかりやすい
+# http://www.sakito.com/2011/11/zsh.html
+PROMPT="%n%F{yellow}@%m%f:%/%1(v|%F{green}%1v%f|)%% "
+
+cd $BASE
+
+
+
