@@ -41,6 +41,10 @@ setopt auto_cd
 # Path
 PATH=/usr/local/local/bin:$HOME/bin/:$PATH
 
+# MANPATH
+# http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
+export MANPATH=/usr/local/git-manpages-1.8.3.1:$MANPATH 
+
 [ -f ~/.awsrc ] && . ~/.awsrc
 ## alias
 
@@ -54,6 +58,7 @@ alias -g M='| more'
 # aliases for Git
 # http://qiita.com/items/1f01aa09ccf148542f21
 # http://qiita.com/items/6ebcce530d9530293fec
+alias git='/usr/local/git/bin/git'
 alias  st='git status --short --branch'
 alias gst='git status --short --branch'
 alias ga='git add'
