@@ -125,3 +125,5 @@ cd $BASE
 
 
 
+# Cygwin用の環境設定
+alias open=cygstart
