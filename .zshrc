@@ -83,7 +83,9 @@ alias prune='git remote prune origin'
 alias gs='git stash'
 alias gsl='git stash list'
 # alias的に使う関数群
-#gcm () { git commit -m "$*" }
+# oh-my-zshのgcmを一度無効にする
+unalias gcm
+gcm () { git commit -m "$*" }
 gsp () { git stash pop stash@{"$*"} }
 
 # colordiff
@@ -127,3 +129,5 @@ cd $BASE
 
 # Cygwin用の環境設定
 alias open=cygstart
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"
