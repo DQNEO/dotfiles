@@ -83,7 +83,7 @@ alias prune='git remote prune origin'
 alias gs='git stash'
 alias gsl='git stash list'
 # alias的に使う関数群
-gcm () { git commit -m "$*" }
+#gcm () { git commit -m "$*" }
 gsp () { git stash pop stash@{"$*"} }
 
 # colordiff
