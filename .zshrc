@@ -1,3 +1,4 @@
+# see http://blog.machacks.net/2013/05/03/oh-my-zsh%E3%82%92github%E3%81%AEdotfiles%E4%B8%8A%E3%81%A7%E7%AE%A1%E7%90%86%E3%81%97%E5%A7%8B%E3%82%81%E3%81%9F%E6%99%82%E3%81%AE%E3%83%A1%E3%83%A2/
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/dotfiles/oh-my-zsh
 
@@ -45,3 +46,5 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+source $HOME/dotfiles/.zshrc_dqneo
