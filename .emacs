@@ -10,7 +10,7 @@
 ;;(setq auto-install-directory "~/.emacs.d/auto-install/")
 ;;(auto-install-update-emacswiki-package-name t)
 
-;;============= Languages ============================
+;; Languages
 (set-language-environment 'Japanese)
 
 ;;(prefer-coding-system 'euc-jp-unix)
