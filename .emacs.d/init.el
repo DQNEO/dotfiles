@@ -10,3 +10,6 @@
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
+;;=========== Buffer Handling ===========
+;; iswitchb-mode on
+(iswitchb-mode 1)
