@@ -23,15 +23,15 @@
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
+;; disable toggle-input-method and use it as help-command
+(global-set-key "\C-\\" 'help-command)
+
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
 
 ;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
 ;; override mark-whole-buffer
 (global-set-key "\C-ch" 'help-command)
-
-;; disable toggle-input-method
-(global-unset-key "\C-\\")
 
 ;; revert-buffer
 (global-set-key "\C-cv" 'revert-buffer)
