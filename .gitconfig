@@ -1,4 +1,5 @@
 # name,emailは.gitconfig.localに書く
+# これはスパム対策のため。
 #[user]
 #        name  = DQNEO
 #        email = hoge@example.com
