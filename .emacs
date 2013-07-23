@@ -23,6 +23,9 @@
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
+;; compare-window
+(global-set-key "\C-cw" 'compare-windows)
+
 ;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
 ;; override mark-whole-buffer
 (global-set-key "\C-ch" 'help-command)
@@ -389,5 +392,3 @@
     (call-process-region (region-beginning) (region-end)
       "htmlentities.php" t t))) 
 
-;; compare-window
-(global-set-key "\C-cw" 'compare-windows)
