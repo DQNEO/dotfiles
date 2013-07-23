@@ -1,3 +1,4 @@
+;; Packages
 ;; http://d.hatena.ne.jp/naoya/20130107/1357553140
 ;; Emacs 24 の初期状態ではパッケージ提供元が elpa.gnu.org のみでやや数が少ないので
 ;; 下記のように設定して増やしてあげると良いでしょう。
@@ -41,6 +42,6 @@
 )
 (global-set-key "\C-cv" 'revert-buffer-force)
 
-;;=========== Buffer Handling ===========
-;; iswitchb-mode on
+;; Buffer Handling
+; iswitchb-mode on
 (iswitchb-mode 1)
