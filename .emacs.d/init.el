@@ -62,3 +62,8 @@
 ;; Buffer Handling
 ; iswitchb-mode on
 (iswitchb-mode 1)
+
+;; Git
+; EmacsのGitクライアント：Magit
+; http://qiita.com/takc923/items/c7a11ff30caedc4c5ba7
+(require 'magit)
