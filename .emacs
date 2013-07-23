@@ -7,11 +7,10 @@
 ;; Languages
 (set-language-environment 'Japanese)
 
-;;(prefer-coding-system 'euc-jp-unix)
-(prefer-coding-system 'utf-8-unix)
+;; Coding system.
 (set-keyboard-coding-system 'utf-8-unix)
 (set-terminal-coding-system 'utf-8-unix)
-
+(prefer-coding-system 'utf-8-unix)
 ;;============ Global Keybind ====================
 
 ;; C-h as backspace
