@@ -16,6 +16,13 @@
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
 
+;; カレントバッファのファイルパスを表示
+(defun show-file-path()
+  (interactive)
+  (message (buffer-file-name))
+  )
+(global-set-key  "\C-cp" 'show-file-path)
+
 ;;=========== Buffer Handling ===========
 ;; iswitchb-mode on
 (iswitchb-mode 1)
