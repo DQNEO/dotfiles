@@ -6,3 +6,7 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+;;=========== Global Set Key ===========
+;; C-h as backspace
+(global-set-key "\C-h" 'delete-backward-char)
+
