@@ -17,6 +17,10 @@
 (set-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; Theme 
+;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
+(load-theme 'misterioso t)
+
 ;; Global Set Keys
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
