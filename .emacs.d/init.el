@@ -53,6 +53,12 @@
 
 (global-set-key  "\C-cr" 'run-file)
 
+;; recentf
+;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
+(require 'recentf)
+(recentf-mode 1)
+(global-set-key "\C-xf" 'recentf-open-files)
+
 ;; Buffer Handling
 ; iswitchb-mode on
 (iswitchb-mode 1)

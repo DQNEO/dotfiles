@@ -131,12 +131,11 @@
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 
-;;=============== recentf ===============
+;;recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
 ;; recent files
 (require 'recentf)
 (recentf-mode 1)
-;; open recent files
 (global-set-key "\C-xf" 'recentf-open-files)
 
 ;;=============== swap-screen ===============
