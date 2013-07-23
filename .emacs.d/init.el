@@ -6,6 +6,16 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+;; Langeage
+(set-language-environment 'Japanese)
+
+;; Coding system.
+(set-default-coding-systems 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-buffer-file-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 ;;=========== Global Set Key ===========
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
