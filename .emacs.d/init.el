@@ -16,7 +16,7 @@
 (set-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;;=========== Global Set Key ===========
+;; Global Set Keys
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
