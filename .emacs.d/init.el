@@ -10,6 +10,9 @@
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
+;; disable toggle-input-method and use it as help-command
+(global-set-key "\C-\\" 'help-command)
+
 ;;=========== Buffer Handling ===========
 ;; iswitchb-mode on
 (iswitchb-mode 1)
