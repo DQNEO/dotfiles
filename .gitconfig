@@ -31,6 +31,8 @@
 [color]
 	ui = auto
 [core]
-        # cygwinではlvがちゃんと動かないので。
-        # Linuxでは.gitconfig.localで下記のようにする。
-	#pager = lv -c
+        # cygwinとLinuxで環境が異なるので、
+        # pagerは.ginconfig.localにまかせる。
+        #
+        # 仕事環境では下記がよいかも。
+	# pager = nkf -w | colordiff | less -R
