@@ -48,3 +48,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 source $HOME/dotfiles/.zshrc_dqneo
+
+[[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
