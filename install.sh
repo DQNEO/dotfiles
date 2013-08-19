@@ -6,7 +6,7 @@ THIS_DIR=$(cd $(dirname $0); pwd)
 
 cd ~
 
-for file in .screenrc .emacs .zshrc .gitconfig
+for file in .screenrc  .zshrc .gitconfig
 do
   echo ln -s dotfiles/$file .
   ln -s dotfiles/$file .
