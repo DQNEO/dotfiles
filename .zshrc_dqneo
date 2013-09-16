@@ -31,6 +31,10 @@ function historyall  { history -E 1 }
 # 混乱のもとになるので無効にする。
 unsetopt promptcr
 
+# correct機能はウザイので無効に
+# http://nojobu.blogspot.jp/2013/03/zsh-correct.html
+unsetopt correctall
+
 # ディレクトリ名をうつだけでcdできる。
 # ..で上へあがれて便利。
 setopt auto_cd
