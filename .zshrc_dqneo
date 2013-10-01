@@ -92,7 +92,7 @@ alias gsl='git stash list'
 unalias gcm
 gcm () { git commit -m "$*" }
 gsp () { git stash pop stash@{"$*"} }
-
+alias cm='gcm'
 # colordiff
 alias cdi='colordiff'
 alias cdf='colordiff'
