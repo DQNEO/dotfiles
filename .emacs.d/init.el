@@ -72,3 +72,6 @@
 ; http://yoshiori.github.io/blog/2013/01/31/file-update-emacs/
 ; 変更のあったファイルの自動再読み込み
 (global-auto-revert-mode 1)
+
+; ~つきのバックアップファイルを作らない
+(setq make-backup-files nil)
