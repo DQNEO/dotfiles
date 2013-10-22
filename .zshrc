@@ -50,3 +50,5 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/.zshrc_dqneo
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"
