@@ -31,6 +31,9 @@
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
 
+;; http://tech.kayac.com/archive/emacs.html
+(setq make-backup-files nil)
+
 ;; カレントバッファのファイルパスを表示
 (defun show-file-path()
   (interactive)
