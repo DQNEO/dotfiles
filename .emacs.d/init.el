@@ -76,6 +76,10 @@
 ; 変更のあったファイルの自動再読み込み
 (global-auto-revert-mode 1)
 
+
+; ~つきのバックアップファイルを作らない
+(setq make-backup-files nil)
+
 ;;=============== auto chmod ===============
 ;; ファイル保存時にchmodする
 ;; chmod +x when you save a file
@@ -112,3 +116,4 @@
                     js-expr-indent-offset 2
                     indent-tabs-mode nil)
               (set (make-local-variable 'indent-line-function) 'js-indent-line)))
+
