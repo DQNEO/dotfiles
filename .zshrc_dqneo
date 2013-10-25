@@ -139,7 +139,7 @@ fi
 alias open=cygstart
 
 # plenv用の設定
-if type plenv 1>/dev/null 2>&1 ; then
+if [ -f $HOME/.plenv  ] ; then
   export PATH="$HOME/.plenv/bin:$PATH"
   eval "$(plenv init -)"
 fi
