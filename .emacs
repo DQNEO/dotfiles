@@ -193,13 +193,6 @@
                     indent-tabs-mode nil)
               (set (make-local-variable 'indent-line-function) 'js-indent-line)))
 
-;; settings for text file
-(add-hook 'text-mode-hook
-          '(lambda ()
-             (progn
-               (font-lock-mode t)
-               (font-lock-fontify-buffer))))
-
 ;;=============== HTML mode ===============
 
 ;; 拡張子tplのファイルはhtml-modeで開く
@@ -393,4 +386,11 @@
 (global-set-key [S-f2] 'swap-screen-with-cursor)
 
 (global-set-key "\C-cx" 'swap-screen)
+
+;; settings for text file
+(add-hook 'text-mode-hook
+          '(lambda ()
+             (progn
+               (font-lock-mode t)
+               (font-lock-fontify-buffer))))
 
