@@ -32,9 +32,6 @@
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
 
-;; http://tech.kayac.com/archive/emacs.html
-(setq make-backup-files nil)
-
 ;; カレントバッファのファイルパスを表示
 (defun show-file-path()
   (interactive)
@@ -56,6 +53,10 @@
   (shell-command (concat "./" (file-name-nondirectory (buffer-file-name)))))
 
 (global-set-key  "\C-cr" 'run-file)
+
+;; http://tech.kayac.com/archive/emacs.html
+(setq make-backup-files nil)
+
 
 ;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
