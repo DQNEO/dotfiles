@@ -75,7 +75,6 @@
 (setq backward-delete-char-untabify-method 'hungry)
 
 ;; display time mode
-;;(display-time)
 (setq display-time-day-and-date nil)
 
 (setq c-set-style "stroustrup")
