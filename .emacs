@@ -239,66 +239,10 @@
      (setq php-manual-url "http://www.phppro.jp/phpmanual")
      ))
 
-
-;; exec current test file
-(defun prove-quiet()
-  (interactive)
-  (shell-command
-   (concat "prove -Q  " (file-name-nondirectory (buffer-file-name)))))
-
-(define-key php-mode-map "\C-cq" 'prove-quiet)
-
-;; run test
-(defun run-test()
-  (interactive)
-  (shell-command
-   ( buffer-file-name)))
-(define-key php-mode-map "\C-ct" 'run-test)
-
-
 (defun my-php-mode ()
   (c-toggle-hungry-state 1)
 )
 (add-hook 'php-mode-user-hook 'my-php-mode)
-
-;; Flymake PHP Extension
-
-(when 
-    (string-match "22" emacs-version)
-  (progn
-    (require 'flymake)
-    
-    (defconst flymake-allowed-php-file-name-masks '(
-                                                    ("\\.php3\\'" flymake-php-init)
-                                                    ("\\.inc\\'" flymake-php-init)
-                                                    ("\\.php\\'" flymake-php-init))
-      "Filename extensions that switch on flymake-php mode syntax checks")
-    
-    (defconst flymake-php-err-line-pattern-re '("\\(.*\\) in \\(.*\\) on line \\([0-9]+\\)" 2 3 nil 1)
-      "Regexp matching PHP error messages")
-
-    (defun flymake-php-init ()
-      (let* ((temp-file       (flymake-init-create-temp-buffer-copy
-                               'flymake-create-temp-inplace))
-             (local-file  (file-relative-name
-                           temp-file
-                           (file-name-directory buffer-file-name))))
-        (list "php" (list "-f" local-file "-l"))))
-    
-    (defun flymake-php-load ()
-      (setq flymake-allowed-file-name-masks (append flymake-allowed-file-name-masks flymake-allowed-php-file-name-masks))
-      (setq flymake-err-line-patterns (cons flymake-php-err-line-pattern-re flymake-err-line-patterns))
-      (flymake-mode t)
-      (local-set-key "\C-cd" 'flymake-display-err-menu-for-current-line))
-
-    (add-hook 'php-mode-user-hook 'flymake-php-load)))
-
-
-
-
-(put 'set-goal-column 'disabled nil)
-
-
 
 ;;=============== tdd-mode ===============
 
