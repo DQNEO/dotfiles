@@ -132,6 +132,14 @@
 (ffap-bindings)
 (global-set-key "\C-cc" 'ffap-copy-string-as-kill)
 
+
+;;=============== shell-mode ===============
+;; http://www.namazu.org/~tsuchiya/elisp/index.html#script
+(autoload 'ansi-color-for-comint-mode-on "ansi-color"
+          "Set `ansi-color-for-comint-mode' to t." t)
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
+
 ;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
 (require 'recentf)
