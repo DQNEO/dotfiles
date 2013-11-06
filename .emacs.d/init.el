@@ -59,6 +59,7 @@
 (global-set-key  "\C-cr" 'run-file)
 
 ;; http://tech.kayac.com/archive/emacs.html
+; ~つきのバックアップファイルを作らない
 (setq make-backup-files nil)
 
 ;; http://www.cozmixng.org/~kou/emacs/dot_emacs
