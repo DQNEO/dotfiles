@@ -100,12 +100,6 @@
 ;; http://emacsblog.org/2007/04/09/highlight-the-current-line/
 (global-hl-line-mode nil)
 
-;; dsvn.el
-;; http://dev.ariel-networks.com/Members/matsuyama/dsvn
-(autoload 'svn-status "dsvn" "Run `svn status'." t)
-
-(autoload 'svn-update "dsvn" "Run `svn update'." t)
-
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
