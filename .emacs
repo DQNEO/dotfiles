@@ -244,61 +244,6 @@
 )
 (add-hook 'php-mode-user-hook 'my-php-mode)
 
-;;=============== tdd-mode ===============
-
-;; this is a modification version
-;; http://unknownplace.org/memo/2008/02/21/#e001
-(defvar tdd-bgcolor-alist
-  '(("Think"      ."snow")
-    ("Red"        ."#ff4444")
-    ("Green"      ."#44dd44")
-    ("Refactoring"."#ffaa44")))
-
-(defvar tdd-bgcolor-mode 3)
-(defvar tdd-bgcolor-mode-name "")
-(let (
-      (cell (or (memq 'mode-line-position mode-line-format)
-                (memq 'mode-line-buffer-identification mode-line-format)))
-      (newcdr 'tdd-bgcolor-mode-name))
-  (unless (member newcdr mode-line-format)
-    (setcdr cell (cons newcdr (cdr cell)))))
-
-(defun tdd-bgcolor-rotate ()
-  (interactive)
-  (let (pair)
-    (if (>= tdd-bgcolor-mode 3)
-        (setq tdd-bgcolor-mode 0)
-      (setq tdd-bgcolor-mode
-            (+ tdd-bgcolor-mode 1)))
-    (setq pair
-          (nth tdd-bgcolor-mode tdd-bgcolor-alist))
-    (setq tdd-bgcolor-mode-name (format "[%s]" (car pair)))
-    (message tdd-bgcolor-mode-name)
-    (set-face-foreground 'mode-line (cdr pair))))
-
-(global-set-key "\C-cm" 'tdd-bgcolor-rotate)
-
-;;=======================================
-
-;; 再帰的にファイルを検索させて、etags を実行させる。
-(defun etags-find (dir pattern)
-  " find DIR -name 'PATTERN' |etags -"
-  (interactive
-   "DFind-name (directory): \nsFind-name (filename wildcard): ")
-  (shell-command
-   (concat "find " dir " -type f -name \"" pattern "\" | etags -")))
-
-
-
-;;=============== antything.el ===============
-;; antything.el
-;;(add-to-list 'load-path "~/.emacs.d/auto-install" )
-;;(require 'anything-startup)
-
-;;=============== HTML helper mode ===============
-(autoload 'html-helper-mode "html-helper-mode" "Yay HTML" t)
-
-
 ;;============ htmlentities-region ==============
 (defun htmlentities-region ()
   (interactive)
