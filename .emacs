@@ -19,7 +19,6 @@
 (load-theme 'misterioso t)
 
 ;;============ Global Keybind ====================
-
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
