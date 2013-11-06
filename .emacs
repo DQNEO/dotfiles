@@ -173,6 +173,10 @@
                 (message (concat "Wrote " name " (+x)"))))))))
 (add-hook 'after-save-hook 'make-file-executable)
 
+;;=============== shell-pop ===============
+;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
+(require 'shell-pop)
+(global-set-key [f8] 'shell-pop)
 
 
 ;;=============== Visible White Spaces ===============
@@ -367,11 +371,6 @@
   (shell-command
    (concat "find " dir " -type f -name \"" pattern "\" | etags -")))
 
-
-;;=============== shell-pop ===============
-;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
-(require 'shell-pop)
-(global-set-key [f8] 'shell-pop)
 
 
 ;;=============== antything.el ===============
