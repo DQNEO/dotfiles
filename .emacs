@@ -193,40 +193,6 @@
                     indent-tabs-mode nil)
               (set (make-local-variable 'indent-line-function) 'js-indent-line)))
 
-;;=============== Visible White Spaces ===============
-;; Show tab, zenkaku-space, white spaces at end of line
-;; http://openlab.dino.co.jp/wp-content/uploads/2008/07/dotemacs-show-white-spaces.txt
-;; http://www.bookshelf.jp/soft/meadow_26.html#SEC317
-(defface my-face-tab         '((t (:background "Yellow"))) nil :group 'my-faces)
-(defface my-face-zenkaku-spc '((t (:background "LightBlue"))) nil :group 'my-faces)
-(defface my-face-spc-at-eol  '((t (:foreground "Red" :underline t))) nil :group 'my-faces)
-(defvar my-face-tab         'my-face-tab)
-(defvar my-face-zenkaku-spc 'my-face-zenkaku-spc)
-(defvar my-face-spc-at-eol  'my-face-spc-at-eol)
-(defadvice font-lock-mode (before my-font-lock-mode ())
-  (font-lock-add-keywords
-   major-mode
-   '(("\t" 0 my-face-tab append)
-     ("　" 0 my-face-zenkaku-spc append)
-     ("[ \t]+$" 0 my-face-spc-at-eol append)
-     )))
-(ad-enable-advice 'font-lock-mode 'before 'my-font-lock-mode)
-(ad-activate 'font-lock-mode)
-
-;; http://memememomo.hatenablog.com/entry/2013/03/23/125240
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.\\(js\\|json\\)$" . js2-mode))
-
-;; http://blog.ainam.me/2011/12/13/emacs-js2-mode-indent/
-;; インデントの関数の再設定
-(add-hook 'js2-mode-hook
-          #'(lambda ()
-              (require 'js)
-              (setq js-indent-level 2
-                    js-expr-indent-offset 2
-                    indent-tabs-mode nil)
-              (set (make-local-variable 'indent-line-function) 'js-indent-line)))
-
 ;; settings for text file
 (add-hook 'text-mode-hook
           '(lambda ()
