@@ -70,6 +70,38 @@
 ;; set start up message off
 ;;(setq inhibit-startup-message t)
 
+;; 1 回の delete-backward-char で複数の whitespace を消す
+;; http://www.fan.gr.jp/~ring/Meadow/meadow.html#backward-delete-char-untabify-method
+(setq backward-delete-char-untabify-method 'hungry)
+
+;; display time mode
+(setq display-time-day-and-date nil)
+
+(setq c-set-style "stroustrup")
+
+;; iswitchb-mode on
+(iswitchb-mode 1)
+
+;; colorize region  http://blog.livedoor.jp/t100life/archives/51680860.html
+(transient-mark-mode 1)
+
+;; show line-number
+(line-number-mode t)
+
+;; hide menu bar
+(menu-bar-mode nil)
+
+
+;; hilight parenthes
+(show-paren-mode t)
+
+;; hilight current line
+;; http://emacsblog.org/2007/04/09/highlight-the-current-line/
+(global-hl-line-mode nil)
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
 ;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
 (require 'recentf)
