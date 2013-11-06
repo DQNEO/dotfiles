@@ -251,6 +251,7 @@
     (call-process-region (region-beginning) (region-end)
       "htmlentities.php" t t))) 
 
+
 ;;=============== swap-screen ===============
 ;; これは超便利。
 ;; 
