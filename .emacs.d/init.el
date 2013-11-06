@@ -22,7 +22,7 @@
 ;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
 (load-theme 'misterioso t)
 
-;; Global Set Keys
+;;============ Global Keybind ====================
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
