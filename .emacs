@@ -140,7 +140,7 @@
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 
-;;recentf
+;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
 ;; recent files
 (require 'recentf)
