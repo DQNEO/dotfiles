@@ -193,6 +193,58 @@
                     indent-tabs-mode nil)
               (set (make-local-variable 'indent-line-function) 'js-indent-line)))
 
+;;=============== HTML mode ===============
+
+;; 拡張子tplのファイルはhtml-modeで開く
+;;http://blog.livedoor.jp/ubuntumini/archives/51253507.html
+(setq auto-mode-alist
+      (cons (cons "\\.tpl$" 'html-mode) auto-mode-alist))
+
+
+;;=============== php-mode ===============
+;; require php-mode
+(load-library "php-mode")
+(require 'php-mode)
+
+(setq interpreter-mode-alist
+      (cons '("php" . php-mode)
+            interpreter-mode-alist))
+
+;; http://www.phppro.jp/phptips/archives/vol5/
+(add-hook 'php-mode-user-hook
+          '(lambda ()
+             (define-abbrev php-mode-abbrev-table "ex" "extends")
+             (c-set-offset 'comment-intro 0)
+             (setq tab-width 4)
+             (setq c-basic-offset 4)
+             (setq c-hanging-comment-ender-p nil)
+             (setq php-mode-force-pear t)
+             (setq indent-tabs-mode nil)
+             (setq php-manual-path "/usr/local/share/php/doc/php-chunked-xhtml")
+             (setq php-search-url "http://php.net")
+             (setq php-manual-url "http://www.phppro.jp/phpmanual")
+             (setq c-set-style "stroustrup")
+             (c-set-style "stroustrup")
+
+             )
+
+          )
+
+
+(add-hook 'php-mode-hook
+  '(lambda ()
+     (c-set-style "stroustrup")
+     (setq php-manual-path "/home/userdqn/php/doc/html")
+     (setq php-search-url "http://www.phppro.jp/")
+     (setq php-manual-url "http://www.phppro.jp/phpmanual")
+     ))
+
+(defun my-php-mode ()
+  (c-toggle-hungry-state 1)
+)
+(add-hook 'php-mode-user-hook 'my-php-mode)
+
+
 ;;=============== swap-screen ===============
 ;; これは超便利。
 ;; 
