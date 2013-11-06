@@ -51,7 +51,7 @@
 )
 (global-set-key "\C-cv" 'revert-buffer-force)
 
-; run-file
+;; run-file
 (defun run-file()
   (interactive)
   (shell-command (concat "./" (file-name-nondirectory (buffer-file-name)))))
