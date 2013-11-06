@@ -100,10 +100,6 @@
 ;; http://emacsblog.org/2007/04/09/highlight-the-current-line/
 (global-hl-line-mode nil)
 
-;; To customize the background color(
-;; (set-face-background 'hl-line "#ffa")
-
-
 ;; dsvn.el
 ;; http://dev.ariel-networks.com/Members/matsuyama/dsvn
 (autoload 'svn-status "dsvn" "Run `svn status'." t)
