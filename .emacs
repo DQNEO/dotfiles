@@ -66,6 +66,7 @@
 ;; set start up message off
 ;;(setq inhibit-startup-message t)
 
+;; 1 回の delete-backward-char で複数の whitespace を消す
 ;; http://www.fan.gr.jp/~ring/Meadow/meadow.html#backward-delete-char-untabify-method
 (setq backward-delete-char-untabify-method 'hungry)
 
