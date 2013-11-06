@@ -146,6 +146,16 @@
 (recentf-mode 1)
 (global-set-key "\C-xf" 'recentf-open-files)
 
+;; Git
+; EmacsのGitクライアント：Magit
+; http://qiita.com/takc923/items/c7a11ff30caedc4c5ba7
+(require 'magit)
+
+; branch切り替えた時に開いてるBufferを自動更新
+; http://yoshiori.github.io/blog/2013/01/31/file-update-emacs/
+; 変更のあったファイルの自動再読み込み
+(global-auto-revert-mode 1)
+
 ;;=============== auto chmod ===============
 ;; ファイル保存時にchmodする
 ;; chmod +x when you save a file
