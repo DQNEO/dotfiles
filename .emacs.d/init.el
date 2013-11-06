@@ -102,6 +102,36 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
+;;=============== session.el ===============
+;; http://openlab.dino.co.jp/2008/09/26/230919351.html
+;;session.el + minibuf-isearchが便利すぎる — ディノオープンラボラトリ
+
+;; ミニバッファ履歴リストの最大長：tなら無限
+(setq history-length t)
+;; session.el
+;;   kill-ringやミニバッファで過去に開いたファイルなどの履歴を保存する
+(when (require 'session nil t)
+  (setq session-initialize '(de-saveplace session keys menus places)
+        session-globals-include '((kill-ring 50)
+                                  (session-file-alist 500 t)
+                                  (file-name-history 10000)))
+  (add-hook 'after-init-hook 'session-initialize)
+  ;; 前回閉じたときの位置にカーソルを復帰
+  (setq session-undo-check -1))
+;; minibuf-isearch
+;;   minibufでisearchを使えるようにする
+(require 'minibuf-isearch nil t)
+
+;;=============== Custom ===============
+;; disable tab
+(custom-set-variables
+ '(indent-tabs-mode nil))
+
+;; copy current word
+;; http://sh1.2-d.jp/b/2006-07-16-00-44.html
+(ffap-bindings)
+(global-set-key "\C-cc" 'ffap-copy-string-as-kill)
+
 ;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
 (require 'recentf)
