@@ -67,6 +67,9 @@
 
 ;;============ Global Variables ====================
 
+;; set start up message off
+;;(setq inhibit-startup-message t)
+
 ;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
 (require 'recentf)

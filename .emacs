@@ -64,7 +64,7 @@
 ;;============ Global Variables ====================
 
 ;; set start up message off
-(setq inhibit-startup-message t)
+;;(setq inhibit-startup-message t)
 
 ;; http://www.fan.gr.jp/~ring/Meadow/meadow.html#backward-delete-char-untabify-method
 (setq backward-delete-char-untabify-method 'hungry)
