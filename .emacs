@@ -4,7 +4,7 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp" )
 (add-to-list 'load-path "~/.emacs.d/auot-install" )
 
-;; Languages
+;; Language
 (set-language-environment 'Japanese)
 
 ;; Coding system.
