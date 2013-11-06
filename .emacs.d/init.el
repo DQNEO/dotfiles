@@ -8,7 +8,7 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
-;; Langeage
+;; Language
 (set-language-environment 'Japanese)
 
 ;; Coding system.
