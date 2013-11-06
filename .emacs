@@ -77,8 +77,6 @@
 (setq c-set-style "stroustrup")
  
 
-;;=============== Global Minor Modes ===============
-
 ;; iswitchb-mode on
 (iswitchb-mode 1)
 
