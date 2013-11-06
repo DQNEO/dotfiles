@@ -61,6 +61,8 @@
 ;; http://tech.kayac.com/archive/emacs.html
 (setq make-backup-files nil)
 
+;; http://www.cozmixng.org/~kou/emacs/dot_emacs
+(setq kill-whole-line t)
 
 ;; recentf
 ;; http://www23.atwiki.jp/selflearn/pages/41.html#id_4af821e2
