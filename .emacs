@@ -13,6 +13,11 @@
 (set-terminal-coding-system 'utf-8-unix)
 (set-buffer-file-coding-system 'utf-8-unix)
 (prefer-coding-system 'utf-8-unix)
+
+;; Theme 
+;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
+(load-theme 'misterioso t)
+
 ;;============ Global Keybind ====================
 
 ;; C-h as backspace
