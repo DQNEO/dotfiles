@@ -1,8 +1,12 @@
-;;============ Load Path ====================
-
-;; add to load-path
-(add-to-list 'load-path "~/.emacs.d/site-lisp" )
-(add-to-list 'load-path "~/.emacs.d/auot-install" )
+;; Packages
+;; http://d.hatena.ne.jp/naoya/20130107/1357553140
+;; Emacs 24 のデフォルトではパッケージ提供元が
+;; elpa.gnu.org のみなので
+;; 下記のように設定して増やしてあげる
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(package-initialize)
 
 ;; Language
 (set-language-environment 'Japanese)
