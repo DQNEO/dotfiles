@@ -173,7 +173,6 @@
                 (message (concat "Wrote " name " (+x)"))))))))
 (add-hook 'after-save-hook 'make-file-executable)
 
-
 ;;=============== shell-pop ===============
 ;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
 (require 'shell-pop)
@@ -218,3 +217,11 @@
 (global-set-key [S-f2] 'swap-screen-with-cursor)
 
 (global-set-key "\C-cx" 'swap-screen)
+
+;; settings for text file
+(add-hook 'text-mode-hook
+          '(lambda ()
+             (progn
+               (font-lock-mode t)
+               (font-lock-fontify-buffer))))
+
