@@ -147,10 +147,6 @@
 (recentf-mode 1)
 (global-set-key "\C-xf" 'recentf-open-files)
 
-;; Buffer Handling
-; iswitchb-mode on
-(iswitchb-mode 1)
-
 ;; Git
 ; EmacsのGitクライアント：Magit
 ; http://qiita.com/takc923/items/c7a11ff30caedc4c5ba7
@@ -160,10 +156,6 @@
 ; http://yoshiori.github.io/blog/2013/01/31/file-update-emacs/
 ; 変更のあったファイルの自動再読み込み
 (global-auto-revert-mode 1)
-
-
-; ~つきのバックアップファイルを作らない
-(setq make-backup-files nil)
 
 ;;=============== auto chmod ===============
 ;; ファイル保存時にchmodする
