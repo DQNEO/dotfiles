@@ -244,6 +244,13 @@
 )
 (add-hook 'php-mode-user-hook 'my-php-mode)
 
+;;============ htmlentities-region ==============
+(defun htmlentities-region ()
+  (interactive)
+  (save-excursion
+    (call-process-region (region-beginning) (region-end)
+      "htmlentities.php" t t))) 
+
 
 ;;=============== swap-screen ===============
 ;; これは超便利。
