@@ -32,6 +32,21 @@
 ;; override mark-whole-buffer
 (global-set-key "\C-ch" 'help-command)
 
+;; カレントバッファのファイルパスを表示
+(defun show-file-path()
+  (interactive)
+  (message (buffer-file-name))
+  )
+(global-set-key  "\C-cp" 'show-file-path)
+
+;; revert-buffer-force
+(defun revert-buffer-force()
+  (interactive)
+  (revert-buffer nil t)
+  (message "revert-buffer-force done.")
+)
+(global-set-key "\C-cv" 'revert-buffer-force)
+
 ;; run-file
 (defun run-file()
   (interactive)
