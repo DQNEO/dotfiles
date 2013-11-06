@@ -78,7 +78,6 @@
 (setq display-time-day-and-date nil)
 
 (setq c-set-style "stroustrup")
- 
 
 ;; iswitchb-mode on
 (iswitchb-mode 1)
@@ -122,7 +121,6 @@
 ;; minibuf-isearch
 ;;   minibufでisearchを使えるようにする
 (require 'minibuf-isearch nil t)
-
 
 ;;=============== Custom ===============
 ;; disable tab
