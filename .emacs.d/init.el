@@ -32,6 +32,10 @@
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
 
+;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
+;; override mark-whole-buffer
+(global-set-key "\C-ch" 'help-command)
+
 ;; カレントバッファのファイルパスを表示
 (defun show-file-path()
   (interactive)
