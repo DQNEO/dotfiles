@@ -32,8 +32,6 @@
 ;; override mark-whole-buffer
 (global-set-key "\C-ch" 'help-command)
 
-;; revert-buffer
-(global-set-key "\C-cv" 'revert-buffer)
 ;; run-file
 (defun run-file()
   (interactive)
