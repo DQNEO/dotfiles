@@ -25,7 +25,8 @@
 
         #http://blog.blindgaenger.net/advanced_git_aliases.html#show_all_defined_aliases
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
-
+        dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
+        diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
 [push]
 	default = current
 [color]
@@ -36,3 +37,5 @@
         #
         # 仕事環境では下記がよいかも。
 	# pager = nkf -w | colordiff | less -R
+[core]
+	whitespace = cr-at-eol
