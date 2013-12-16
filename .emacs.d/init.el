@@ -103,6 +103,9 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
+;; perldocなどのためにPAGERを無効にする
+(setenv "PAGER" "cat")
+
 ;;=============== session.el ===============
 ;; http://openlab.dino.co.jp/2008/09/26/230919351.html
 ;;session.el + minibuf-isearchが便利すぎる — ディノオープンラボラトリ
