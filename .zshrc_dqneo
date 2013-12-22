@@ -144,6 +144,13 @@ if [ -e $HOME/.plenv  ] ; then
   eval "$(plenv init -)"
 fi
 
+# rbenv
+if [ -d $HOME/.rbenv ]; then
+  export PATH=$HOME/.rbenv/bin:$PATH
+  eval "$(rbenv init - zsh)"
+fi
+
 # EDITOR
 export EDITOR=nano
+
 
