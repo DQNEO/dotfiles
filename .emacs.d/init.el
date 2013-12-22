@@ -8,6 +8,9 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+(load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
+(setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
+
 ;; Language
 (set-language-environment 'Japanese)
 
