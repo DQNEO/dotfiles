@@ -37,5 +37,3 @@
         #
         # 仕事環境では下記がよいかも。
 	# pager = nkf -w | colordiff | less -R
-[core]
-	whitespace = cr-at-eol
