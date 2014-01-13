@@ -184,6 +184,7 @@
 
 ;;=============== shell-pop ===============
 ;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
+(load "~/dotfiles/.emacs.d/submodules/shell-pop-el/shell-pop.el")
 (require 'shell-pop)
 (global-set-key [f8] 'shell-pop)
 
