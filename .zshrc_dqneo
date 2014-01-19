@@ -141,7 +141,7 @@ alias open=cygstart
 # plenv用の設定
 if [ -e $HOME/.plenv  ] ; then
   export PATH="$HOME/.plenv/bin:$HOME/.plenv/shims/:$PATH"
-  eval "$(plenv init -)"
+  eval "$(plenv init - zsh)"
 fi
 
 # rbenv
