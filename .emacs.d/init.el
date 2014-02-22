@@ -1,3 +1,18 @@
+;======= よく忘れがちな便利コマンド =========
+;; \(tramp)/
+;; /sudo::/etc/
+;; /ssh:web1:/home/prj01hon
+
+;;============= Startup scratch message =====================
+;; http://d.hatena.ne.jp/sandai/20120304/p2
+(setq initial-scratch-message ";;
+;; \(空白削除系コマンドたち)/
+;; M-^ delete-indentation
+;; M-SPC  just-one-space
+;; M-m
+;; M-h
+")
+
 ;; Packages
 ;; http://d.hatena.ne.jp/naoya/20130107/1357553140
 ;; Emacs 24 のデフォルトではパッケージ提供元が
