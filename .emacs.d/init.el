@@ -13,6 +13,14 @@
 ;; M-h
 ")
 
+;; Language
+(set-language-environment 'Japanese)
+(set-default-coding-systems 'utf-8)
+(set-keyboard-coding-system 'utf-8-unix)
+(set-terminal-coding-system 'utf-8-unix)
+(set-buffer-file-coding-system 'utf-8-unix)
+(prefer-coding-system 'utf-8-unix)
+
 ;; Packages
 ;; http://d.hatena.ne.jp/naoya/20130107/1357553140
 ;; Emacs 24 のデフォルトではパッケージ提供元が
@@ -25,16 +33,6 @@
 
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
-
-;; Language
-(set-language-environment 'Japanese)
-
-;; Coding system.
-(set-default-coding-systems 'utf-8)
-(set-keyboard-coding-system 'utf-8-unix)
-(set-terminal-coding-system 'utf-8-unix)
-(set-buffer-file-coding-system 'utf-8-unix)
-(prefer-coding-system 'utf-8-unix)
 
 ;; Theme 
 ;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
