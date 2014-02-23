@@ -49,15 +49,15 @@
 ;; C-M-%が使えないので、代替。
 (global-set-key "\M-$" 'replace-regexp)
 
+;; keybind for help
+;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
+;; override mark-whole-buffer
+(global-set-key "\C-ch" 'help-command)
 ;; disable toggle-input-method and replace it as help-command
 (global-set-key "\C-\\" 'help-command)
 
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
-
-;; http://flex.ee.uec.ac.jp/texi/faq-jp/faq-jp_79.html
-;; override mark-whole-buffer
-(global-set-key "\C-ch" 'help-command)
 
 ;; カレントバッファのファイルパスを表示
 (defun show-file-path()
