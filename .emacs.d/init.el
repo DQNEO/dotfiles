@@ -49,7 +49,7 @@
 ;; C-M-%が使えないので、代替。
 (global-set-key "\M-$" 'replace-regexp)
 
-;; disable toggle-input-method and use it as help-command
+;; disable toggle-input-method and replace it as help-command
 (global-set-key "\C-\\" 'help-command)
 
 ;; compare-window
