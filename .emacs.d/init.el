@@ -55,6 +55,7 @@
 (global-set-key "\C-ch" 'help-command)
 ;; disable toggle-input-method and replace it as help-command
 (global-set-key "\C-\\" 'help-command)
+(global-set-key (kbd "M-?") 'help-for-help)
 
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
