@@ -60,12 +60,12 @@
 ;; compare-window
 (global-set-key "\C-cw" 'compare-windows)
 
-;; カレントバッファのファイルパスを表示
-(defun show-file-path()
+;; カレントバッファのフルパスを表示
+(defun show-buffer-file-path()
   (interactive)
   (message (buffer-file-name))
   )
-(global-set-key  "\C-cp" 'show-file-path)
+(global-set-key  "\C-cp" 'show-buffer-file-path)
 
 ;; revert-buffer-force
 (defun revert-buffer-force()
