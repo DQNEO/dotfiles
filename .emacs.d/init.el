@@ -40,6 +40,9 @@
 ;; add to load-path
 (add-to-list 'load-path "~/.emacs.d/site-lisp" )
 
+;; Git
+; ページャをEmacs用にカスタマイズする
+(setenv "GIT_PAGER" "nkf -w|colordiff")
 ;; markdown-mode
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
