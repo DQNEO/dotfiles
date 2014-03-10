@@ -115,8 +115,6 @@
 ;; iswitchb-mode on
 (iswitchb-mode t)
 
-;;============ Global Variables ====================
-
 ;; set start up message off
 ;;(setq inhibit-startup-message t)
 
