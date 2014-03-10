@@ -93,6 +93,9 @@
 ;; goto-line
 (global-set-key "\M-g" 'goto-line)
 
+;; 終了時にオートセーブファイルを消す
+(setq delete-auto-save-files t)
+
 ;; http://tech.kayac.com/archive/emacs.html
 ; ~つきのバックアップファイルを作らない
 (setq make-backup-files nil)
