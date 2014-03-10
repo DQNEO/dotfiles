@@ -22,6 +22,7 @@
 (set-default-coding-systems 'utf-8)
 
 ;; Packages
+;; http://sheephead.homelinux.org/2011/06/17/6724/
 ;; http://d.hatena.ne.jp/naoya/20130107/1357553140
 ;; Emacs 24 のデフォルトではパッケージ提供元が
 ;; elpa.gnu.org のみなので
