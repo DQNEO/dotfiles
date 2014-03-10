@@ -115,6 +115,10 @@
 ;; iswitchb-mode on
 (iswitchb-mode t)
 
+;; http://e-arrows.sakura.ne.jp/2010/02/vim-to-emacs.html
+;; バッファリストの拡張機能。あんま便利じゃないのではずす。
+;;(global-set-key "\C-x\C-b" 'bs-show)
+
 ;; set start up message off
 ;;(setq inhibit-startup-message t)
 
