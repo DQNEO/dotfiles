@@ -113,7 +113,7 @@
 (setq backup-inhibited t)
 
 ;; iswitchb-mode on
-(iswitchb-mode 1)
+(iswitchb-mode t)
 
 ;;============ Global Variables ====================
 
