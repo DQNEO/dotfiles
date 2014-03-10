@@ -112,6 +112,8 @@
 
 (setq backup-inhibited t)
 
+;; iswitchb-mode on
+(iswitchb-mode 1)
 
 ;;============ Global Variables ====================
 
@@ -126,9 +128,6 @@
 (setq display-time-day-and-date nil)
 
 (setq c-set-style "stroustrup")
-
-;; iswitchb-mode on
-(iswitchb-mode 1)
 
 ;; colorize region  http://blog.livedoor.jp/t100life/archives/51680860.html
 (transient-mark-mode 1)
