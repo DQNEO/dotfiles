@@ -90,6 +90,9 @@
 (global-set-key  "\C-cr" 'run-file)
 (global-set-key [f5] 'run-file)
 
+;; goto-line
+(global-set-key "\M-g" 'goto-line)
+
 ;; http://tech.kayac.com/archive/emacs.html
 ; ~つきのバックアップファイルを作らない
 (setq make-backup-files nil)
