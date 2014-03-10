@@ -138,7 +138,7 @@
 ;; show line-number
 (line-number-mode t)
 
-;; ;; 左端に行番号を表示
+;; 左端に行番号を表示
 ;; http://d.hatena.ne.jp/sandai/20120304/p2
 ;;(global-linum-mode nil)
 ;; (set-face-attribute 'linum nil
