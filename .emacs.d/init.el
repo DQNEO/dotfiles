@@ -103,6 +103,15 @@
 ;; http://www.cozmixng.org/~kou/emacs/dot_emacs
 (setq kill-whole-line t)
 
+;; display time mode は画面が崩れるから無効にする
+(display-time-mode 0)
+(setq display-time-day-and-date nil)
+
+;; 最終行に必ず一行挿入する
+(setq require-final-newline t)
+
+(setq backup-inhibited t)
+
 
 ;;============ Global Variables ====================
 
