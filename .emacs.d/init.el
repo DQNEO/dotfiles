@@ -46,10 +46,6 @@
 ;; 変更のあったファイルの自動再読み込み
 (global-auto-revert-mode 1)
 
-;; Theme 
-;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
-(load-theme 'misterioso t)
-
 ;;============ Global Keybind ====================
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
@@ -330,4 +326,8 @@
 ;; markdown-mode
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
+
+;; Theme 
+;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
+(load-theme 'misterioso t)
 
