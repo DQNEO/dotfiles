@@ -43,6 +43,9 @@
 ;; Git
 ; ページャをEmacs用にカスタマイズする
 (setenv "GIT_PAGER" "nkf -w|colordiff")
+;; 変更のあったファイルの自動再読み込み
+(global-auto-revert-mode 1)
+
 ;; markdown-mode
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
