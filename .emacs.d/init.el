@@ -28,8 +28,11 @@
 ;; elpa.gnu.org のみなので
 ;; 下記のように設定して増やしてあげる
 (require 'package)
+;;リポジトリにmelpaを追加
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;;リポジトリにMarmaladeを追加
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;;インストールしたパッケージにロードパスを通してロードする
 (package-initialize)
 
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
