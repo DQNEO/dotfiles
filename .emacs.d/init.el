@@ -87,8 +87,8 @@
 (defun run-file()
   (interactive)
   (shell-command (concat "./" (file-name-nondirectory (buffer-file-name)))))
-
 (global-set-key  "\C-cr" 'run-file)
+(global-set-key [f5] 'run-file)
 
 ;; http://tech.kayac.com/archive/emacs.html
 ; ~つきのバックアップファイルを作らない
