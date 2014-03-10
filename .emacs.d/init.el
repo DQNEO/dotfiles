@@ -154,6 +154,7 @@
 
 ;; hilight current line
 ;; http://emacsblog.org/2007/04/09/highlight-the-current-line/
+;; http://e-arrows.sakura.ne.jp/2010/02/vim-to-emacs.html
 (global-hl-line-mode nil)
 
 (require 'uniquify)
