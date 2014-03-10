@@ -138,9 +138,16 @@
 ;; show line-number
 (line-number-mode t)
 
+;; ;; 左端に行番号を表示
+;; http://d.hatena.ne.jp/sandai/20120304/p2
+;;(global-linum-mode nil)
+;; (set-face-attribute 'linum nil
+;;                     :foreground "#800"
+;;                     :height 0.9)
+;;(setq linum-format "%4d|")
+
 ;; hide menu bar
 (menu-bar-mode nil)
-
 
 ;; hilight parenthes
 (show-paren-mode t)
