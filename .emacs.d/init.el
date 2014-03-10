@@ -119,6 +119,9 @@
 ;; バッファリストの拡張機能。あんま便利じゃないのではずす。
 ;;(global-set-key "\C-x\C-b" 'bs-show)
 
+;; colorize region  http://blog.livedoor.jp/t100life/archives/51680860.html
+(transient-mark-mode 1)
+
 ;; set start up message off
 ;;(setq inhibit-startup-message t)
 
@@ -131,8 +134,6 @@
 
 (setq c-set-style "stroustrup")
 
-;; colorize region  http://blog.livedoor.jp/t100life/archives/51680860.html
-(transient-mark-mode 1)
 
 ;; show line-number
 (line-number-mode t)
