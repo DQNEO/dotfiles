@@ -278,17 +278,15 @@
 (add-hook 'php-mode-user-hook
           '(lambda ()
              (define-abbrev php-mode-abbrev-table "ex" "extends")
+             (c-set-style "stroustrup")
              (c-set-offset 'comment-intro 0)
              (setq tab-width 4)
              (setq c-basic-offset 4)
              (setq c-hanging-comment-ender-p nil)
              (setq php-mode-force-pear t)
              (setq indent-tabs-mode nil)
-             (setq php-manual-path "/usr/local/share/php/doc/php-chunked-xhtml")
              (setq php-search-url "http://php.net")
              (setq php-manual-url "http://www.phppro.jp/phpmanual")
-             (setq c-set-style "stroustrup")
-             (c-set-style "stroustrup")
 
              )
 
