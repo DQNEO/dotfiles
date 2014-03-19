@@ -6,4 +6,4 @@
 	url = git://jblevins.org/git/markdown-mode.git
 [submodule ".emacs.d/submodules/shell-pop-el"]
 	path = .emacs.d/submodules/shell-pop-el
-	url = git@github.com:DQNEO/shell-pop-el.git
+	url = git://github.com/DQNEO/shell-pop-el.git
