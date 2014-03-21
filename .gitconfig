@@ -1,8 +1,7 @@
-# name,emailは.gitconfig.localに書く
-# これはスパム対策のため。
-#[user]
-#        name  = DQNEO
-#        email = hoge@example.com
+[user]
+        name  = DQNEO
+        # emailは.gitconfig.localに書く
+        # スパム対策のため。
 [include]
         path = .gitconfig.local
 [alias]
