@@ -40,6 +40,33 @@
 ;; add to load-path
 (add-to-list 'load-path "~/.emacs.d/site-lisp" )
 
+;; 各種packageが入ってなければインストールする
+;; https://gist.github.com/DQNEO/83445d953551f1ff3df4
+(require 'cl)
+(defvar installing-package-list
+  '(
+    ;; ここに使っているパッケージを書く。
+    magit
+    php-mode
+    markdown-mode
+    yaml-mode
+    
+    ;; 以下は便利か不明。要評価。
+    js2-mode
+    yasnippet
+    helm
+    auto-complete
+
+    ))
+
+(let ((not-installed (loop for x in installing-package-list
+                            when (not (package-installed-p x))
+                            collect x)))
+  (when not-installed
+    (package-refresh-contents)
+    (dolist (pkg not-installed)
+        (package-install pkg))))
+
 ;; Git
 ; ページャをEmacs用にカスタマイズする
 (setenv "GIT_PAGER" "nkf -w|colordiff")
