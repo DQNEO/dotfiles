@@ -142,8 +142,8 @@ fi
 alias open=cygstart
 
 # plenv用の設定
-if [ -e $HOME/.plenv  ] ; then
-  export PATH="$HOME/.plenv/bin:$HOME/.plenv/shims/:$PATH"
+if [ -e /opt/plenv  ] ; then
+  export PATH="/opt/plenv/bin:/opt/plenv/shims:$PATH"
   eval "$(plenv init - zsh)"
 fi
 
