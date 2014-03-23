@@ -182,3 +182,4 @@ autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
 
+[[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
