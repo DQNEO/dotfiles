@@ -195,6 +195,10 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
+;; 行末の空白を強調表示
+(setq-default show-trailing-whitespace t)
+(set-face-background 'trailing-whitespace "#b14770")
+
 ;; perldocなどのためにPAGERを無効にする
 (setenv "PAGER" "cat")
 
