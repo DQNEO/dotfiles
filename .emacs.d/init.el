@@ -184,6 +184,9 @@
 ;; http://e-arrows.sakura.ne.jp/2010/02/vim-to-emacs.html
 (global-hl-line-mode t)
 
+;; http://www.geocities.co.jp/SiliconValley-Oakland/3992/emacs/use/abbrev.html
+;; http://d.hatena.ne.jp/end0tknr/20090418/1240047494
+(global-set-key "\C-o" 'expand-abbrev)
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
