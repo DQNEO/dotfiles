@@ -222,11 +222,6 @@
 ;;   minibufでisearchを使えるようにする
 (require 'minibuf-isearch nil t)
 
-;;=============== Custom ===============
-;; disable tab
-(custom-set-variables
- '(indent-tabs-mode nil))
-
 ;; copy current word
 ;; http://sh1.2-d.jp/b/2006-07-16-00-44.html
 (ffap-bindings)
