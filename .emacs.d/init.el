@@ -245,6 +245,19 @@
 ;; open recent files
 (global-set-key "\C-xf" 'recentf-open-files)
 
+(setq ansi-color-names-vector
+      ["#000000"           ; black
+       "#ff6565"           ; red
+       "#93d44f"           ; green
+       "#eab93d"           ; yellow
+       "#204a87"           ; blue
+       "#ce5c00"           ; magenta
+       "#89b6e2"           ; cyan
+       "#ffffff"]          ; white
+      )
+(ansi-color-for-comint-mode-on)
+
+
 ;; Git
 ; ページャをEmacs用にカスタマイズする
 (setenv "GIT_PAGER" "nkf -w|colordiff")
