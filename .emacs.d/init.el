@@ -182,7 +182,8 @@
 ;; hilight current line
 ;; http://emacsblog.org/2007/04/09/highlight-the-current-line/
 ;; http://e-arrows.sakura.ne.jp/2010/02/vim-to-emacs.html
-(global-hl-line-mode nil)
+(global-hl-line-mode t)
+
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
