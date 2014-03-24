@@ -188,6 +188,9 @@
 ;; http://d.hatena.ne.jp/end0tknr/20090418/1240047494
 (global-set-key "\C-o" 'expand-abbrev)
 
+;; customize the hi-line-mode background color
+;;(set-face-background 'hl-line "#666")
+
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
