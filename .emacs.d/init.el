@@ -71,6 +71,8 @@
 ;; Git
 ; ページャをEmacs用にカスタマイズする
 (setenv "GIT_PAGER" "nkf -w|colordiff")
+; branch切り替えた時に開いてるBufferを自動更新
+; http://yoshiori.github.io/blog/2013/01/31/file-update-emacs/
 ;; 変更のあったファイルの自動再読み込み
 (global-auto-revert-mode 1)
 
