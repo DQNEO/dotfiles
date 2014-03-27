@@ -26,7 +26,7 @@
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
         dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
         diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
-        delete-merged-branch = !git branch --merged | grep -v '^\\*' | git branch -d
+        delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs git branch -d
 [push]
 	default = current
 [color]
