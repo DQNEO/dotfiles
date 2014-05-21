@@ -80,6 +80,11 @@
 ;; C-h as backspace
 (global-set-key "\C-h" 'delete-backward-char)
 
+;; 左commandをmetaとして設定
+;; 下記に加えてターミナル側でも設定が必要。
+(when (eq system-type 'darwin)
+  (setq ns-command-modifier (quote meta)))
+
 ;; M-h as backspace for word
 ;; http://d.hatena.ne.jp/akisute3/
 (global-set-key (kbd "M-h") 'backward-kill-word)

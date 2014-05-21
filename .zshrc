@@ -55,8 +55,22 @@ export MANPATH=/usr/local/git-manpages-1.8.3.1:$MANPATH
 ## alias
 
 # ls
-alias ls='ls -F --show-control-char --color=always'
-alias ll='ls -laF --show-control-char --color=always'
+case "${OSTYPE}" in
+    # Mac(Unix)
+    darwin*)
+	alias ls='ls -FG'
+	alias ls='ls -laFG'
+	;;
+    # others
+    *)
+	alias ls='ls -F --show-control-char --color=always'
+	alias ll='ls -laF --show-control-char --color=always'
+	# ここに設定
+	;;
+esac
+
+# less to show utf8
+export LESSCHARSET=utf-8
 
 # pager
 alias -g M='| more'
@@ -138,7 +152,7 @@ fi
 
 
 # Cygwin用の環境設定
-alias open=cygstart
+#alias open=cygstart
 
 # plenv用の設定
 if [ -e /opt/plenv  ] ; then
