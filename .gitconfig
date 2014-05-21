@@ -37,3 +37,6 @@
         #
         # 仕事環境では下記がよいかも。
 	# pager = nkf -w | colordiff | less -R
+
+[core]
+  excludesfile = ~/.gitignore
