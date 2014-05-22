@@ -34,9 +34,6 @@
 [core]
         # cygwinとLinuxで環境が異なるので、
         # pagerは.ginconfig.localにまかせる。
-        #
-        # 仕事環境では下記がよいかも。
-	# pager = nkf -w | colordiff | less -R
 
 [core]
   excludesfile = ~/.gitignore
