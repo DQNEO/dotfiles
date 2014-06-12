@@ -160,6 +160,9 @@ fi
 if [ -e /opt/plenv  ] ; then
   export PATH="/opt/plenv/bin:/opt/plenv/shims:$PATH"
   eval "$(plenv init - zsh)"
+elif [ -e $HOME/.plenv ] ; then
+  export PATH="$HOME/.plenv/bin:$PATH"
+  eval "$(plenv init - zsh)"
 fi
 
 # rbenv
