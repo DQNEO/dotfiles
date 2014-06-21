@@ -1,9 +1,8 @@
 source $HOME/dotfiles/.require_oh-my-zsh
 
 # set locale
-export LANG=ja_JP.utf8
-# MacOSで警告が出るので回避
-export LC_ALL=C
+export LANG=ja_JP.UTF-8
+export LC_ALL=ja_JP.UTF-8
 
 # http://journal.mycom.co.jp/column/zsh/001/index.html
 autoload -U compinit
