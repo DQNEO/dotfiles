@@ -175,7 +175,7 @@ if [ -e /opt/plenv  ] ; then
   export PATH="/opt/plenv/bin:/opt/plenv/shims:$PATH"
   eval "$(plenv init - zsh)"
 elif [ -e $HOME/.plenv ] ; then
-  export PATH="$HOME/.plenv/bin:$PATH"
+  export PATH="$HOME/.plenv/bin:$HOME/.plenv/shims:$PATH"
   eval "$(plenv init - zsh)"
 fi
 
