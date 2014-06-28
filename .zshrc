@@ -217,3 +217,10 @@ autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
 setopt prompt_subst
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+
+# clone
+# Usage DQNEO/project
+function clone () {
+    name=$1
+    git clone git@github.com:${name}.git
+}
