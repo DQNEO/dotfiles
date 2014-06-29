@@ -316,6 +316,16 @@
       (cons (cons "\\.tpl$" 'html-mode) auto-mode-alist))
 
 
+;;拡張子.cのファイルはc-modeで開く
+(setq auto-mode-alist
+      (cons (cons "\\.c$" 'c-mode) auto-mode-alist)
+
+;;c-modeのhook
+(add-hook 'c-mode-hook
+  '(lambda ()
+     (c-set-style "stroustrup")
+     ))
+
 ;;=============== php-mode ===============
 ;; require php-mode
 (load-library "php-mode")
