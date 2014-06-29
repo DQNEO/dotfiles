@@ -10,7 +10,7 @@ git submodule update
 
 cd ${HOME}
 
-for file in .emacs.d .screenrc  .zshrc .gitconfig .minttyrc
+for file in .emacs.d .screenrc  .zshrc .gitconfig .gitignore .minttyrc
 do
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
