@@ -11,3 +11,6 @@
 /.emacs.d/url/
 /.emacs.d/bookmarks
 /.emacs.d/tramp
+
+# C言語
+a.out
