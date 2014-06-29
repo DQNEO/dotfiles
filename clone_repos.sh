@@ -21,6 +21,11 @@ mingoose
 mykitchen
 sketchtoy
 web-scraper
+canvas
+snowcrystal
+knife-solo-renshu
+cwork
+process-book
 "
 
 cd $BASE_DIR
