@@ -50,25 +50,23 @@ PATH=/usr/local/bin:$HOME/bin/:$PATH
 
 # MANPATH
 # http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
-export MANPATH=/usr/local/git-manpages-1.8.3.1:$MANPATH 
+
+# for Mac OSX
+# http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
+# coreutils
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+# findutils
+alias find=gfind
+alias xargs=gxargs
+
+
 
 [ -f ~/.awsrc ] && . ~/.awsrc
 ## alias
 
-# ls
-case "${OSTYPE}" in
-    # Mac(Unix)
-    darwin*)
-	alias ls='ls -FG'
-	alias ls='ls -laFG'
-	;;
-    # others
-    *)
-	alias ls='ls -F --show-control-char --color=always'
-	alias ll='ls -laF --show-control-char --color=always'
-	# ここに設定
-	;;
-esac
+alias ls='ls -F --show-control-char --color=always'
+alias ll='ls -laF --show-control-char --color=always'
 
 # less to show utf8
 export LESSCHARSET=utf-8
