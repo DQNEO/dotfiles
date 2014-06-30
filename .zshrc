@@ -107,7 +107,6 @@ alias gsl='git stash list'
 unalias gcm
 gcm () { git commit -m "$*" }
 gsp () { git stash pop stash@{"$*"} }
-alias cm='gcm'
 
 pr () {
     # "組織名/プロジェクト名"を取得。e.g. sen-corporation/8122
@@ -229,4 +228,19 @@ function runc() {
     local progname=$1
     shift
     gcc -Wall $progname -o /tmp/a.out && /tmp/a.out "$@"
+}
+
+## ブランチ名をパーズしてissuenoを取得
+function get_issueno() {
+    git branch | grep '^*'  | awk '{print $2}' | awk -F _ '{print $2}'
+}
+
+function cm() {
+    issueno=$(get_issueno)
+    if [ "$issueno" ] ; then
+	git commit -m "refs #$issueno $*"
+    else
+	echo "cannot get issueno" >&2
+	return 1
+    fi
 }
