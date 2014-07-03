@@ -318,7 +318,7 @@
 
 ;;拡張子.cのファイルはc-modeで開く
 (setq auto-mode-alist
-      (cons (cons "\\.c$" 'c-mode) auto-mode-alist)
+      (cons (cons "\\.c$" 'c-mode) auto-mode-alist))
 
 ;;c-modeのhook
 (add-hook 'c-mode-hook
