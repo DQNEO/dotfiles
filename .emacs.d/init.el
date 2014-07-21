@@ -362,6 +362,12 @@
 )
 (add-hook 'php-mode-user-hook 'my-php-mode)
 
+(defun hello-world()
+  (interactive)
+  (message "hello world!")
+)
+(global-set-key "\C-xw" 'hello-world)
+
 ;;============ htmlentities-region ==============
 (defun htmlentities-region ()
   (interactive)
