@@ -408,6 +408,44 @@
                (font-lock-mode t)
                (font-lock-fontify-buffer))))
 
+
+
+
+;;======= yasnippet ===================
+;;https://github.com/capitaomorte/yasnippet
+
+;;=== auto complete ===
+;; http://blog.fusic.co.jp/archives/94
+;; http://www.nomtats.com/2010/11/auto-completeelemacs.html
+;; http://dev.ariel-networks.com/wp/documents/aritcles/emacs/part9
+(require 'auto-complete)
+(require 'auto-complete-config)
+;;(global-auto-complete-mode nil)
+;;(setq ac-auto-start t)
+
+
+;;(add-hook 'auto-complete-mode-hook
+;;          (lambda ()
+;;            (define-key ac-completing-map (kbd "C-n") 'ac-next)
+;;            (define-key ac-completing-map (kbd "C-p") 'ac-previous)))
+
+
+;;============== cyle-buffer ===================
+;; http://d.hatena.ne.jp/rubikitch/20111211/smalldisplay
+(autoload 'cycle-buffer "cycle-buffer" "Cycle forward." t)
+(autoload 'cycle-buffer-backward "cycle-buffer" "Cycle backward." t)
+(autoload 'cycle-buffer-permissive "cycle-buffer" "Cycle forward allowing *buffers*." t)
+(autoload 'cycle-buffer-backward-permissive "cycle-buffer" "Cycle backward allowing *buffers*." t)
+(autoload 'cycle-buffer-toggle-interesting "cycle-buffer" "Toggle if this buffer will be considered." t)
+(global-set-key [(f9)]        'cycle-buffer-backward)
+(global-set-key [(f10)]       'cycle-buffer)
+(global-set-key [(shift f9)]  'cycle-buffer-backward-permissive)
+(global-set-key [(shift f10)] 'cycle-buffer-permissive)
+
+(define-key global-map (kbd "M-p") 'cycle-buffer-backward)
+(define-key global-map (kbd "M-n") 'cycle-buffer)
+
+
 ;; markdown-mode
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
