@@ -430,21 +430,14 @@
 ;;            (define-key ac-completing-map (kbd "C-p") 'ac-previous)))
 
 
-;;============== cyle-buffer ===================
-;; http://d.hatena.ne.jp/rubikitch/20111211/smalldisplay
-(autoload 'cycle-buffer "cycle-buffer" "Cycle forward." t)
-(autoload 'cycle-buffer-backward "cycle-buffer" "Cycle backward." t)
-(autoload 'cycle-buffer-permissive "cycle-buffer" "Cycle forward allowing *buffers*." t)
-(autoload 'cycle-buffer-backward-permissive "cycle-buffer" "Cycle backward allowing *buffers*." t)
-(autoload 'cycle-buffer-toggle-interesting "cycle-buffer" "Toggle if this buffer will be considered." t)
-(global-set-key [(f9)]        'cycle-buffer-backward)
-(global-set-key [(f10)]       'cycle-buffer)
-(global-set-key [(shift f9)]  'cycle-buffer-backward-permissive)
-(global-set-key [(shift f10)] 'cycle-buffer-permissive)
-
-(define-key global-map (kbd "M-p") 'cycle-buffer-backward)
-(define-key global-map (kbd "M-n") 'cycle-buffer)
-
+;;============== bs.el(バッファ切り替えモジュール) ===================
+;; http://yak-shaver.blogspot.jp/2013/03/cycle-bufferel.html
+;; cycle-buffer.el もう古いらしく、い
+;; 今は bs.el というバッファ切替えモジュールが標準である。
+(global-set-key [(f9)] 'bs-cycle-previous)
+(global-set-key [(f10)] 'bs-cycle-next)
+;; *scratch*バッファも表示候補に入れる
+(setq bs-cycle-configuration-name "files-and-scratch")
 
 ;; markdown-mode
 (load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
