@@ -274,13 +274,6 @@
                 (message (concat "Wrote " name " (+x)"))))))))
 (add-hook 'after-save-hook 'make-file-executable)
 
-;;=============== shell-pop ===============
-;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
-;; http://d.hatena.ne.jp/kyagi/20121024/1351012197
-(load "~/dotfiles/.emacs.d/submodules/shell-pop-el/shell-pop.el")
-(require 'shell-pop)
-(global-set-key [f8] 'shell-pop)
-
 ;;=============== js2-mode ================
 ;; http://memememomo.hatenablog.com/entry/2013/03/23/125240
 (autoload 'js2-mode "js2-mode" nil t)
@@ -407,4 +400,11 @@
 ;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
 (load-theme 'misterioso t)
 
+
+;;=============== shell-pop ===============
+;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
+;; http://d.hatena.ne.jp/kyagi/20121024/1351012197
+(load "~/dotfiles/.emacs.d/submodules/shell-pop-el/shell-pop.el")
+(require 'shell-pop)
+(global-set-key [f8] 'shell-pop)
 
