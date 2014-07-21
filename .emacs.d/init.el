@@ -408,5 +408,3 @@
 (load-theme 'misterioso t)
 
 
-;; customize the hi-line-mode background color
-;;(set-face-background 'hl-line "#666")
