@@ -303,6 +303,10 @@
 (setq auto-mode-alist
       (cons (cons "\\.tpl$" 'html-mode) auto-mode-alist))
 
+;; HTMLファイルを保存するさいに、
+;; Emacsが<head>のcharsetを見て勝手に文字コード判定するのを防ぐ。
+(setq auto-coding-functions nil)
+
 ;;============= c-mode ================
 ;;拡張子.cのファイルはc-modeで開く
 (setq auto-mode-alist
@@ -403,9 +407,6 @@
 ;  http://d.hatena.ne.jp/aoe-tk/20130210/1360506829
 (load-theme 'misterioso t)
 
-;; HTMLファイルを保存するさいに、
-;; Emacsが<head>のcharsetを見て勝手に文字コード判定するのを防ぐ。
-(setq auto-coding-functions nil)
 
 ;; customize the hi-line-mode background color
 ;;(set-face-background 'hl-line "#666")
