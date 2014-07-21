@@ -351,6 +351,7 @@
 (add-hook 'php-mode-hook
   '(lambda ()
      (c-set-style "stroustrup")
+     (setq indent-tabs-mode nil)
      (setq php-manual-path "/home/userdqn/php/doc/html")
      (setq php-search-url "http://www.phppro.jp/")
      (setq php-manual-url "http://www.phppro.jp/phpmanual")
