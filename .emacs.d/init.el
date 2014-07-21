@@ -162,9 +162,6 @@
 ;; display time mode
 (setq display-time-day-and-date nil)
 
-(setq c-set-style "stroustrup")
-
-
 ;; show line-number
 (line-number-mode t)
 
