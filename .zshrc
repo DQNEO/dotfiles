@@ -72,8 +72,14 @@ alias ll='ls -laF --show-control-char --color=always'
 # less to show utf8
 export LESSCHARSET=utf-8
 
-# pager
+# Global Aliases
 alias -g M='| more'
+alias -g L='| less'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g C='| colordiff'
+alias -g E='| nkf -Ew'
+alias -g ECM='E C M'
 
 # aliases for Git
 # http://qiita.com/items/1f01aa09ccf148542f21
@@ -126,12 +132,6 @@ alias open_pr='open $(pr)'
 # colordiff
 alias cdi='colordiff'
 alias cdf='colordiff'
-alias -g C='| colordiff'
-
-# nkf
-alias -g E='| nkf -Ew'
-
-alias -g ECM='E C M'
 
 # setting shell variables
 MYNICKNAME=dqneo
