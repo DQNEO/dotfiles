@@ -126,7 +126,7 @@ pr () {
 }
 
 # for Mac
-alias open_pr='open $(pr)'
+alias opr='open $(pr)'
 
 # colordiff
 alias cdi='colordiff'
