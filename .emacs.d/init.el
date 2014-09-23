@@ -22,6 +22,13 @@
 (set-terminal-coding-system 'utf-8-unix)
 (prefer-coding-system 'utf-8-unix)
 
+;; Cask
+;; OSX(Homebrew)の場合
+(require 'cask)
+;; Linux の場合はcask.elのパスを指定する必要がある。
+;; (require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 ;; Packages
 ;; http://sheephead.homelinux.org/2011/06/17/6724/
 ;; http://d.hatena.ne.jp/naoya/20130107/1357553140
