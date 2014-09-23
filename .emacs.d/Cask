@@ -1,0 +1,65 @@
+;; 参考記事
+
+;; 入門はここが一番わかりやすかった。
+;; http://blog.amacou.net/post/84211717936/emacs-el-cask
+
+
+;; syohexさんのCaskファイル
+;; https://github.com/syohex/dot_files/blob/master/emacs/Cask
+
+(source gnu)
+(source melpa)
+(source marmalade)
+
+(depends-on "bind-key")
+(depends-on "cask")
+(depends-on "drag-stuff")
+(depends-on "exec-path-from-shell")
+(depends-on "expand-region")
+(depends-on "f")
+(depends-on "htmlize")
+(depends-on "idle-highlight-mode")
+(depends-on "multiple-cursors")
+(depends-on "nyan-mode")
+(depends-on "pallet")
+(depends-on "popwin")
+(depends-on "prodigy")
+(depends-on "projectile")
+(depends-on "smartparens")
+(depends-on "smex")
+(depends-on "use-package")
+(depends-on "yasnippet")
+
+;; ここから下が自前で追加したパッケージ群
+(depends-on "helm")
+(depends-on "auto-complete")
+
+;; shell
+(depends-on "shell-pop")
+
+;; Git
+(depends-on "magit")
+
+;; PHP
+(depends-on "php-mode")
+
+;; markdown
+(depends-on "markdown-mode")
+
+;; YAML
+(depends-on "yaml-mode")
+
+;; JS
+(depends-on "js2-mode")
+(depends-on "json")
+
+;; lint
+(depends-on "flycheck")
+(depends-on "flycheck-cask")
+
+;; elisp
+(depends-on "dash")
+(depends-on "s")
+
+;; web
+(depends-on "web-mode")

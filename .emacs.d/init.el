@@ -22,51 +22,16 @@
 (set-terminal-coding-system 'utf-8-unix)
 (prefer-coding-system 'utf-8-unix)
 
-;; Packages
-;; http://sheephead.homelinux.org/2011/06/17/6724/
-;; http://d.hatena.ne.jp/naoya/20130107/1357553140
-;; Emacs 24 のデフォルトではパッケージ提供元が
-;; elpa.gnu.org のみなので
-;; 下記のように設定して増やしてあげる
-(require 'package)
-;;リポジトリにmelpaを追加
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-;;リポジトリにMarmaladeを追加
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
-;;インストールするディレクトリを指定
-(setq package-user-dir (concat user-emacs-directory "vendor/elpa"))
-;;インストールしたパッケージにロードパスを通してロードする
-(package-initialize)
+;; Cask
+;; OSX(Homebrew)の場合
+(require 'cask)
+;; Linux の場合はcask.elのパスを指定する必要がある。
+;; (require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 
 ;; add to load-path
 (add-to-list 'load-path "~/.emacs.d/site-lisp" )
-
-;; 各種packageが入ってなければインストールする
-;; https://gist.github.com/DQNEO/83445d953551f1ff3df4
-(require 'cl)
-(defvar installing-package-list
-  '(
-    ;; ここに使っているパッケージを書く。
-    magit
-    php-mode
-    markdown-mode
-    yaml-mode
-    
-    ;; 以下は便利か不明。要評価。
-    js2-mode
-    yasnippet
-    helm
-    auto-complete
-
-    ))
-
-(let ((not-installed (loop for x in installing-package-list
-                            when (not (package-installed-p x))
-                            collect x)))
-  (when not-installed
-    (package-refresh-contents)
-    (dolist (pkg not-installed)
-        (package-install pkg))))
 
 ;; Git
 ; ページャをEmacs用にカスタマイズする
@@ -457,7 +422,6 @@
 (setq bs-cycle-configuration-name "files-and-scratch")
 
 ;; markdown-mode
-(load "~/dotfiles/.emacs.d/submodules/markdown-mode/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . gfm-mode) auto-mode-alist))
 
 ;; Theme 
@@ -468,7 +432,6 @@
 ;;=============== shell-pop ===============
 ;; http://d.hatena.ne.jp/kyagi/20090601/1243841415
 ;; http://d.hatena.ne.jp/kyagi/20121024/1351012197
-(load "~/dotfiles/.emacs.d/submodules/shell-pop-el/shell-pop.el")
 (require 'shell-pop)
 (global-set-key [f8] 'shell-pop)
 

@@ -11,6 +11,7 @@
 /.emacs.d/url/
 /.emacs.d/bookmarks
 /.emacs.d/tramp
+/.emacs.d/.cask
 
 # C言語
 a.out
