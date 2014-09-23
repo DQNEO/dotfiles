@@ -3,6 +3,7 @@
 
 # ~/.gitignore用の設定
 .DS_Store
+a.out
 
 # dotfiles/.gitignore用の設定
 /.emacs.d/vendor/
@@ -13,5 +14,3 @@
 /.emacs.d/tramp
 /.emacs.d/.cask
 
-# C言語
-a.out
