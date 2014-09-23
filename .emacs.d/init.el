@@ -22,6 +22,10 @@
 
 ;; 設定ファイルを分割管理する
 ;; https://github.com/emacs-jp/init-loader
+
+;; syohexさんの設定ファイルが参考になるので
+;; たまに読んでおくとよさそう。
+;; https://github.com/syohex/dot_files/tree/master/emacs/init_loader
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/inits")
 
