@@ -36,3 +36,5 @@
 (depends-on "yasnippet")
 (depends-on "helm")
 (depends-on "auto-complete")
+
+(depends-on "shell-pop")
