@@ -31,7 +31,11 @@
 (depends-on "use-package")
 (depends-on "yasnippet")
 
+
 ;; ここから下が自前で追加したパッケージ群
+;; el管理
+(depends-on "init-loader")
+
 ;; helm
 ;; see http://qiita.com/aKenjiKato/items/aa8a6d9c797a4f10d9f8
 (depends-on "helm")
