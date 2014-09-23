@@ -51,6 +51,7 @@
 
 ;; JS
 (depends-on "js2-mode")
+(depends-on "json")
 
 ;; lint
 (depends-on "flycheck")
