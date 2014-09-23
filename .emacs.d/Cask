@@ -18,6 +18,7 @@
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "htmlize")
+(depends-on "highlight-symbol")
 (depends-on "idle-highlight-mode")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
@@ -31,7 +32,14 @@
 (depends-on "yasnippet")
 
 ;; ここから下が自前で追加したパッケージ群
+;; helm
+;; see http://qiita.com/aKenjiKato/items/aa8a6d9c797a4f10d9f8
 (depends-on "helm")
+(depends-on "helm-git-grep")
+(depends-on "helm-gtags")
+(depends-on "helm-ls-git")
+
+;; completion
 (depends-on "auto-complete")
 
 ;; shell
