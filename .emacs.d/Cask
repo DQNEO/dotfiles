@@ -1,3 +1,12 @@
+;; 参考記事
+
+;; 入門はここが一番わかりやすかった。
+;; http://blog.amacou.net/post/84211717936/emacs-el-cask
+
+
+;; syohexさんのCaskファイル
+;; https://github.com/syohex/dot_files/blob/master/emacs/Cask
+
 (source gnu)
 (source melpa)
 (source marmalade)
