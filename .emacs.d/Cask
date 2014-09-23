@@ -63,7 +63,15 @@
 
 ;; JS
 (depends-on "js2-mode")
-(depends-on "json")
+(depends-on "json-mode")
+
+;; Ruby
+(depends-on "ruby-mode")
+(depends-on "rubocop")
+(depends-on "ruby-block")
+(depends-on "ruby-electric")
+(depends-on "ruby-end")
+
 
 ;; lint
 (depends-on "flycheck")
@@ -75,3 +83,13 @@
 
 ;; web
 (depends-on "web-mode")
+
+;; naoya氏のブログにあった便利そうなやつを追加してみる
+;; http://d.hatena.ne.jp/naoya/20140424/1398318293
+(depends-on "ag")
+(depends-on "browse-kill-ring")
+(depends-on "elscreen" :git "git@github.com:knu/elscreen.git")
+(depends-on "pbcopy")
+(depends-on "quickrun")
+(depends-on "recentf-ext")
+(depends-on "popwin")
