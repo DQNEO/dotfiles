@@ -1,9 +1,3 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule ".emacs.d/submodules/markdown-mode"]
-	path = .emacs.d/submodules/markdown-mode
-	url = git://github.com/defunkt/markdown-mode.git
-[submodule ".emacs.d/submodules/shell-pop-el"]
-	path = .emacs.d/submodules/shell-pop-el
-	url = git://github.com/DQNEO/shell-pop-el.git
