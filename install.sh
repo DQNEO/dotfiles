@@ -8,7 +8,7 @@ git submodule update
 
 #echo $THIS_DIR
 
-cd ${HOME}
+cd $HOME
 
 for file in .emacs.d .screenrc  .zshrc .gitconfig .gitignore .minttyrc
 do
