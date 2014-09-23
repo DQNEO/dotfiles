@@ -472,3 +472,5 @@
 (require 'shell-pop)
 (global-set-key [f8] 'shell-pop)
 
+;; これなんだったか忘れたw
+(put 'dired-find-alternate-file 'disabled nil)
