@@ -244,3 +244,8 @@ function cm() {
 	return 1
     fi
 }
+
+# z
+# naoya氏のブログで知った。
+# http://d.hatena.ne.jp/naoya/20130108/1357630895
+. `brew --prefix`/etc/profile.d/z.sh
