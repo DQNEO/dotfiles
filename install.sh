@@ -15,6 +15,11 @@ do
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
 
+echo "setup .emacs.d"
+cd ${THIS_DIR}/.emacs.d
+cask install
+
+cd $HOME
 [ ! -e .gitconfig.local ] && cp dotfiles/.gitconfig.local.template .gitconfig.local
 
 echo "please edit .gitconfig.local manually"
