@@ -46,7 +46,7 @@ setopt auto_cd
 #RPROMPT="[%~]"
 
 # Path
-PATH=/usr/local/bin:$HOME/bin/:$PATH
+PATH=/usr/local/bin:$HOME/bin:$PATH
 
 # MANPATH
 # http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
