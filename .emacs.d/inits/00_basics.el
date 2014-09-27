@@ -39,3 +39,8 @@
 
 ;; add to load-path
 (add-to-list 'load-path "~/.emacs.d/site-lisp" )
+
+;; http://tatanaideyo.hatenablog.com/entry/2014/03/04/084901
+;;タブではなくスペースを使う
+(setq-default indent-tabs-mode nil)
+(setq indent-line-function 'indent-relative-maybe)
