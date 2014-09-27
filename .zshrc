@@ -116,7 +116,8 @@ gsp () { git stash pop stash@{"$*"} }
 
 pr () {
     # "組織名/プロジェクト名"を取得。e.g. sen-corporation/8122
-    org_repo_name=$( git config --get remote.origin.pushurl  | sed -e s#git@github.com:## | sed -e s#.git## )
+    url=$(git remote -v | head -1 | awk '{print $2}')
+    org_repo_name=$( echo $url| sed -e s#git@github.com:## | sed -e s#.git## )
 
     # カレントブランチ名を取得
     current_branch=$( git branch | grep '^*' | awk '{print $2}' )
