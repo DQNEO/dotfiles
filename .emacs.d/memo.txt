@@ -1,4 +1,4 @@
-移動関連
+## 移動関連
 M-m 行の最初の文字に移動
 M-a, M-e:文単位で移動
 
@@ -16,19 +16,19 @@ C-x $ 折り畳み解除
 
 http://www.bookshelf.jp/soft/meadow_42.html#SEC643
 
-空白削除系
+## 空白削除系
 M-space
 
-VC-mode
+## VC-mode
 C-u C-x v g  リビジョンを指定してannotate
 http://e-arrows.sakura.ne.jp/2010/02/vim-to-emacs.html
 
-.emacsに必ず書くこと
+## .emacsに必ず書くこと
 
 ;; do not make backup files
 (setq make-backup-files nil)
 
-矩形編集
+## 矩形編集
 
 C-x r o 空白文字で埋まった矩形を挿入
 C-x r d 矩形を削除
