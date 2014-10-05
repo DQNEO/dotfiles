@@ -29,11 +29,6 @@ setopt extended_history
 function history-all { history -E 1 }
 function historyall  { history -E 1 }
 
-# http://d.hatena.ne.jp/hayori/20071019/1192785576
-# zshのデフォルトでは改行のない文字列を表示しない。
-# 混乱のもとになるので無効にする。
-unsetopt promptcr
-
 # correct機能はウザイので無効に
 # http://nojobu.blogspot.jp/2013/03/zsh-correct.html
 unsetopt correctall
