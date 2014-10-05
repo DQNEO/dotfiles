@@ -93,3 +93,6 @@
 (depends-on "quickrun")
 (depends-on "recentf-ext")
 (depends-on "popwin")
+
+;; 実験的
+(depends-on  "key-combo")
