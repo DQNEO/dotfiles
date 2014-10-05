@@ -27,3 +27,12 @@ http://e-arrows.sakura.ne.jp/2010/02/vim-to-emacs.html
 
 ;; do not make backup files
 (setq make-backup-files nil)
+
+矩形編集
+
+C-x r o 空白文字で埋まった矩形を挿入
+C-x r d 矩形を削除
+C-x r t 矩形を文字列で置き換え
+C-x r c 矩形を空白文字で置き換え
+C-x r k 矩形をキルリングに追加
+C-x r y キルリングをヤンク
