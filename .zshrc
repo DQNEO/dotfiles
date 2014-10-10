@@ -201,8 +201,8 @@ function do_enter() {
     zle reset-prompt
     return 0
 }
-zle -N do_enter
-bindkey '^m' do_enter
+#zle -N do_enter
+#bindkey '^m' do_enter
 
 ## ROMPT
 autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
