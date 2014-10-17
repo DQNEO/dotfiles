@@ -143,11 +143,12 @@ fi
 autoload -Uz is-at-least
 
 autoload -Uz vcs_info
-precmd () {
-    psvar=()
-    LANG=en_US.UTF-8 vcs_info
-    psvar[1]=$vcs_info_msg_0_
-}
+#
+#precmd () {
+#    psvar=()
+#    LANG=en_US.UTF-8 vcs_info
+#    psvar[1]=$vcs_info_msg_0_
+#}
 
 
 # プロンプトの色付けは下記記事がわかりやすい
@@ -205,7 +206,7 @@ function do_enter() {
 #bindkey '^m' do_enter
 
 ## ROMPT
-autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
+#autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
 
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
