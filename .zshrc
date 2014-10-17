@@ -106,7 +106,9 @@ alias gs='git stash'
 alias gsl='git stash list'
 # alias的に使う関数群
 # oh-my-zshのgcmを一度無効にする
-unalias gcm
+if type gcm 1>/dev/null 2>&1 ; then
+    unalias gcm
+fi
 gcm () { git commit -m "$*" }
 gsp () { git stash pop stash@{"$*"} }
 
