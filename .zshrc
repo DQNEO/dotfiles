@@ -40,18 +40,6 @@ setopt auto_cd
 # 右側プロンプトはコピペするときに邪魔なのでやめる。
 #RPROMPT="[%~]"
 
-# PATHを設定
-# http://qiita.com/mollifier/items/42ae46ff4140251290a7
-path=(
-    /usr/local/bin(N-/)
-    $HOME/bin(N-/)
-    $path
-)
-
-# MANPATH
-# http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
-
-
 [ -f ~/.awsrc ] && . ~/.awsrc
 ## alias
 
@@ -179,6 +167,18 @@ fi
 if type rbenv >/dev/null 2>&1; then
   eval "$(rbenv init - zsh)"
 fi
+
+# PATHを設定
+# http://qiita.com/mollifier/items/42ae46ff4140251290a7
+path=(
+    /usr/local/bin(N-/)
+    $HOME/bin(N-/)
+    $path
+)
+
+# MANPATH
+# http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
+
 
 # Mac OSXで coreutilsを使う
 # http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
