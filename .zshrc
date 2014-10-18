@@ -167,18 +167,25 @@ fi
 # Cygwin用の環境設定
 #alias open=cygstart
 
+# PATHを設定
+# http://qiita.com/mollifier/items/42ae46ff4140251290a7
+#
+path=(
+ $HOME/.rbenv/bin(N-/)
+ $HOME/.rbenv/shims(N-/)
+ $HOME/.plenv/bin(N-/)
+ $HOME/.plenv/shims(N-/)
+ /opt/plenv/bin(N-/)
+ /opt/plenv/shims(N-/)
+ $path)
+
 # plenv用の設定
-if [ -e /opt/plenv  ] ; then
-  export PATH="/opt/plenv/bin:/opt/plenv/shims:$PATH"
-  eval "$(plenv init - zsh)"
-elif [ -e $HOME/.plenv ] ; then
-  export PATH="$HOME/.plenv/bin:$HOME/.plenv/shims:$PATH"
+if type plenv >/dev/null 2>&1; then
   eval "$(plenv init - zsh)"
 fi
 
 # rbenv
-if [ -d $HOME/.rbenv ]; then
-  export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+if type rbenv >/dev/null 2>&1; then
   eval "$(rbenv init - zsh)"
 fi
 
