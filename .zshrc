@@ -4,6 +4,14 @@ source $HOME/dotfiles/.require_oh-my-zsh
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
+# zsh-completions
+# brew,vagrantなど非標準コマンドを保管してくる便利なやつ
+#
+# brew installしておく必要がある。
+# $ brew install zsh-completions
+# autoload -Uz compinitより前にfpathを設定する必要がある。
+fpath=(/usr/local/share/zsh-completions(N-/) $fpath)
+
 # http://journal.mycom.co.jp/column/zsh/001/index.html
 autoload -U compinit
 compinit
