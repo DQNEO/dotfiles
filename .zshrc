@@ -180,7 +180,7 @@ if type rbenv >/dev/null 2>&1; then
   eval "$(rbenv init - zsh)"
 fi
 
-# for Mac OSX
+# Mac OSXで coreutilsを使う
 # http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
 # coreutils
 if [ -x /usr/local/bin/brew ] ; then
