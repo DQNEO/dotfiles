@@ -51,17 +51,6 @@ path=(
 # MANPATH
 # http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
 
-# for Mac OSX
-# http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
-# coreutils
-if [ -x /usr/local/bin/brew ] ; then
-    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-    export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
-    # findutils
-    alias find=gfind
-    alias xargs=gxargs
-fi
-
 
 [ -f ~/.awsrc ] && . ~/.awsrc
 ## alias
@@ -189,6 +178,17 @@ fi
 # rbenv
 if type rbenv >/dev/null 2>&1; then
   eval "$(rbenv init - zsh)"
+fi
+
+# for Mac OSX
+# http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
+# coreutils
+if [ -x /usr/local/bin/brew ] ; then
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+    export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+    # findutils
+    alias find=gfind
+    alias xargs=gxargs
 fi
 
 # EDITOR
