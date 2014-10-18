@@ -87,6 +87,8 @@ alias gcob='gcb'
 alias gf='git fetch --prune'
 alias grb='git rebase'
 alias gr='git reset'
+alias grh >/dev/null && unalias grh
+alias grh='git reset --hard'
 alias gp='pr ;git push -u &'
 alias gpl='git pull --ff-only && git delete-merged-branch'
 alias amend='git commit -v --amend'
