@@ -172,11 +172,8 @@ fi
 #
 path=(
  $HOME/.rbenv/bin(N-/)
- $HOME/.rbenv/shims(N-/)
  $HOME/.plenv/bin(N-/)
- $HOME/.plenv/shims(N-/)
  /opt/plenv/bin(N-/)
- /opt/plenv/shims(N-/)
  $path)
 
 # plenv用の設定
