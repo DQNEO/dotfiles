@@ -153,13 +153,14 @@ fi
 # http://qiita.com/mollifier/items/42ae46ff4140251290a7
 #
 path=(
- $HOME/.rbenv/bin(N-/)
- $HOME/.plenv/bin(N-/)
- /opt/plenv/bin(N-/)
- /opt/rbenv/bin(N-/)
- /usr/local/bin(N-/)
- $HOME/bin(N-/)
- $path)
+    $HOME/.rbenv/bin(N-/)
+    $HOME/.plenv/bin(N-/)
+    /opt/plenv/bin(N-/)
+    /opt/rbenv/bin(N-/)
+    /usr/local/bin(N-/)
+    $HOME/bin(N-/)
+    $path
+)
 
 # plenv用の設定
 if type plenv >/dev/null 2>&1; then
