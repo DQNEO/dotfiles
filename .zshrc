@@ -143,11 +143,6 @@ autoload -Uz vcs_info
 #    psvar[1]=$vcs_info_msg_0_
 #}
 
-
-# プロンプトの色付けは下記記事がわかりやすい
-# http://www.sakito.com/2011/11/zsh.html
-#PROMPT="%n%F{yellow}@%m%f:%/%1(v|%F{green}%1v%f|)%% "
-
 if [ -n "$BASE" ] ; then
     cd $BASE
 fi
