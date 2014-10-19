@@ -1,0 +1,11 @@
+#!/bin/bash
+# filter-branchで履歴を修正する
+
+# 過去の全コミットを書き換える
+git filter-branch --commit-filter '
+    GIT_AUTHOR_NAME="DQNEO"
+    GIT_AUTHOR_EMAIL="dqneoo@example.com"
+    GIT_COMMITTER_NAME="DQNEO"
+    GIT_COMMITTER_EMAIL="dqneoo@example.com"
+    git commit-tree "$@"
+' HEAD
