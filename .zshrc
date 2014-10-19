@@ -163,6 +163,7 @@ fi
 #
 path=(
     $HOME/bin(N-/)
+    $HOME/dotfiles/bin(N-/)
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
     /opt/plenv/bin(N-/)
