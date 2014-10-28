@@ -164,6 +164,7 @@ path=(
     /opt/plenv/bin(N-/)
     /opt/rbenv/bin(N-/)
     /usr/local/bin(N-/)
+    /opt/php56/bin
     $path
 )
 
