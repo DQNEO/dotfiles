@@ -34,8 +34,8 @@ setopt share_history        # share command history data
 
 # http://0xcc.net/unimag/3/#foottext-6
 setopt extended_history
-function history-all { history -E 1 }
-function historyall  { history -E 1 }
+function history-all { \history -E 1 }
+alias historyall='history-all'
 
 # correct機能はウザイので無効に
 # http://nojobu.blogspot.jp/2013/03/zsh-correct.html
