@@ -161,11 +161,15 @@ path=(
     $HOME/dotfiles/bin(N-/)
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
+
     /opt/plenv/bin(N-/)
     /opt/rbenv/bin(N-/)
     /usr/local/bin(N-/)
-    /opt/php56/bin
-    $path
+    /opt/php56/bin(N-/)
+    /usr/bin
+    /bin
+    /usr/sbin
+    /sbin
 )
 
 # plenv用の設定
