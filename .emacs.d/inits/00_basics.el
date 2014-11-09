@@ -44,3 +44,12 @@
 ;;タブではなくスペースを使う
 (setq-default indent-tabs-mode nil)
 (setq indent-line-function 'indent-relative-maybe)
+
+;; ホックを使った設定
+(defun my-c-c++-mode-init ()
+  (setq c-basic-offset 4)
+  (make-local-variable 'c-tab-always-indent)
+  (setq c-tab-always-indent nil)
+  )
+(add-hook 'c-mode-hook 'my-c-c++-mode-init)
+(add-hook 'c++-mode-hook 'my-c-c++-mode-init)
