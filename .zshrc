@@ -263,4 +263,7 @@ function cm() {
 # z
 # naoya氏のブログで知った。
 # http://d.hatena.ne.jp/naoya/20130108/1357630895
-[[ which brew 1>/dev/null 2>/dev/null ]] && . `brew --prefix`/etc/profile.d/z.sh
+if which brew 1>/dev/null 2>/dev/null ; then
+    . `brew --prefix`/etc/profile.d/z.sh
+fi
+
