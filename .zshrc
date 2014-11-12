@@ -125,11 +125,6 @@ alias cdf='colordiff'
 # setting shell variables
 MYNICKNAME=dqneo
 
-
-if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
-    source ~/perl5/perlbrew/etc/bashrc
-fi
-
 # for Git
 # http://d.hatena.ne.jp/mollifier/20100906/p1
 # http://d.hatena.ne.jp/mollifier/20090814/p1
