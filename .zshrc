@@ -160,7 +160,7 @@ path=(
     /opt/plenv/bin(N-/)
     /opt/rbenv/bin(N-/)
     /usr/local/bin(N-/)
-    /opt/php56/bin(N-/)
+    /opt/php/bin(N-/)
     /usr/bin
     /bin
     /usr/sbin
