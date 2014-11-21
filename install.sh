@@ -31,7 +31,7 @@ fi
 
 cd $HOME
 if [ ! -e .gitconfig.local ] ; then
-    cat dotfiles/.gitconfig.local.template \
+    cat .gitconfig.local.template \
     sed -e s/MYACCOUNT/dqneoo/ \
     sed -e s/DOMAIN/gmail.com/ \
     > .gitconfig.local
