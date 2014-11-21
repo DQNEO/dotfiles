@@ -19,7 +19,10 @@ done
 
 echo "setup .emacs.d"
 cd ${THIS_DIR}/.emacs.d
-cask install
+
+if which cask >/dev/null  ; then
+    cask install
+fi
 
 cd ${THIS_DIR}/oh-my-zsh/custom
 if [[ ! -e dqneo.zsh-theme ]] ; then
