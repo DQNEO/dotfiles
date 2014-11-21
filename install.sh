@@ -1,5 +1,6 @@
 #!/bin/bash
 set -u
+#set -x
 
 THIS_DIR=$(cd $(dirname $0); pwd)
 
@@ -19,6 +20,9 @@ done
 echo "setup .emacs.d"
 cd ${THIS_DIR}/.emacs.d
 cask install
+
+cd ${THIS_DIR}/oh-my-zsh/custom
+ln -s ../../dqneo.zsh-theme .
 
 cd $HOME
 [ ! -e .gitconfig.local ] && cp dotfiles/.gitconfig.local.template .gitconfig.local
