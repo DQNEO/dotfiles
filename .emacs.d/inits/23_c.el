@@ -12,7 +12,7 @@
      ;; http://at-aka.blogspot.com/2006/12/emacs-c.html
 
      ;; センテンスの終了である ';' を入力したら、自動改行+インデント
-     (c-toggle-auto-hungry-state 1)
+     (c-toggle-auto-hungry-state nil)
      ;; RET キーで自動改行+インデント
      (define-key c-mode-base-map "\C-m" 'newline-and-indent)
 
