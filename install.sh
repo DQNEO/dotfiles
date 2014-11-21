@@ -20,7 +20,7 @@ done
 echo "setup .emacs.d"
 cd ${THIS_DIR}/.emacs.d
 
-if which cask >/dev/null  ; then
+if which cask >/dev/null 2>&1 ; then
     cask install
 fi
 
