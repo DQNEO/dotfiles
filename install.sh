@@ -22,7 +22,9 @@ cd ${THIS_DIR}/.emacs.d
 cask install
 
 cd ${THIS_DIR}/oh-my-zsh/custom
-ln -s ../../dqneo.zsh-theme .
+if [[ ! -e dqneo.zsh-theme ]] ; then
+    ln -s ../../dqneo.zsh-theme .
+fi
 
 cd $HOME
 if [ ! -e .gitconfig.local ] ; then
