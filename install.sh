@@ -25,7 +25,11 @@ cd ${THIS_DIR}/oh-my-zsh/custom
 ln -s ../../dqneo.zsh-theme .
 
 cd $HOME
-[ ! -e .gitconfig.local ] && cp dotfiles/.gitconfig.local.template .gitconfig.local
+if [ ! -e .gitconfig.local ] ; then
+    cat dotfiles/.gitconfig.local.template \
+    sed -e s/MYACCOUNT/dqneoo/ \
+    sed -e s/DOMAIN/gmail.com/ \
+    > .gitconfig.local
+fi
 
-echo "please edit .gitconfig.local manually"
 
