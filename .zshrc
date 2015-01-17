@@ -262,8 +262,8 @@ if which brew 1>/dev/null 2>/dev/null ; then
     . `brew --prefix`/etc/profile.d/z.sh
 fi
 
-# OSXで使えないコマンドのときにヒントを表示する
 if [[ $(uname) = "Darwin" ]]; then
+    # OSXで使えないコマンドのときにヒントを表示する
     alias ldd="echo ldd is not on OSX. use otool -L."
     alias strace="echo strace is not on OSX. use dtruss"
 fi
