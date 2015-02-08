@@ -266,4 +266,8 @@ if [[ $(uname) = "Darwin" ]]; then
     # OSXで使えないコマンドのときにヒントを表示する
     alias ldd="echo ldd is not on OSX. use otool -L."
     alias strace="echo strace is not on OSX. use dtruss"
+
+    # boot2docker
+    alias b2="boot2docker"
+    alias dk="docker"
 fi
