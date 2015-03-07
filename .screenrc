@@ -5,7 +5,9 @@ escape ^Tt
 vbell on
 
 ## stats bar setting  (Not required for Ubuntu9.04 )
-hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+# %H hostname
+# %c time (HH:MM)
+hardstatus alwayslastline "%H [%02c] %`%-w%{=b bw}%n %t%{-}%+w"
 
 
 startup_message off
