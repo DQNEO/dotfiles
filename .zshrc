@@ -262,12 +262,7 @@ if which brew 1>/dev/null 2>/dev/null ; then
     . `brew --prefix`/etc/profile.d/z.sh
 fi
 
+# OSXの場合はそれ用のファイルを読み込む
 if [[ $(uname) = "Darwin" ]]; then
-    # OSXで使えないコマンドのときにヒントを表示する
-    alias ldd="echo ldd is not on OSX. use otool -L."
-    alias strace="echo strace is not on OSX. use dtruss"
-
-    # boot2docker
-    alias b2="boot2docker"
-    alias dk="docker"
+    source ~/dotfiles/.zshrc_osx
 fi
