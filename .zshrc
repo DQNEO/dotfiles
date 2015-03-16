@@ -180,18 +180,6 @@ fi
 # MANPATH
 # http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
 
-
-# Mac OSXで coreutilsを使う
-# http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
-# coreutils
-if [ -x /usr/local/bin/brew ] ; then
-    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-    export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
-    # findutils
-    alias find=gfind
-    alias xargs=gxargs
-fi
-
 # EDITOR
 export EDITOR=nano
 
