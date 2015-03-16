@@ -7,7 +7,7 @@ vbell on
 ## stats bar setting  (Not required for Ubuntu9.04 )
 # %H hostname
 # %c time (HH:MM)
-hardstatus alwayslastline "%H [%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w %H"
 
 
 startup_message off
