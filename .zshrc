@@ -161,6 +161,7 @@ path=(
     /opt/rbenv/bin(N-/)
     /usr/local/bin(N-/)
     /opt/php/bin(N-/)
+    /opt/mongodb/bin(N-/)
     /usr/bin
     /bin
     /usr/sbin
