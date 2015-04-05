@@ -4,7 +4,7 @@ alias ldd="echo ldd is not on OSX. use otool -L."
 alias strace="echo strace is not on OSX. use dtruss"
 
 # boot2docker
-alias b2="boot2docker"
+alias b2d="boot2docker"
 alias dk="docker"
 
 if [ "`boot2docker status`" = "running" ]; then
