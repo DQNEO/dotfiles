@@ -1,5 +1,10 @@
 ;; Emacsの小技集
 
+;; bookmark
+`C-x r l`    list-bookmarks
+`C-x r b`    jump to the bookmark
+
+
 ;; Tramp
 
 sudo でファイルを開く
