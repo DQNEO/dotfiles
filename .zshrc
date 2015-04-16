@@ -101,7 +101,7 @@ alias gsl='git stash list'
 alias gcm 1>/dev/null && unalias gcm
 
 gcm () { git commit -m "$*" }
-gsp () { git stash pop stash@{"$*"} }
+alias gsp='git show -p'
 
 pr () {
     # "組織名/プロジェクト名"を取得。e.g. sen-corporation/8122
