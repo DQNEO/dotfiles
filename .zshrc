@@ -48,9 +48,7 @@ setopt auto_cd
 # 右側プロンプトはコピペするときに邪魔なのでやめる。
 #RPROMPT="[%~]"
 
-[ -f ~/.awsrc ] && . ~/.awsrc
 ## alias
-
 alias ls='ls -F --show-control-char --color=always'
 alias ll='ls -laF --show-control-char --color=always'
 
