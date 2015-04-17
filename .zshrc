@@ -61,8 +61,6 @@ alias -g L='| less'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g C='| colordiff'
-alias -g E='| nkf -Ew'
-alias -g ECM='E C M'
 
 # aliases for Git
 # http://qiita.com/items/1f01aa09ccf148542f21
