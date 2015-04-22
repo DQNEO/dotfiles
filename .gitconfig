@@ -12,9 +12,9 @@
 	st = status
         b  = branch
 	br = branch
+	brr = branch -r
 	di = diff
         d  = diff
-	brr = branch -r
 	plf = pull --ff-only
 	pi = cherry-pick
 	cp = cherry-pick
