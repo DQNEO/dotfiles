@@ -1,7 +1,7 @@
 ;======= よく忘れがちな便利コマンド =========
 ;; \(tramp)/
 ;; /sudo::/etc/
-;; /ssh:web1:/home/prj01hon
+;; /ssh:web1:/home/myuser
 
 ;;============= Startup scratch message =====================
 ;; http://d.hatena.ne.jp/sandai/20120304/p2
