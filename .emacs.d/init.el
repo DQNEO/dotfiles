@@ -2,16 +2,13 @@
 ;; \(tramp)/
 ;; /sudo::/etc/
 ;; /ssh:web1:/home/myuser
-
-;;============= Startup scratch message =====================
-;; http://d.hatena.ne.jp/sandai/20120304/p2
-(setq initial-scratch-message ";;
-;; \(空白削除系コマンドたち)/
+;;
+;; \(空白削除系)/
 ;; M-^ delete-indentation
 ;; M-SPC  just-one-space
 ;; M-m
 ;; M-h
-")
+
 
 ;; Cask
 ;; OSX(Homebrew)の場合
