@@ -264,4 +264,4 @@ function peco-src () {
     zle clear-screen
 }
 zle -N peco-src
-bindkey '^]' peco-src
+bindkey '^x^x' peco-src
