@@ -152,6 +152,7 @@ path=(
     $HOME/dotfiles/bin(N-/)
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
+    $HOME/.composer/vendor/bin(N-/)
 
     /opt/plenv/bin(N-/)
     /opt/rbenv/bin(N-/)
