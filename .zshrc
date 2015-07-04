@@ -266,3 +266,14 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^x^x' peco-src
+
+# Screenのwindow名を自動でセットする
+# http://ogawa.s18.xrea.com/tdiary/20080331.html
+case "${TERM}" in screen)
+                      preexec() {
+                          echo -ne "\ek#${1%% *}\e\\"
+                      }
+                      precmd() {
+                          echo -ne "\ek$(basename $(pwd))\e\\"
+                      }
+esac
