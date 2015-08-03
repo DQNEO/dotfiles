@@ -7,7 +7,7 @@ alias strace="echo strace is not on OSX. use dtruss"
 alias bd="boot2docker"
 alias dk="docker"
 
-if [ "`boot2docker status`" = "running" ]; then
+if [[ -x boot2docker &&  "`boot2docker status`" = "running" ]]; then
     $(boot2docker shellinit)
 fi
 
