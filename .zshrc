@@ -274,7 +274,8 @@ case "${TERM}" in screen)
                           echo -ne "\ek#${1%% *}\e\\"
                       }
                       precmd() {
-                          echo -ne "\ek$(basename $(pwd))\e\\"
+                          _basename=$(basename "$(pwd)")
+                          echo -ne "\ek$_basename\e\\"
                       }
 esac
 
