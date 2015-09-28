@@ -5,6 +5,7 @@
 [include]
         path = .gitconfig.local
 [alias]
+        grepi = grep -i
         a = add
 	co = checkout
 	ci = commit
