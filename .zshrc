@@ -283,3 +283,7 @@ if [[ -d $HOME/.ndenv ]]; then
     export PATH="$HOME/.ndenv/bin:$PATH"
     eval "$(ndenv init -)"
 fi
+
+if type direnv >/dev/null; then
+    eval "$(direnv hook zsh)"
+fi
