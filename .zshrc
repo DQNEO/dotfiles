@@ -257,7 +257,8 @@ fi
 # Ctl + ] でローカルのレポジトリ検索できる
 # http://qiita.com/strsk/items/9151cef7e68f0746820d
 function peco-src () {
-    local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+    local ghq_root="~/src"
+    local selected_dir=$(find $ghq_root/github.com -follow  -maxdepth 2 -mindepth 2 -type d | peco --query "$LBUFFER")
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${selected_dir}"
         zle accept-line
