@@ -92,6 +92,7 @@ alias amendc='git commit -v --amend --reuse-message=HEAD'
 alias prune='git remote prune origin'
 alias gs='git stash'
 alias gsl='git stash list'
+alias hbb='hub browse'
 # alias的に使う関数群
 # oh-my-zshのgcmを一度無効にする
 alias gcm 1>/dev/null && unalias gcm
