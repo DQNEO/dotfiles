@@ -9,7 +9,7 @@ brew install coreutils findutils  gnu-sed
 brew install ansible
 
 # command util
-brew install tree wget
+brew install tree wget colordiff
 
 # php
 brew install composer
