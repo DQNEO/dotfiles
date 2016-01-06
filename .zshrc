@@ -261,6 +261,18 @@ function peco-src () {
 zle -N peco-src
 bindkey '^x^x' peco-src
 
+function peco-git-branch () {
+    local selected=$(git branch | peco --query "$LBUFFER")
+    if [ -n "$selected" ]; then
+        BUFFER="git checkout ${selected}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+
+zle -N peco-git-branch
+bindkey '^x^b' peco-git-branch
+
 # Screenのwindow名を自動でセットする
 # http://ogawa.s18.xrea.com/tdiary/20080331.html
 case "${TERM}" in screen)
