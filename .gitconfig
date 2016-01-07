@@ -48,3 +48,5 @@ diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
   root = ~/src
 [rebase]
 	autostash = true
+[stash]
+	showPatch = true
