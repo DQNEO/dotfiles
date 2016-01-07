@@ -46,3 +46,5 @@ diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
 
 [ghq]
   root = ~/src
+[rebase]
+	autostash = true
