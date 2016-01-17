@@ -143,9 +143,11 @@ fi
 #
 path=(
     $HOME/bin(N-/)
+    $HOME/local/bin(N-/)
     $HOME/dotfiles/bin(N-/)
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
+    $HOME/.phpenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
 
     /opt/plenv/bin(N-/)
@@ -167,6 +169,10 @@ fi
 # rbenv
 if type rbenv >/dev/null 2>&1; then
   eval "$(rbenv init - zsh)"
+fi
+
+if type phpenv >/dev/null 2>&1; then
+    eval "$(phpenv init - zsh)"
 fi
 
 # MANPATH
