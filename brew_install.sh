@@ -16,3 +16,7 @@ brew install composer
 
 # env util
 brew install direnv
+
+# to build php
+# install bison3. see http://qiita.com/DQNEO/items/c9bada0c4a6f83d3584e
+brew install bison libmcrypt
