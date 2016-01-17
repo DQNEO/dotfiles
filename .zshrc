@@ -87,14 +87,13 @@ alias grb='git rebase'
 alias gr='git reset'
 alias grh >/dev/null && unalias grh
 alias grh='git reset --hard'
-alias gp='pr ;git push -u &'
+alias gp='git push -u &'
 alias gpl='git pull --ff-only && git delete-merged-branch'
 alias amend='git commit -v --amend'
 alias amendc='git commit -v --amend --reuse-message=HEAD'
 alias prune='git remote prune origin'
 alias gs='git stash'
 alias gsl='git stash list'
-alias hbb='hub browse'
 # alias的に使う関数群
 # oh-my-zshのgcmを一度無効にする
 alias gcm 1>/dev/null && unalias gcm
@@ -102,12 +101,12 @@ alias gcm 1>/dev/null && unalias gcm
 gcm () { git commit -m "$*" }
 alias gsp='git show -p'
 
-pr () {
-    hub --noop browse
-}
-
+alias comp='hub compare'
+# pr () {
+#     hub --noop browse
+# }
 # for Mac
-alias opr='open $(pr)'
+#alias opr='open $(pr)'
 
 # colordiff
 alias cdi='colordiff'
