@@ -76,6 +76,7 @@ alias gb='git branch'
 alias gdi='git diff'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gdw='git diffw'
 alias gbr='git branch -r'
 alias gl='git l'
 alias gl1='git l -1'
@@ -94,6 +95,9 @@ alias amendc='git commit -v --amend --reuse-message=HEAD'
 alias prune='git remote prune origin'
 alias gs='git stash'
 alias gsl='git stash list'
+alias ggrep='git grep'
+alias ggrepi='git grep -i'
+
 # alias的に使う関数群
 # oh-my-zshのgcmを一度無効にする
 alias gcm 1>/dev/null && unalias gcm
