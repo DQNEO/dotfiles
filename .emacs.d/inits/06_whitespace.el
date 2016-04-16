@@ -1,6 +1,6 @@
 ;; 行末の空白を強調表示
-(setq-default show-trailing-whitespace t)
-(set-face-background 'trailing-whitespace "#b14770")
+;;(setq-default show-trailing-whitespace t)
+;;(set-face-background 'trailing-whitespace "#b14770")
 
 ;; whitespace modeで可視化
 ;; http://qiita.com/itiut@github/items/4d74da2412a29ef59c3a

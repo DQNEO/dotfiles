@@ -7,4 +7,4 @@
       (cons '("php" . php-mode)
             interpreter-mode-alist))
 
-(add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
+;;(add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
