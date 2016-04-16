@@ -30,7 +30,7 @@
         dc = diff --cached
         dwc = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
         dcw = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
-diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
+        diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
         delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
 [push]
 	default = current
