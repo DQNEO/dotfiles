@@ -5,47 +5,49 @@
 [include]
         path = .gitconfig.local
 [alias]
-        grepi = grep -i
-        a = add
-	co = checkout
-	ci = commit
-        amend = commit --amend
-	st = status
-        b  = branch
-	br = branch
-	brr = branch -r
-	di = diff
-        d  = diff
-	plf = pull --ff-only
-	pi = cherry-pick
-	cp = cherry-pick
-        rp = rev-parse
-        l2 = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-        la = !git l --all
-        sp = show -p
+        # very convenient / used often
 
-        #http://blog.blindgaenger.net/advanced_git_aliases.html#show_all_defined_aliases
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+        delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
+
+        st = status
+        co = checkout
+        cp = cherry-pick
+        di = diff
         dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
         dc = diff --cached
         dwc = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
         dcw = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
-        diffw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
-        delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
-[push]
-	default = current
-[color]
-	ui = auto
-[core]
-        # cygwinとLinuxで環境が異なるので、
-        # pagerは.ginconfig.localにまかせる。
+        grepi = grep -i
+        b  = branch
+        br = branch
+        sp = show -p
+        amend = commit --amend
+        ci = commit
+        d  = diff
+        a = add
+        brr = branch -r
 
+        # not used recently
+        plf = pull --ff-only
+        rp = rev-parse
+
+        # will be removed
+        l2 = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        la = !git l --all
+
+[push]
+        default = current
+[color]
+        ui = auto
 [core]
-  excludesfile = ~/.gitignore
+        # pagerは.ginconfig.localにまかせる。(環境ごとに異なるので)
+
+        excludesfile = ~/.gitignore
 
 [ghq]
-  root = ~/src
+        root = ~/src
 [rebase]
-	autostash = true
+        autostash = true
 [stash]
-	showPatch = true
+        showPatch = true
