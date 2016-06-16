@@ -3,6 +3,8 @@
         # emailは.gitconfig.localに書く
         # スパム対策のため。
 [include]
+        # 環境ごとに異なる設定は、.ginconfig.localに書く。
+        # 具体的には、OSXとLinuxとWindiwsでの違いとか。
         path = .gitconfig.local
 [alias]
         # very convenient / used often
@@ -41,8 +43,6 @@
 [color]
         ui = auto
 [core]
-        # pagerは.ginconfig.localにまかせる。(環境ごとに異なるので)
-
         excludesfile = ~/.gitignore
 
 [ghq]
