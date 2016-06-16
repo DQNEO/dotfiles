@@ -51,3 +51,5 @@
         autostash = true
 [stash]
         showPatch = true
+[diff]
+	compactionHeuristic = true
