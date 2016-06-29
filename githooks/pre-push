@@ -1,0 +1,14 @@
+#!/bin/bash
+# prevent from pushing to master
+
+remote="$1"
+url="$2"
+
+read local_ref local_sha remote_ref remote_sha
+
+if [[ "master" =  ${remote_ref##*/} ]] ;then
+    echo "DO NOT PUSH to master"
+    exit 1
+fi
+
+exit 0
