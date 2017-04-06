@@ -56,6 +56,9 @@
 (depends-on "php-mode")
 (depends-on "php-auto-yasnippets")
 
+;; Go
+(depends-on "go-mode")
+
 
 ;; markdown
 (depends-on "markdown-mode")
