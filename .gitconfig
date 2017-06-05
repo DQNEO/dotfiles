@@ -9,7 +9,7 @@
 [alias]
         # very convenient / used often
 
-        alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+        alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
         delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
 
         st = status
