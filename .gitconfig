@@ -38,6 +38,7 @@
         l2 = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
         la = !git l --all
 
+        mm = merge origin/master
         review = diff origin/master...
 [push]
         default = current
