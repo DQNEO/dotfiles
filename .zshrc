@@ -268,7 +268,7 @@ if [[ $(uname) = "Darwin" ]]; then
 fi
 
 # peco & ghq
-# Ctl + ] でローカルのレポジトリ検索できる
+# Ctl + xx でローカルのレポジトリ検索できる
 # http://qiita.com/strsk/items/9151cef7e68f0746820d
 function peco-src () {
     local ghq_root=$HOME/src
