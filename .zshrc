@@ -246,6 +246,15 @@ function cm() {
     fi
 }
 
+function review() {
+    local ref=$1
+    if [[ ! $ref ]]; then
+        ref=origin/master
+    fi
+
+    git diff $ref...
+}
+
 # z
 # naoya氏のブログで知った。
 # http://d.hatena.ne.jp/naoya/20130108/1357630895
