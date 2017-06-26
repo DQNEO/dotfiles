@@ -282,6 +282,20 @@ function peco-src () {
 zle -N peco-src
 bindkey '^x^x' peco-src
 
+# peco & ghq
+# Ctl + xp でpstormを開く
+function peco-pstorm () {
+    local ghq_root=$HOME/src
+    local selected_dir=$(find $ghq_root -follow  -maxdepth 3 -mindepth 3 -type d | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="pstorm ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-pstorm
+bindkey '^x^p' peco-pstorm
+
 function peco-git-branch () {
     local selected=$(git branch | peco --query "$LBUFFER")
     if [ -n "$selected" ]; then
