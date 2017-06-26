@@ -105,6 +105,7 @@ alias gcm 1>/dev/null && unalias gcm
 gcm () { git commit -m "$*" }
 alias gsp='git show -p'
 
+alias gphc='git push && hub compare'
 alias comp='hub compare'
 # pr () {
 #     hub --noop browse
