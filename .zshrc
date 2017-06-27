@@ -49,9 +49,8 @@ setopt auto_cd
 #RPROMPT="[%~]"
 
 ## alias
-alias ls='ls -F --show-control-char --color=always'
-alias ll='ls -laF --show-control-char --color=always'
-
+#alias ls='ls -F --show-control-char --color=always'
+#alias ll='ls -laF --show-control-char --color=always'
 # less to show utf8
 export LESSCHARSET=utf-8
 
