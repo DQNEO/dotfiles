@@ -334,3 +334,6 @@ export GOPATH=$HOME
 alias d='docker'
 alias de='docker exec'
 
+# .yarn/bin
+export PATH="$HOME/.yarn/bin:$PATH"
+
