@@ -330,3 +330,7 @@ fi
 
 export GOPATH=$HOME
 
+## Docker
+alias d='docker'
+alias de='docker exec'
+
