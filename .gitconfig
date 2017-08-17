@@ -12,6 +12,9 @@
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
         delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
 
+        # for self code review before git push
+        review = diff origin/master...
+
         st = status
         co = checkout
         cp = cherry-pick
@@ -39,7 +42,6 @@
         la = !git l --all
 
         mm = merge origin/master
-        review = diff origin/master...
 [push]
         default = current
 [color]
