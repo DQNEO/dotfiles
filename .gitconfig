@@ -7,8 +7,7 @@
         # 具体的には、OSXとLinuxとWindiwsでの違いとか。
         path = .gitconfig.local
 [alias]
-        # very convenient / used often
-
+        ## very convenient / used often
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
         delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
 
