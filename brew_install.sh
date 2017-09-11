@@ -9,7 +9,7 @@ brew install zsh zsh-completions
 brew install emacs cask
 
 # unix
-brew install coreutils findutils  gnu-sed colordiff tree wget
+brew install coreutils findutils  gnu-sed colordiff nkf tree wget
 
 # git
 brew install git hub ghq tig
