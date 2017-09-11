@@ -17,8 +17,8 @@ brew install git hub ghq tig
 # terminal UI
 brew install peco z screen tmux
 
-# provisioning
-brew install ansible
+# infra
+brew install ansible awscli
 
 # env
 brew install direnv
