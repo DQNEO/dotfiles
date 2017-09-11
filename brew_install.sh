@@ -1,20 +1,24 @@
 #!/bin/bash
 
 # 現在入ってるパッケージ一覧は`brew ls`で列挙できる
-brew install zsh emacs git cask
-brew install zsh-completions
+
+# zsh
+brew install zsh zsh-completions
+
+# emacs
+brew install emacs cask
 
 # unix
-brew install coreutils findutils  gnu-sed colordiff
+brew install coreutils findutils  gnu-sed colordiff tree wget
 
-# util
-brew install hub ghq peco z tig screen tmux
+# git
+brew install git hub ghq tig
+
+# terminal UI
+brew install peco z screen tmux
 
 # provisioning
 brew install ansible
-
-# command util
-brew install tree wget colordiff
 
 # env
 brew install direnv
