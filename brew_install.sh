@@ -3,20 +3,27 @@
 # 現在入ってるパッケージ一覧は`brew ls`で列挙できる
 brew install zsh emacs git cask
 brew install zsh-completions
-brew install hub ghq peco z tig
-brew install node
-brew install coreutils findutils  gnu-sed
+
+# unix
+brew install coreutils findutils  gnu-sed colordiff
+
+# util
+brew install hub ghq peco z tig screen tmux
+
+# provisioning
 brew install ansible
 
 # command util
 brew install tree wget colordiff
 
 # php
-brew install composer
+brew install php71 
 
-# env util
+# env
 brew install direnv
 
-# to build php
-# install bison3. see http://qiita.com/DQNEO/items/c9bada0c4a6f83d3584e
-brew install bison libmcrypt
+# node
+brew install node yarn jq
+
+# blog
+brew install hugo
