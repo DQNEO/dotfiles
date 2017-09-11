@@ -16,9 +16,6 @@ brew install ansible
 # command util
 brew install tree wget colordiff
 
-# php
-brew install php71 
-
 # env
 brew install direnv
 
@@ -27,3 +24,7 @@ brew install node yarn jq
 
 # blog
 brew install hugo
+
+# php
+# brew tap homebrew/php
+# brew install php71 
