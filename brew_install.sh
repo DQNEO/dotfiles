@@ -27,10 +27,13 @@ brew instal mycli
 brew install direnv
 
 # node
-brew install node yarn jq
+brew install node yarn
 
 # blog
 brew install hugo
+
+# communication
+brew install jq brotobuf
 
 # php
 # brew tap homebrew/php
