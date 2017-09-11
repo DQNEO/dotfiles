@@ -339,11 +339,12 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # GCP
 ## The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/DQNEO/Downloads/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/DQNEO/Downloads/google-cloud-sdk/path.zsh.inc'
+GOOGLE_CLOUD_SDK=$HOME/Downloads/google-cloud-sdk-158
+if [ -f $GOOGLE_CLOUD_SDK/path.zsh.inc ]; then
+  source  $GOOGLE_CLOUD_SDK/path.zsh.inc
 fi
 
 ## The next line enables shell command completion for gcloud.
-if [ -f /Users/DQNEO/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/DQNEO/Downloads/google-cloud-sdk/completion.zsh.inc'
+if [ -f $GOOGLE_CLOUD_SDK/completion.zsh.inc ]; then
+  source  $GOOGLE_CLOUD_SDK/completion.zsh.inc
 fi
