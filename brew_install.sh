@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 現在入ってるパッケージ一覧は`brew ls`で列挙できる
+# `brew list` lists up all installed packages
 
 # zsh
 brew install zsh zsh-completions
