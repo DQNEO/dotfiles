@@ -154,11 +154,7 @@ path=(
     $HOME/.phpenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
 
-    /opt/plenv/bin(N-/)
-    /opt/rbenv/bin(N-/)
     /usr/local/bin(N-/)
-    /opt/php/bin(N-/)
-    /opt/mongodb/bin(N-/)
     /usr/bin
     /bin
     /usr/sbin
