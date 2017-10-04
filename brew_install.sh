@@ -8,7 +8,7 @@ brew install zsh zsh-completions
 # emacs
 brew install emacs cask
 
-# unix
+# unix tools
 brew install coreutils findutils  gnu-sed colordiff nkf tree wget
 
 # git
