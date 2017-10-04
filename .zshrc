@@ -152,6 +152,7 @@ path=(
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
     $HOME/.phpenv/bin(N-/)
+    $HOME/.xcenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
 
     /usr/local/bin(N-/)
@@ -173,6 +174,10 @@ fi
 
 if type phpenv >/dev/null 2>&1; then
     eval "$(phpenv init - zsh)"
+fi
+
+if type xcenv >/dev/null 2>&1; then
+    eval "$(xcenv init - zsh)"
 fi
 
 # MANPATH
