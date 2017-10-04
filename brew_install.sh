@@ -20,6 +20,9 @@ brew install peco z screen tmux
 # infra
 brew install ansible awscli
 
+# builder/compiler
+brew install autoconf
+
 # DB
 brew instal mycli
 
