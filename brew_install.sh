@@ -23,6 +23,9 @@ brew install ansible awscli
 # DB
 brew instal mycli
 
+# go
+brew install go
+
 # env
 brew install direnv
 
