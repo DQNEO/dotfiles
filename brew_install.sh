@@ -47,3 +47,6 @@ brew install imagemagick
 
 # python
 # brew install python python3
+
+# db
+brew install mycli
