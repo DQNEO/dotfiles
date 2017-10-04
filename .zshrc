@@ -339,7 +339,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # GCP
 ## The next line updates PATH for the Google Cloud SDK.
-GOOGLE_CLOUD_SDK=$HOME/Downloads/google-cloud-sdk-158
+GOOGLE_CLOUD_SDK=$HOME/Downloads/google-cloud-sdk
 if [ -f $GOOGLE_CLOUD_SDK/path.zsh.inc ]; then
   source  $GOOGLE_CLOUD_SDK/path.zsh.inc
 fi
