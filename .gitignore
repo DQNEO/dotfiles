@@ -14,7 +14,7 @@ a.out
 /.emacs.d/tramp
 /.emacs.d/.cask
 
-,/
+/,
 
 # ignore PHPStorm dir
 /.idea/
