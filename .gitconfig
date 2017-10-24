@@ -31,8 +31,7 @@
         rp = rev-parse
 
         # will be removed
-        l2 = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-        la = !git l --all
+        log2 = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
         mm = merge origin/master
 [push]
