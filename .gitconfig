@@ -5,21 +5,20 @@
         ## very convenient / used often
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
         delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
-
-        # for self code review before git push
-        review = diff origin/master...
-
         st = status
         co = checkout
         cp = cherry-pick
         di = diff
+        grepi = grep -i
+
+        # for self code review before git push
+        review = diff origin/master...
+
         dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
         dc = diff --cached
         dwc = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
         dcw = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
-        grepi = grep -i
         b  = branch
-        br = branch
         sp = show -p
         amend = commit --amend
         ci = commit
