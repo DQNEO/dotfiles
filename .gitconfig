@@ -1,11 +1,6 @@
 [user]
         name  = DQNEO
-        # emailは.gitconfig.localに書く
-        # スパム対策のため。
-[include]
-        # 環境ごとに異なる設定は、.ginconfig.localに書く。
-        # 具体的には、OSXとLinuxとWindiwsでの違いとか。
-        path = .gitconfig.local
+        email = dqneoo@gmail.com
 [alias]
         ## very convenient / used often
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort

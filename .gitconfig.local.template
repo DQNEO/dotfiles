@@ -1,6 +1,0 @@
-[user]
-        email = MYACCOUNT@DOMAIN
-[core]
-        # pager
-        # 仕事環境では下記がよいかも。
-	# pager = nkf -w | colordiff | less -R
