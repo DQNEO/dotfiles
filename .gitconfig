@@ -10,7 +10,6 @@
         cp = cherry-pick
         di = diff
         grepi = grep -i
-        stsh = stash
         review = diff origin/master...
 
         dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
