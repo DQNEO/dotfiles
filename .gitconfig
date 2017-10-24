@@ -10,8 +10,7 @@
         cp = cherry-pick
         di = diff
         grepi = grep -i
-
-        # for self code review before git push
+        stsh = stash
         review = diff origin/master...
 
         dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
