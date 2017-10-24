@@ -53,3 +53,9 @@ brew install imagemagick
 
 # db
 brew install mycli
+
+# PHP
+# add Tap
+brew tap homebrew/homebrew-php
+brew unlink php56
+brew install php71
