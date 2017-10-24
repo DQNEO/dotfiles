@@ -16,7 +16,7 @@
         dw = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
         dc = diff --cached
         dwc = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
-        dcw = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
+        dcw = !git dwc
         b  = branch
         sp = show -p
         amend = commit --amend
