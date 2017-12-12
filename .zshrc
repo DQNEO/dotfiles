@@ -62,6 +62,8 @@ alias -g T='| tail'
 alias -g C='| colordiff'
 
 alias v='vagrant'
+alias kb='kubectl'
+
 alias grepi='grep -i'
 # aliases for Git
 # http://qiita.com/items/1f01aa09ccf148542f21
