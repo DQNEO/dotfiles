@@ -17,12 +17,14 @@
         dwc = diff  --word-diff-regex='\\w+|[^[:space:]]' --cached
         dcw = !git dwc
         b  = branch
+        br = branch
         sp = show -p
         amend = commit --amend
         ci = commit
         d  = diff
         a = add
         brr = branch -r
+        rmt = remote
 
         # not used recently
         plf = pull --ff-only
