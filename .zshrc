@@ -154,7 +154,7 @@ path=(
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
     $HOME/.phpenv/bin(N-/)
-    $HOME/.xcenv/bin(N-/)
+#    $HOME/.xcenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
 
     /usr/local/bin(N-/)
