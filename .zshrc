@@ -148,16 +148,16 @@ fi
 # http://qiita.com/mollifier/items/42ae46ff4140251290a7
 #
 path=(
-    $HOME/bin(N-/)
-    $HOME/local/bin(N-/)
+    /usr/local/bin(N-/)
     $HOME/dotfiles/bin(N-/)
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
     $HOME/.phpenv/bin(N-/)
 #    $HOME/.xcenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
+    $HOME/local/bin(N-/)
+    $HOME/bin(N-/)
 
-    /usr/local/bin(N-/)
     /usr/bin
     /bin
     /usr/sbin
