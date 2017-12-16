@@ -17,10 +17,9 @@ do
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
 
-echo "setup .emacs.d"
-cd ${THIS_DIR}/.emacs.d
-
+# need 'brew install cask'
 if which cask >/dev/null 2>&1 ; then
+    cd ${THIS_DIR}/.emacs.d
     cask install
 fi
 
