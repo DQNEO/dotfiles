@@ -28,13 +28,3 @@ cd ${THIS_DIR}/oh-my-zsh/custom
 if [[ ! -e dqneo.zsh-theme ]] ; then
     ln -s ../../dqneo.zsh-theme .
 fi
-
-cd $THIS_DIR
-if [ ! -e $HOME/.gitconfig.local ] ; then
-    cat .gitconfig.local.template \
-    | sed -e s/MYACCOUNT/dqneoo/ \
-    | sed -e s/DOMAIN/gmail.com/ \
-    > $HOME/.gitconfig.local
-fi
-
-
