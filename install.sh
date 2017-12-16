@@ -17,12 +17,6 @@ do
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
 
-# need 'brew install cask'
-if which cask >/dev/null 2>&1 ; then
-    cd ${THIS_DIR}/.emacs.d
-    cask install
-fi
-
 cd ${THIS_DIR}/oh-my-zsh/custom
 if [[ ! -e dqneo.zsh-theme ]] ; then
     ln -s ../../dqneo.zsh-theme .

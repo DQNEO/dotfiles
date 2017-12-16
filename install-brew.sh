@@ -62,3 +62,8 @@ brew install mycli
 brew tap homebrew/homebrew-php
 brew unlink php56
 brew install php71
+
+# Cask
+echo "=== install cask ===="
+cd $HOME/dotfiles/.emacs.d
+cask install
