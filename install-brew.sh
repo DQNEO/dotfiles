@@ -47,10 +47,6 @@ brew install jq brotobuf
 # image
 brew install imagemagick
 
-# php
-# brew tap homebrew/php
-# brew install php71 
-
 # python
 # brew install python python3
 
