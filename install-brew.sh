@@ -60,6 +60,7 @@ brew unlink php56
 brew install php71
 
 # Cask
+this_dir=$(cd $(dirname $0);pwd)
 echo "=== install cask ===="
-cd $HOME/dotfiles/.emacs.d
+cd $this_dir/.emacs.d
 cask install
