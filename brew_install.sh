@@ -1,5 +1,8 @@
 #!/bin/bash
 
+if ! type brew ;then
+    exit 1
+fi
 # `brew list` lists up all installed packages
 
 # zsh
