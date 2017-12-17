@@ -30,7 +30,7 @@ brew install autoconf
 brew instal mycli
 
 # go
-brew install go
+brew install go dep
 
 # env
 brew install direnv
