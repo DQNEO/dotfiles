@@ -161,20 +161,20 @@ path=(
 
 # plenv用の設定
 if type plenv >/dev/null 2>&1; then
-  eval "$(plenv init -)"
+  eval "$(plenv init - zsh)"
 fi
 
 # rbenv
 if type rbenv >/dev/null 2>&1; then
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - zsh)"
 fi
 
 if type phpenv >/dev/null 2>&1; then
-    eval "$(phpenv init -)"
+    eval "$(phpenv init - zsh)"
 fi
 
 if type xcenv >/dev/null 2>&1; then
-    eval "$(xcenv init -)"
+    eval "$(xcenv init - zsh)"
 fi
 
 # MANPATH
