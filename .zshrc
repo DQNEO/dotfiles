@@ -1,3 +1,5 @@
+#zmodload zsh/zprof && zprof
+
 source $HOME/dotfiles/.require_oh-my-zsh
 
 # set locale
@@ -349,3 +351,4 @@ PERL_LOCAL_LIB_ROOT="/Users/DQNEO/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_
 PERL_MB_OPT="--install_base \"/Users/DQNEO/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/DQNEO/perl5"; export PERL_MM_OPT;
 
+#zprof
