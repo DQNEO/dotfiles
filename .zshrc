@@ -138,12 +138,6 @@ if [ -n "$BASE" ] ; then
     cd $BASE
 fi
 
-
-
-
-# Cygwin用の環境設定
-#alias open=cygstart
-
 # PATHを設定
 # http://qiita.com/mollifier/items/42ae46ff4140251290a7
 #
