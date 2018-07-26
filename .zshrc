@@ -63,7 +63,9 @@ alias -g C='| colordiff'
 alias v='vagrant'
 alias kc='kubectl'
 
+alias grep='grep  --color=auto --exclude-dir={.git,.svn}'
 alias grepi='grep -i'
+
 # aliases for Git
 # http://qiita.com/items/1f01aa09ccf148542f21
 # http://qiita.com/items/6ebcce530d9530293fec
