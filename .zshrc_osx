@@ -16,3 +16,15 @@ if [ -x /usr/local/bin/brew ] ; then
     alias xargs=gxargs
 fi
 
+# stolen from oh-my-zsh/plugins/web-search/web-search.plugin.zsh
+function google() {
+  emulate -L zsh
+
+  # define search engine URLS
+  google_url="https://www.google.com/search?q="
+
+  # build search url:
+  # join arguments passed with '+', then append to search engine URL
+  url="${google_url}${(j:+:)@[2,-1]}"
+  open_command "$url"
+}
