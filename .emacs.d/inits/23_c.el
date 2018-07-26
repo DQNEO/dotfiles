@@ -3,11 +3,19 @@
 (setq auto-mode-alist
       (cons (cons "\\.c$" 'c-mode) auto-mode-alist))
 
+;; hook c c++ mode
+(defun my-c-c++-mode-init ()
+  (setq c-basic-offset 4)
+  (make-local-variable 'c-tab-always-indent)
+  (setq c-tab-always-indent nil)
+  )
+(add-hook 'c-mode-hook 'my-c-c++-mode-init)
+(add-hook 'c++-mode-hook 'my-c-c++-mode-init)
+
+
 ;;c-modeのhook
 (add-hook 'c-mode-hook
   '(lambda ()
-     (c-set-style "stroustrup")
-
      ;; Emacs で C 言語プログラミングを始める人へのイントロダクション
      ;; http://at-aka.blogspot.com/2006/12/emacs-c.html
 
