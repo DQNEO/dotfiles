@@ -336,3 +336,7 @@ fi
 if [ -f $GOOGLE_CLOUD_SDK/completion.zsh.inc ]; then
   source  $GOOGLE_CLOUD_SDK/completion.zsh.inc
 fi
+
+# for phpbuild
+export PATH="/usr/local/opt/bison/bin:$PATH"
+export PATH="/usr/local/opt/bzip2/bin:$PATH"
