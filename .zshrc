@@ -219,14 +219,6 @@ function clone () {
     git clone git@github.com:${name}.git
 }
 
-# C言語プログラムを即時実行するためのコマンド
-# see http://dqn.sakusakutto.jp/2013/07/runc.html
-function runc() {
-    local progname=$1
-    shift
-    gcc -Wall $progname -o /tmp/a.out && /tmp/a.out "$@"
-}
-
 ## ブランチ名をパーズしてissuenoを取得
 function get_issueno() {
     git branch | grep '^*'  | awk '{print $2}' | awk -F _ '{print $2}'

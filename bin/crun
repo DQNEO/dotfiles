@@ -1,0 +1,4 @@
+#!/bin/bash
+progname=$1
+shift
+gcc -Wall $progname -o /tmp/a.out && /tmp/a.out "$@"
