@@ -45,6 +45,6 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git)
-plugins=(git osx brew web-search)
+plugins=(git osx brew)
 
 source $ZSH/oh-my-zsh.sh
