@@ -34,6 +34,7 @@
         rp = rev-parse
 
         # will be removed
+        log1 = log --graph --pretty='%Cred%h%Creset - %Cgreen[%an]%Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset %s' --abbrev-commit --date=iso
         log2 = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
         mm = merge origin/master
