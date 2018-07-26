@@ -1,3 +1,5 @@
+skip_global_compinit=1
+
 source $HOME/dotfiles/.require_oh-my-zsh
 
 # set locale
