@@ -25,8 +25,13 @@
   (setq extension (file-name-extension (buffer-file-name)))
   (if (equal extension "go")
       (shell-command (concat "go run " (file-name-nondirectory (buffer-file-name))))
+  (if (equal extension "c")
+      (shell-command (concat "crun " (file-name-nondirectory (buffer-file-name))))
     (shell-command (concat "./" (file-name-nondirectory (buffer-file-name))))
     )
+
+    )
+
   )
 (global-set-key  "\C-cr" 'run-file)
 (global-set-key [f5] 'run-file)
