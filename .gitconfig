@@ -26,6 +26,9 @@
         brr = branch -r
         rmt = remote
 
+        # newly added
+        empty = commit --allow-empty -m 'empty commit'
+
         # not used recently
         plf = pull --ff-only
         rp = rev-parse
