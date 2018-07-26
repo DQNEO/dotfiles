@@ -12,9 +12,9 @@ export LC_ALL=ja_JP.UTF-8
 # autoload -Uz compinitより前にfpathを設定する必要がある。
 fpath=(/usr/local/share/zsh-completions(N-/) $fpath)
 
-# http://journal.mycom.co.jp/column/zsh/001/index.html
-autoload -U compinit
-compinit
+# compinit is called somehwere else where I don't know :(
+#autoload -U compinit
+#compinit
 
 # http://0xcc.net/unimag/3/
 # keybind like Emacs
