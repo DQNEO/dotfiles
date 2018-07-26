@@ -60,9 +60,8 @@ alias -g L='| less'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g C='| colordiff'
-
 alias v='vagrant'
-alias kb='kubectl'
+alias kc='kubectl'
 
 alias grepi='grep -i'
 # aliases for Git
