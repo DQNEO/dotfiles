@@ -349,6 +349,12 @@ PERL_LOCAL_LIB_ROOT="/Users/DQNEO/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_
 PERL_MB_OPT="--install_base \"/Users/DQNEO/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/DQNEO/perl5"; export PERL_MM_OPT;
 
+# zcompile
+# https://qiita.com/vintersnow/items/7343b9bf60ea468a4180
+if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
+    zcompile ~/.zshrc
+fi
+
 if (which zprof > /dev/null 2>&1) ;then
     zprof
 fi
