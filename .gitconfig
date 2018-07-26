@@ -52,7 +52,8 @@
 [stash]
         showPatch = true
 [diff]
-	compactionHeuristic = true
+#	compactionHeuristic = true
+#	colorMoved = zebra
 [help]
 	autocorrect = 1
 [fetch]
