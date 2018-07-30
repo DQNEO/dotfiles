@@ -163,16 +163,16 @@ path=(
 
 # plenv用の設定
 if type plenv >/dev/null 2>&1; then
-  eval "$(plenv init - zsh)"
+  eval "$(plenv init - --no-rehash zsh)"
 fi
 
 # rbenv
 if type rbenv >/dev/null 2>&1; then
-  eval "$(rbenv init - zsh)"
+  eval "$(rbenv init - --no-rehash zsh)"
 fi
 
 if type phpenv >/dev/null 2>&1; then
-    eval "$(phpenv init - zsh)"
+    eval "$(phpenv init - --no-rehash zsh)"
 fi
 
 if type xcenv >/dev/null 2>&1; then
