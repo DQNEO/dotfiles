@@ -137,10 +137,6 @@ autoload -Uz vcs_info
 #    psvar[1]=$vcs_info_msg_0_
 #}
 
-if [ -n "$BASE" ] ; then
-    cd $BASE
-fi
-
 # PATHを設定
 # http://qiita.com/mollifier/items/42ae46ff4140251290a7
 #
