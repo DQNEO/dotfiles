@@ -242,16 +242,16 @@ function review() {
     git diff $ref...
 }
 
-# z
-# naoya氏のブログで知った。
-# http://d.hatena.ne.jp/naoya/20130108/1357630895
-if which brew 1>/dev/null 2>/dev/null ; then
-    . `brew --prefix`/etc/profile.d/z.sh
-fi
 
 # OSXの場合はそれ用のファイルを読み込む
 if [[ $(uname) = "Darwin" ]]; then
     source ~/dotfiles/.zshrc_osx
+
+    # z
+    # naoya氏のブログで知った。
+    # http://d.hatena.ne.jp/naoya/20130108/1357630895
+    source `brew --prefix`/etc/profile.d/z.sh
+
 fi
 
 # peco & ghq
