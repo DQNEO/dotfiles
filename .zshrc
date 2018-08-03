@@ -1,5 +1,4 @@
 skip_global_compinit=1
-source $HOME/dotfiles/.require_oh-my-zsh
 
 # zsh-completions
 # brew,vagrantなど非標準コマンドを保管してくる便利なやつ
