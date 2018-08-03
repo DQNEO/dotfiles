@@ -244,13 +244,42 @@ function review() {
 
 # OSXの場合はそれ用のファイルを読み込む
 if [[ $(uname) = "Darwin" ]]; then
-    source ~/dotfiles/.zshrc_osx
 
     # z
     # naoya氏のブログで知った。
     # http://d.hatena.ne.jp/naoya/20130108/1357630895
     source /usr/local/etc/profile.d/z.sh
 
+    # OSX専用の設定
+    # OSXで使えないコマンドのときにヒントを表示する
+    alias ldd="echo ldd is not on OSX. use otool -L."
+    alias strace="echo strace is not on OSX. use dtruss"
+
+    alias dk="docker"
+
+    # Mac OSXで coreutilsを使う
+    # http://qiita.com/kawaz/items/952cb1a86b1da77cd7ab
+    # coreutils
+    if [ -x /usr/local/bin/brew ] ; then
+        export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+        # findutils
+        alias find=gfind
+        alias xargs=gxargs
+    fi
+
+    # stolen from oh-my-zsh/plugins/web-search/web-search.plugin.zsh
+    function google() {
+        emulate -L zsh
+
+        # define search engine URLS
+        google_url="https://www.google.com/search?q="
+
+        # build search url:
+        # join arguments passed with '+', then append to search engine URL
+        url="${google_url}${(j:+:)@[2,-1]}"
+        open_command "$url"
+    }
 fi
 
 # peco & ghq
