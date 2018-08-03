@@ -145,6 +145,7 @@ path=(
     $HOME/.rbenv/bin(N-/)
     $HOME/.plenv/bin(N-/)
     $HOME/.phpenv/bin(N-/)
+    $HOME/.ndenv/bin(N-/)
 #    $HOME/.xcenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
     $HOME/local/bin(N-/)
@@ -173,6 +174,11 @@ fi
 if type xcenv >/dev/null 2>&1; then
     eval "$(xcenv init - zsh)"
 fi
+
+if type ndenv >/dev/null 2>&1; then
+    eval "$(ndenv init - --no-rehash zsh)"
+fi
+
 
 # MANPATH
 # http://dqn.sakusakutto.jp/2013/06/git-install-man-doc.html
@@ -334,11 +340,6 @@ case "${TERM}" in screen)
                           echo -ne "\ek$_basename\e\\"
                       }
 esac
-
-if [[ -d $HOME/.ndenv ]]; then
-    export PATH="$HOME/.ndenv/bin:$PATH"
-    eval "$(ndenv init -)"
-fi
 
 if type direnv >/dev/null; then
     eval "$(direnv hook zsh)"
