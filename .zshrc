@@ -215,13 +215,6 @@ setopt prompt_subst
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
-# clone
-# Usage DQNEO/project
-function clone () {
-    name=$1
-    git clone git@github.com:${name}.git
-}
-
 ## ブランチ名をパーズしてissuenoを取得
 function get_issueno() {
     git branch | grep '^*'  | awk '{print $2}' | awk -F _ '{print $2}'
