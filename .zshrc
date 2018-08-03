@@ -1,10 +1,6 @@
 skip_global_compinit=1
 source $HOME/dotfiles/.require_oh-my-zsh
 
-# set locale
-export LANG=ja_JP.UTF-8
-export LC_ALL=ja_JP.UTF-8
-
 # zsh-completions
 # brew,vagrantなど非標準コマンドを保管してくる便利なやつ
 #
