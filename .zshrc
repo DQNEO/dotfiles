@@ -215,21 +215,6 @@ setopt prompt_subst
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
-## ブランチ名をパーズしてissuenoを取得
-function get_issueno() {
-    git branch | grep '^*'  | awk '{print $2}' | awk -F _ '{print $2}'
-}
-
-function cm() {
-    issueno=$(get_issueno)
-    if [ "$issueno" ] ; then
-	git commit -m "refs #$issueno $*"
-    else
-	echo "cannot get issueno" >&2
-	return 1
-    fi
-}
-
 function review() {
     local ref=$1
     if [[ ! $ref ]]; then
