@@ -157,12 +157,11 @@ path=(
     /sbin
 )
 
-# plenv用の設定
+# *env init
 if type plenv >/dev/null 2>&1; then
   eval "$(plenv init - --no-rehash zsh)"
 fi
 
-# rbenv
 if type rbenv >/dev/null 2>&1; then
   eval "$(rbenv init - --no-rehash zsh)"
 fi
