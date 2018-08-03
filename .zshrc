@@ -146,6 +146,7 @@ path=(
     $HOME/.plenv/bin(N-/)
     $HOME/.phpenv/bin(N-/)
     $HOME/.ndenv/bin(N-/)
+    $HOME/.yarn/bin(N-/)
 #    $HOME/.xcenv/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
     $HOME/local/bin(N-/)
@@ -313,9 +314,6 @@ export GOPATH=$HOME
 ## Docker
 alias d='docker'
 alias de='docker exec'
-
-# .yarn/bin
-export PATH="$HOME/.yarn/bin:$PATH"
 
 # GCP
 ## The next line updates PATH for the Google Cloud SDK.
