@@ -215,16 +215,6 @@ setopt prompt_subst
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
-function review() {
-    local ref=$1
-    if [[ ! $ref ]]; then
-        ref=origin/master
-    fi
-
-    git diff $ref...
-}
-
-
 # OSXの場合はそれ用のファイルを読み込む
 if [[ $(uname) = "Darwin" ]]; then
 
