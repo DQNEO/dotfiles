@@ -81,7 +81,6 @@ alias gcob='gcb'
 alias gf='git fetch --prune'
 alias grb='git rebase'
 alias gr='git reset'
-unalias grh
 alias grh='git reset --hard'
 alias gp='git push -u &'
 alias gpl='git pull --ff-only && git delete-merged-branch'
@@ -92,10 +91,6 @@ alias gs='git stash'
 alias gsl='git stash list'
 alias ggrep='git grep'
 alias ggrepi='git grep -i'
-
-# alias的に使う関数群
-# remove gcm of oh-my-zsh
-unalias gcm
 
 gcm () { git commit -m "$*" }
 alias gsp='git show -p'
