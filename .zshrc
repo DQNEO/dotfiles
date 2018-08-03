@@ -1,5 +1,4 @@
 skip_global_compinit=1
-
 source $HOME/dotfiles/.require_oh-my-zsh
 
 # set locale
@@ -250,7 +249,7 @@ if [[ $(uname) = "Darwin" ]]; then
     # z
     # naoya氏のブログで知った。
     # http://d.hatena.ne.jp/naoya/20130108/1357630895
-    source `brew --prefix`/etc/profile.d/z.sh
+    source /usr/local/etc/profile.d/z.sh
 
 fi
 
