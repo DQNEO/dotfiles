@@ -1,12 +1,10 @@
-# zshrc reborn
-
 export EDITOR=nano
 export GOPATH=$HOME
-
+export DOTFILES=$HOME/dotfiles
 # PATH http://qiita.com/mollifier/items/42ae46ff4140251290a7
 path=(
     # my bin
-    $HOME/dotfiles/bin(N-/)
+    $DOTFILES/bin(N-/)
 
     # Go tools
     $HOME/bin(N-/)
@@ -26,7 +24,7 @@ path=(
     /sbin
 )
 
-source $HOME/dotfiles/.zshrc.history
+source $DOTFILES/.zshrc.history
 
 # Completion
 autoload -U compinit
@@ -41,15 +39,14 @@ setopt auto_cd
 # z http://d.hatena.ne.jp/naoya/20130108/1357630895
 [[ /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
 
-source $HOME/dotfiles/.zshrc.alias
-source $HOME/dotfiles/.zshrc.git
-source $HOME/dotfiles/.zshrc.xenv
-source $HOME/dotfiles/.zshrc.mac
-source $HOME/dotfiles/.zshrc.peco
-source $HOME/dotfiles/.zshrc.prompt
-source $HOME/dotfiles/.zshrc.gcp
-source $HOME/dotfiles/.zshrc.enterkey
-source $HOME/dotfiles/.zshrc.screen
-
+source $DOTFILES/.zshrc.alias
+source $DOTFILES/.zshrc.git
+source $DOTFILES/.zshrc.xenv
+source $DOTFILES/.zshrc.mac
+source $DOTFILES/.zshrc.peco
+source $DOTFILES/.zshrc.prompt
+source $DOTFILES/.zshrc.gcp
+source $DOTFILES/.zshrc.enterkey
+source $DOTFILES/.zshrc.screen
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
-source $HOME/dotfiles/.zshrc.profile
+source $DOTFILES/.zshrc.profile
