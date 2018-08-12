@@ -7,7 +7,7 @@ if [[ /Users/$USER = $HOME ]]; then
     [[ -x /usr/local/git/bin/git ]] && alias git='/usr/local/git/bin/git'
 
     # require `brew install binutils coreutils findutils`
-    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    path=(/usr/local/opt/coreutils/libexec/gnubin(N-/) $path)
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
     # findutils
     alias find=gfind
