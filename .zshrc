@@ -163,8 +163,7 @@ function do_enter() {
     fi
     echo
     ls
-    # ↓おすすめ
-    # ls_abbrev
+    # ls_abbrev (Recommended)
     if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
         echo
         echo -e "\e[0;33m--- git status ---\e[0m"
@@ -215,7 +214,7 @@ function peco-git-branch () {
 zle -N peco-git-branch && bindkey '^x^b' peco-git-branch
 
 
-# Screenのwindow名を自動でセットする
+# set Screen window name automatically
 # http://ogawa.s18.xrea.com/tdiary/20080331.html
 case "${TERM}" in screen)
                       preexec() {
