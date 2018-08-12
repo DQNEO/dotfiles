@@ -10,6 +10,20 @@
 #autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
 #setopt prompt_subst
 
+# Left promtp
+# Color setting http://www.sakito.com/2011/11/zsh.html
+#PROMPT="%{$fg_bold[cyan]%}> %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
+
+# Garbage
+#ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$fg[cyan]%}"
+#ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+#ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}] %{$fg[yellow]%}⚡%{$reset_color%} "
+#ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}]"
+
+# my original
+#PROMPT="%n%F{yellow}@%m%f:%/%1(v|%F{green}%1v%f|)%% "
+
+
 # borrowed from https://qiita.com/mollifier/items/8d5a627d773758dd8078
 # vcs_info 設定
 
