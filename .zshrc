@@ -48,41 +48,8 @@ source $HOME/dotfiles/.zshrc.mac
 source $HOME/dotfiles/.zshrc.peco
 source $HOME/dotfiles/.zshrc.prompt
 source $HOME/dotfiles/.zshrc.gcp
-
-# Enter key for  ls and git status
-# http://qiita.com/yuyuchu3333/items/e9af05670c95e2cc5b4d
-function do_enter() {
-    if [ -n "$BUFFER" ]; then
-        zle accept-line
-        return 0
-    fi
-    echo
-    ls
-    # ls_abbrev (Recommended)
-    if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
-        echo
-        echo -e "\e[0;33m--- git status ---\e[0m"
-        git status -sb
-    fi
-    zle reset-prompt
-    return 0
-}
-#zle -N do_enter
-#bindkey '^m' do_enter
-
-# set Screen window name automatically
-# http://ogawa.s18.xrea.com/tdiary/20080331.html
-case "${TERM}" in screen)
-                      preexec() {
-                          echo -ne "\ek#${1%% *}\e\\"
-                      }
-                      precmd() {
-                          _basename=$(basename "$(pwd)")
-                          echo -ne "\ek$_basename\e\\"
-                      }
-esac
-
+source $HOME/dotfiles/.zshrc.enterkey
+source $HOME/dotfiles/.zshrc.screen
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
-
 source $HOME/dotfiles/.zshrc.profile

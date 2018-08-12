@@ -1,0 +1,11 @@
+# set Screen window name automatically
+# http://ogawa.s18.xrea.com/tdiary/20080331.html
+case "${TERM}" in screen)
+                      preexec() {
+                          echo -ne "\ek#${1%% *}\e\\"
+                      }
+                      precmd() {
+                          _basename=$(basename "$(pwd)")
+                          echo -ne "\ek$_basename\e\\"
+                      }
+esac
