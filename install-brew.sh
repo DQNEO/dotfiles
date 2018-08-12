@@ -6,7 +6,7 @@ fi
 # `brew list` lists up all installed packages
 
 # zsh
-brew install zsh zsh-completions
+brew install zsh
 
 # emacs
 brew install emacs cask
