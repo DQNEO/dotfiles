@@ -1,0 +1,37 @@
+# peco
+## peco + ghq
+# Ctl + xx to search repo
+# http://qiita.com/strsk/items/9151cef7e68f0746820d
+function peco-src () {
+    local ghq_root=$HOME/src
+    local selected_dir=$(find $ghq_root -follow  -maxdepth 3 -mindepth 3 -type d | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-src && bindkey '^x^x' peco-src
+
+# Ctl + xp to open phpstorm
+function peco-pstorm () {
+    local ghq_root=$HOME/src
+    local selected_dir=$(find $ghq_root -follow  -maxdepth 3 -mindepth 3 -type d | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="pstorm ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-pstorm && bindkey '^x^p' peco-pstorm
+
+# Ctl + xb to git branch
+function peco-git-branch () {
+    local selected=$(git branch | peco --query "$LBUFFER")
+    if [ -n "$selected" ]; then
+        BUFFER="git checkout ${selected}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-git-branch && bindkey '^x^b' peco-git-branch
