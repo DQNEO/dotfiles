@@ -1,0 +1,42 @@
+# Git
+# aliases for Git
+# http://qiita.com/items/1f01aa09ccf148542f21
+# http://qiita.com/items/6ebcce530d9530293fec
+alias  st='git status --short --branch'
+alias gst='git status --short --branch'
+alias ga='git add'
+alias gap='git add -p'
+alias gb='git branch'
+alias gdi='git diff'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gdw='git dw'
+alias gbr='git branch -r'
+alias gl='git l'
+alias gl1='git l -1'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gcob='gcb'
+alias gf='git fetch --prune'
+alias grb='git rebase'
+alias gr='git reset'
+alias grh='git reset --hard'
+alias gp='git push -u &'
+alias gpl='git pull --ff-only && git delete-merged-branch'
+alias amend='git commit -v --amend'
+alias amendc='git commit -v --amend --reuse-message=HEAD'
+alias prune='git remote prune origin'
+alias gs='git stash'
+alias gsl='git stash list'
+alias ggrep='git grep'
+alias ggrepi='git grep -i'
+
+gcm () { git commit -m "$*" }
+alias gsp='git show -p'
+
+alias gphc='git push && hub compare'
+alias comp='hub compare'
+
+# pr () {
+#     hub --noop browse
+# }

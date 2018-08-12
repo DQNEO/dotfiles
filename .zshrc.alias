@@ -1,0 +1,15 @@
+# General aliases
+
+# Aliases for Unix commands
+alias ls='ls -F --show-control-char --color=always'
+alias ll='ls -laF --show-control-char --color=always'
+alias grep='grep  --color=auto --exclude-dir={.git,.svn}'
+alias grepi='grep -i'
+alias cdi='colordiff'
+alias cdf=cdi
+
+# Global Aliases
+alias -g M='| more'
+alias -g L='| less'
+alias -g H='| head'
+alias -g T='| tail'
