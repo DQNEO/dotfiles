@@ -110,10 +110,7 @@ alias cdf='colordiff'
 # setting shell variables
 MYNICKNAME=dqneo
 
-# for Git
-# http://d.hatena.ne.jp/mollifier/20100906/p1
-# http://d.hatena.ne.jp/mollifier/20090814/p1
-
+# customize prompt for Git
 autoload -Uz vcs_info
 #
 #precmd () {
