@@ -4,6 +4,7 @@
 # ~/.gitignore用の設定
 .DS_Store
 a.out
+a.c
 
 # dotfiles/.gitignore用の設定
 /.emacs.d/vendor/
