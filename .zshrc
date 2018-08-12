@@ -113,7 +113,6 @@ MYNICKNAME=dqneo
 # for Git
 # http://d.hatena.ne.jp/mollifier/20100906/p1
 # http://d.hatena.ne.jp/mollifier/20090814/p1
-autoload -Uz is-at-least
 
 autoload -Uz vcs_info
 #
