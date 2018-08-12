@@ -12,9 +12,6 @@ path=(
     # Go tools
     $HOME/bin(N-/)
 
-    # what is this ??
-    $HOME/local/bin(N-/)
-
     # to build php
     /usr/local/opt/bison/bin(N-/)
     /usr/local/opt/bzip2/bin(N-/)
