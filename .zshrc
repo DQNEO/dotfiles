@@ -107,9 +107,6 @@ alias comp='hub compare'
 alias cdi='colordiff'
 alias cdf='colordiff'
 
-# setting shell variables
-MYNICKNAME=dqneo
-
 # customize prompt for Git
 autoload -Uz vcs_info
 #
