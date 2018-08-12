@@ -51,6 +51,10 @@ export GOPATH=$HOME
 
 # for MacOS
 if [[ /Users/$USER = $HOME ]]; then
+    # warn if linux commands are hit
+    alias ldd="echo ldd is not on OSX. use otool -L."
+    alias strace="echo strace is not on OSX. use dtruss"
+
     [[ -x /usr/local/git/bin/git ]] && alias git='/usr/local/git/bin/git'
 
     # require `brew install binutils coreutils findutils`
@@ -59,10 +63,6 @@ if [[ /Users/$USER = $HOME ]]; then
     # findutils
     alias find=gfind
     alias xargs=gxargs
-
-    # warn if linux commands are hit
-    alias ldd="echo ldd is not on OSX. use otool -L."
-    alias strace="echo strace is not on OSX. use dtruss"
 
 fi
 
