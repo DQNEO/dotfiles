@@ -154,7 +154,6 @@ if [[ /Users/$USER = $HOME ]]; then
 
 fi
 
-
 # エンターキーでlsとgit status
 # http://qiita.com/yuyuchu3333/items/e9af05670c95e2cc5b4d
 function do_enter() {
@@ -237,8 +236,6 @@ esac
 #    LANG=en_US.UTF-8 vcs_info
 #    psvar[1]=$vcs_info_msg_0_
 #}
-
-
 ## ROMPT
 #autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
 #setopt prompt_subst
