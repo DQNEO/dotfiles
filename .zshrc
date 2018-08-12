@@ -18,10 +18,7 @@ path=(
     $HOME/.composer/vendor/bin(N-/)
 
     /usr/local/bin(N-/)
-    /usr/bin
-    /bin
-    /usr/sbin
-    /sbin
+    /usr/bin /bin /usr/sbin /sbin
 )
 
 source $DOTFILES/.zshrc.history
