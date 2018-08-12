@@ -112,10 +112,10 @@ alias comp='hub compare'
 
 # Xenv init
 type plenv  >/dev/null 2>&1  && eval "$(plenv  init - --no-rehash zsh)"
-type rbenv  >/dev/null 2>&1  && eval "$(rbenv  init - --no-rehash zsh)"
-type phpenv >/dev/null 2>&1  && eval "$(phpenv init - --no-rehash zsh)"
-type ndenv  >/dev/null 2>&1  && eval "$(ndenv  init - --no-rehash zsh)"
-type xcenv  >/dev/null 2>&1  && eval "$(xcenv  init - zsh)"
+#type rbenv  >/dev/null 2>&1  && eval "$(rbenv  init - --no-rehash zsh)"
+#type phpenv >/dev/null 2>&1  && eval "$(phpenv init - --no-rehash zsh)"
+#type ndenv  >/dev/null 2>&1  && eval "$(ndenv  init - --no-rehash zsh)"
+#type xcenv  >/dev/null 2>&1  && eval "$(xcenv  init - zsh)"
 
 # Golang
 export GOPATH=$HOME
