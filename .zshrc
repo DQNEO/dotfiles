@@ -192,8 +192,7 @@ function peco-src () {
     fi
     zle clear-screen
 }
-zle -N peco-src
-bindkey '^x^x' peco-src
+zle -N peco-src && bindkey '^x^x' peco-src
 
 # Ctl + xp to open phpstorm
 function peco-pstorm () {
@@ -205,8 +204,7 @@ function peco-pstorm () {
     fi
     zle clear-screen
 }
-zle -N peco-pstorm
-bindkey '^x^p' peco-pstorm
+zle -N peco-pstorm && bindkey '^x^p' peco-pstorm
 
 # Ctl + xb to git branch
 function peco-git-branch () {
@@ -217,9 +215,7 @@ function peco-git-branch () {
     fi
     zle clear-screen
 }
-
-zle -N peco-git-branch
-bindkey '^x^b' peco-git-branch
+zle -N peco-git-branch && bindkey '^x^b' peco-git-branch
 
 
 # Screenのwindow名を自動でセットする
