@@ -49,22 +49,7 @@ source $HOME/dotfiles/.zshrc.xenv
 # Golang
 export GOPATH=$HOME
 
-# for MacOS
-if [[ /Users/$USER = $HOME ]]; then
-    # warn if linux commands are hit
-    alias ldd="echo ldd is not on OSX. use otool -L."
-    alias strace="echo strace is not on OSX. use dtruss"
-
-    [[ -x /usr/local/git/bin/git ]] && alias git='/usr/local/git/bin/git'
-
-    # require `brew install binutils coreutils findutils`
-    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-    export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-    # findutils
-    alias find=gfind
-    alias xargs=gxargs
-
-fi
+source $HOME/dotfiles/.zshrc.mac
 
 # Enter key for  ls and git status
 # http://qiita.com/yuyuchu3333/items/e9af05670c95e2cc5b4d
