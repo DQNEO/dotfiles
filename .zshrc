@@ -154,7 +154,7 @@ if [[ /Users/$USER = $HOME ]]; then
 
 fi
 
-# エンターキーでlsとgit status
+# Enter key for  ls and git status
 # http://qiita.com/yuyuchu3333/items/e9af05670c95e2cc5b4d
 function do_enter() {
     if [ -n "$BUFFER" ]; then
