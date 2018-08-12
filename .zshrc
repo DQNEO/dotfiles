@@ -1,10 +1,9 @@
 # zshrc reborn
 
-# EDITOR
 export EDITOR=nano
+export GOPATH=$HOME
 
-# PATH
-# http://qiita.com/mollifier/items/42ae46ff4140251290a7
+# PATH http://qiita.com/mollifier/items/42ae46ff4140251290a7
 path=(
     # my bin
     $HOME/dotfiles/bin(N-/)
@@ -45,11 +44,10 @@ setopt auto_cd
 source $HOME/dotfiles/.zshrc.alias
 source $HOME/dotfiles/.zshrc.git
 source $HOME/dotfiles/.zshrc.xenv
-
-# Golang
-export GOPATH=$HOME
-
 source $HOME/dotfiles/.zshrc.mac
+source $HOME/dotfiles/.zshrc.peco
+source $HOME/dotfiles/.zshrc.prompt
+source $HOME/dotfiles/.zshrc.gcp
 
 # Enter key for  ls and git status
 # http://qiita.com/yuyuchu3333/items/e9af05670c95e2cc5b4d
@@ -72,8 +70,6 @@ function do_enter() {
 #zle -N do_enter
 #bindkey '^m' do_enter
 
-source $HOME/dotfiles/.zshrc.peco
-
 # set Screen window name automatically
 # http://ogawa.s18.xrea.com/tdiary/20080331.html
 case "${TERM}" in screen)
@@ -86,9 +82,6 @@ case "${TERM}" in screen)
                       }
 esac
 
-source $HOME/dotfiles/.zshrc.prompt
-
-source $HOME/dotfiles/.zshrc.gcp
 
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
