@@ -134,6 +134,8 @@ if type ndenv >/dev/null 2>&1; then
     eval "$(ndenv init - --no-rehash zsh)"
 fi
 
+# Golang
+export GOPATH=$HOME
 
 # for MacOS
 if [[ /Users/$USER = $HOME ]]; then
@@ -174,10 +176,6 @@ function do_enter() {
 }
 #zle -N do_enter
 #bindkey '^m' do_enter
-
-
-# Golang
-export GOPATH=$HOME
 
 # peco
 ## peco + ghq
