@@ -12,7 +12,7 @@ brew install zsh
 brew install emacs cask
 
 # unix tools
-brew install coreutils findutils  gnu-sed colordiff nkf tree wget
+brew install coreutils findutils  gnu-sed colordiff nkf tree wget nano
 
 # git
 brew install git hub ghq tig
