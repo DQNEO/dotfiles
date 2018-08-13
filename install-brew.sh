@@ -50,9 +50,6 @@ brew install imagemagick
 # python
 # brew install python python3
 
-# db
-brew install mycli
-
 # PHP
 # add Tap
 brew tap homebrew/homebrew-php
