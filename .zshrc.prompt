@@ -39,7 +39,11 @@ autoload -Uz colors
 #   $vcs_info_msg_2_ : エラーメッセージ用 (赤)
 zstyle ':vcs_info:*' max-exports 3
 
-zstyle ':vcs_info:*' enable git svn hg bzr
+#zstyle ':vcs_info:*' enable git svn hg bzr
+# enable git only
+zstyle ':vcs_info:*' enable git
+
+
 # 標準のフォーマット(git 以外で使用)
 # misc(%m) は通常は空文字列に置き換えられる
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
