@@ -43,22 +43,13 @@ zstyle ':vcs_info:*' max-exports 3
 # enable git only
 zstyle ':vcs_info:*' enable git
 
-
-# 標準のフォーマット(git 以外で使用)
-# misc(%m) は通常は空文字列に置き換えられる
-zstyle ':vcs_info:*' formats '(%s)-[%b]'
-zstyle ':vcs_info:*' actionformats '(%s)-[%b]' '%m' '<!%a>'
-zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
-zstyle ':vcs_info:bzr:*' use-simple true
-
-
-    # git 用のフォーマット
-    # git のときはステージしているかどうかを表示
-    zstyle ':vcs_info:git:*' formats '(%s)-[%b]' '%c%u %m'
-    zstyle ':vcs_info:git:*' actionformats '(%s)-[%b]' '%c%u %m' '<!%a>'
-    zstyle ':vcs_info:git:*' check-for-changes true
-    zstyle ':vcs_info:git:*' stagedstr "+"    # %c で表示する文字列
-    zstyle ':vcs_info:git:*' unstagedstr "-"  # %u で表示する文字列
+# config for git
+# git のときはステージしているかどうかを表示
+zstyle ':vcs_info:git:*' formats '(%s)-[%b]' '%c%u %m'
+zstyle ':vcs_info:git:*' actionformats '(%s)-[%b]' '%c%u %m' '<!%a>'
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "+"    # %c で表示する文字列
+zstyle ':vcs_info:git:*' unstagedstr "-"  # %u で表示する文字列
 
 # hooks 設定
     # git のときはフック関数を設定する
