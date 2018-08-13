@@ -29,13 +29,7 @@ compinit -C
 ## http://0xcc.net/unimag/3/
 zstyle ':completion:*:default' menu select=1
 
-# Auto CD
-## make typing a directory name invoke `cd`.
-## `..`  is useful
-setopt auto_cd
-# z http://d.hatena.ne.jp/naoya/20130108/1357630895
-[[ /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
-
+source $DOTFILES/.zshrc.cd
 source $DOTFILES/.zshrc.alias
 source $DOTFILES/.zshrc.git
 source $DOTFILES/.zshrc.xenv
