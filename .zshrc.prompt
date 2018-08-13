@@ -22,7 +22,7 @@
 # my old version
 #PROMPT="%{$fg_bold[cyan]%}> %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
 
-PROMPT="%B%F{green}%/%1(v|%1v|)%f%b %B$%b "
+PROMPT="%B%F{cyan}%/%1(v|%1v|)%f%b %B$%b "
 
 
 # borrowed from https://qiita.com/mollifier/items/8d5a627d773758dd8078
