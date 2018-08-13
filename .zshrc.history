@@ -1,9 +1,14 @@
 # HISTORY
 ## http://0xcc.net/unimag/3/
-HISTFILE=~/.zsh_history
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
 SAVEHIST=1000000
+
+# http://d.hatena.ne.jp/yk5656/20160203/1461325853
 setopt hist_ignore_dups     # ignore duplication command history list
 setopt share_history        # share command history data
 setopt extended_history
+setopt hist_save_no_dups
+setopt hist_reduce_blanks
+
 function historyall { \history -E 1 }
