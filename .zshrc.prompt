@@ -21,7 +21,7 @@
 #ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}]"
 
 # my original
-PROMPT="%/%1(v|%F{green}%1v%f|) %% "
+PROMPT="%F{green}%/%1(v|%1v|)%f $ "
 
 
 # borrowed from https://qiita.com/mollifier/items/8d5a627d773758dd8078
