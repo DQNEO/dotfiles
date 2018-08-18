@@ -39,5 +39,7 @@ source $DOTFILES/.zshrc.prompt
 source $DOTFILES/.zshrc.gcp
 source $DOTFILES/.zshrc.enterkey
 source $DOTFILES/.zshrc.screen
+source $DOTFILES/.zshrc.perl
+
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 source $DOTFILES/.zshrc.profile
