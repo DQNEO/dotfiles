@@ -4,6 +4,7 @@
 (setq auto-mode-alist (append '(("\\.cgi$" . cperl-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\\.pl$" . cperl-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\\.pm$" . cperl-mode)) auto-mode-alist))
+(setq auto-mode-alist (append '(("\\.t$" . cperl-mode)) auto-mode-alist))
 
 (add-hook 'cperl-mode-hook
           '(lambda ()
