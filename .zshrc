@@ -17,6 +17,9 @@ path=(
     $HOME/.yarn/bin(N-/)
     $HOME/.composer/vendor/bin(N-/)
 
+    # x-env
+    $HOME/.phpenv/bin/(N-/)
+    
     /usr/local/bin(N-/)
     /usr/bin /bin /usr/sbin /sbin
 )
