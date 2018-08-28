@@ -58,3 +58,5 @@
 	autocorrect = 1
 [fetch]
 	prune = true
+[protocol]
+	version = 2
