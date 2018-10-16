@@ -7,3 +7,6 @@ if [[ -d $GOOGLE_CLOUD_SDK ]]; then
    source  $GOOGLE_CLOUD_SDK/completion.zsh.inc
 fi
 
+# kubectl
+alias kc=kubectl
+alias kclf="kubectl logs -f"
