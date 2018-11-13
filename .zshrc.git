@@ -32,6 +32,9 @@ alias gsl='git stash list'
 alias ggrep='git grep'
 alias ggrepi='git grep -i'
 
+# alias for options
+alias -g WDR="--word-diff-regex='\\w+|[^[:space:]]'"
+
 gcm () { git commit -m "$*" }
 alias gsp='git show -p'
 
