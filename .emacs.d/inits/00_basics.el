@@ -45,6 +45,9 @@
 (setq-default indent-tabs-mode nil)
 (setq indent-line-function 'indent-relative-maybe)
 
+;; insert closing punct
+(electric-pair-mode)
+
 ;; ホックを使った設定
 (defun my-c-c++-mode-init ()
   (setq c-basic-offset 4)
