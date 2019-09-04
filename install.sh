@@ -16,8 +16,3 @@ for file in .emacs.d .screenrc  .zshrc .gitconfig .gitignore
 do
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
-
-cd ${THIS_DIR}/oh-my-zsh/custom
-if [[ ! -e dqneo.zsh-theme ]] ; then
-    ln -s ../../dqneo.zsh-theme .
-fi
