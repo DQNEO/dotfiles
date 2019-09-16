@@ -1,4 +1,4 @@
-export LC_ALL=C
+export LC_ALL=en_US.UTF-8
 export EDITOR=nano
 export GOPATH=$HOME
 export DOTFILES=$HOME/dotfiles
