@@ -1,3 +1,4 @@
+export LC_ALL=C
 export EDITOR=nano
 export GOPATH=$HOME
 export DOTFILES=$HOME/dotfiles
