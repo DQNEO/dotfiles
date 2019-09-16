@@ -21,6 +21,7 @@ path=(
     $HOME/.phpenv/bin/(N-/)
     
     /usr/local/bin(N-/)
+    /usr/local/sbin(N-/)
     /usr/bin /bin /usr/sbin /sbin
 )
 
