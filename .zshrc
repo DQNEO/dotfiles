@@ -41,7 +41,6 @@ source $DOTFILES/.zshrc.mac
 source $DOTFILES/.zshrc.peco
 source $DOTFILES/.zshrc.prompt
 source $DOTFILES/.zshrc.gcp
-source $DOTFILES/.zshrc.enterkey
 source $DOTFILES/.zshrc.screen
 source $DOTFILES/.zshrc.perl
 
