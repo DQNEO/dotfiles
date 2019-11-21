@@ -1,9 +1,9 @@
-all: $HOME/dotfiles
+all: $$HOME/dotfiles
 	./install.sh
 	make brew
 
 
-$HOME/dotfiles:
+$$HOME/dotfiles:
 	cd $$HOME && ln -s src/github.com/DQNEO/dotfiles .
 
 brew:
