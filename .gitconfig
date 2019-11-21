@@ -60,3 +60,5 @@
 	prune = true
 [protocol]
 	version = 2
+[http]
+	cookiefile = /Users/DQNEO/.gitcookies
