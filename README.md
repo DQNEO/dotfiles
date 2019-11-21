@@ -2,7 +2,7 @@
 
 ```sh
 cd $HOME
-git clone git@github.com:DQNEO/dotfiles
-~/dotfiles/install.sh
+git clone git@github.com:DQNEO/dotfiles src/github.com/DQNEO/dotfiles
+make -C src/github.com/DQNEO/dotfiles
 ```
 
