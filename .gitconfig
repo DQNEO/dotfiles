@@ -63,3 +63,6 @@
 	version = 2
 [http]
 	cookiefile = /Users/DQNEO/.gitcookies
+
+[init]
+	defaultBranch = main
