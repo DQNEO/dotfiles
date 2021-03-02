@@ -1,6 +1,9 @@
 [user]
         name  = DQNEO
         email = dqneoo@gmail.com
+[include]
+        path = .gitconfig.local # for private info
+
 [alias]
         ## very convenient / used often
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
