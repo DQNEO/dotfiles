@@ -25,10 +25,13 @@
         a = add
         brr = branch -r
         rmt = remote
+        rb = rebase
 
         # newly added
         empty = commit --allow-empty -m 'empty commit'
         mom = merge origin/master
+        rbom = rebase origin/master
+        f = fetch
 
         # not used recently
         plf = pull --ff-only
