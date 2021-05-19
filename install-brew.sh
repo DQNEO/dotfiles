@@ -27,7 +27,7 @@ brew install ansible awscli
 brew install autoconf
 
 # DB
-brew instal mycli
+brew instal mycli mysql-client
 
 # go
 brew install go dep
