@@ -19,6 +19,8 @@
 ;; You may delete these explanatory comments.
 ;;(package-initialize)
 
+(setq warning-suppress-log-types '((package reinitialization)))
+
 (require 'cask)
 ;; Linux の場合はcask.elのパスを指定する必要がある。
 ;; (require 'cask "~/.cask/cask.el")
