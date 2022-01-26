@@ -9,4 +9,5 @@ fi
 
 # kubectl
 alias kc=kubectl
+alias k=kubectl
 alias kclf="kubectl logs -f"
