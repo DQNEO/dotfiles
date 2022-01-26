@@ -1,5 +1,5 @@
 # Google Cloud SDK(GCP)
-GOOGLE_CLOUD_SDK=$HOME/Downloads/google-cloud-sdk
+GOOGLE_CLOUD_SDK=$HOME/google-cloud-sdk
 if [[ -d $GOOGLE_CLOUD_SDK ]]; then
    ## updates PATH for the Google Cloud SDK.
    source  $GOOGLE_CLOUD_SDK/path.zsh.inc
