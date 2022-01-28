@@ -20,6 +20,9 @@ path=(
 
     # x-env
     $HOME/.phpenv/bin/(N-/)
+
+    # mysql
+    /usr/local/opt/mysql-client/bin
     
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
