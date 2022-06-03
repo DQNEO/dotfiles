@@ -9,9 +9,9 @@
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
         delete-merged-branch = !git branch --merged | grep -v '^\\*' | xargs -n 1 git branch -d
         st = status
-        co = checkout
         cp = cherry-pick
         di = diff
+        co = !echo "Please use switch\\(sw\\) or restore"
         sw = switch
         grepi = grep -i
         review = diff origin/master...
