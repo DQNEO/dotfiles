@@ -12,6 +12,7 @@
         co = checkout
         cp = cherry-pick
         di = diff
+        sw = switch
         grepi = grep -i
         review = diff origin/master...
 
