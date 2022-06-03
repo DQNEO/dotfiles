@@ -14,6 +14,8 @@ a.c
 /.emacs.d/bookmarks
 /.emacs.d/tramp
 /.emacs.d/.cask
+/.emacs.d/transient/
+/.emacs.d/*.log
 
 /,
 
