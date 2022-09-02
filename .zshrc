@@ -51,8 +51,6 @@ source $DOTFILES/.zshrc.perl
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 source $DOTFILES/.zshrc.profile
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/DQNEO/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/DQNEO/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/DQNEO/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/DQNEO/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# gcloud
+[[ -f $HOME/google-cloud-sdk/path.zsh.inc ]]       && source $HOME/google-cloud-sdk/path.zsh.inc
+[[ -f $HOME/google-cloud-sdk/completion.zsh.inc ]] && source $HOME/google-cloud-sdk/completion.zsh.inc
