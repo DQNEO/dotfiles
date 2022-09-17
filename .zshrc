@@ -19,10 +19,10 @@ path=(
     $HOME/.composer/vendor/bin(N-/)
 
     # x-env
-    $HOME/.phpenv/bin/(N-/)
+    $HOME/.phpenv/bin(N-/)
 
     # mysql
-    /usr/local/opt/mysql-client/bin
+    /usr/local/opt/mysql-client/bin(N-/)
     
     # MacOS make, gcc etc
     /Applications/Xcode.app/Contents/Developer/usr/bin(N-/)
