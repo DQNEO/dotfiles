@@ -4,8 +4,6 @@ if [[ /Users/$USER = $HOME ]]; then
     alias ldd="echo ldd is not on OSX. use 'otool -L' instead."
     alias strace="echo strace is not on OSX. use dtruss"
 
-    [[ -x /usr/local/git/bin/git ]] && alias git='/usr/local/git/bin/git'
-
     # require `brew install binutils coreutils findutils`
     path=(/usr/local/opt/coreutils/libexec/gnubin(N-/) $path)
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
