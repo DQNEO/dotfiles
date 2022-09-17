@@ -51,6 +51,12 @@ source $DOTFILES/.zshrc.perl
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 source $DOTFILES/.zshrc.profile
 
+# kubectl
+alias kc=kubectl
+alias k=kubectl
+alias kclf="kubectl logs -f"
+
 # gcloud
 [[ -f $HOME/google-cloud-sdk/path.zsh.inc ]]       && source $HOME/google-cloud-sdk/path.zsh.inc
 [[ -f $HOME/google-cloud-sdk/completion.zsh.inc ]] && source $HOME/google-cloud-sdk/completion.zsh.inc
+
