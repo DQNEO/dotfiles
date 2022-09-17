@@ -24,9 +24,13 @@ path=(
     # mysql
     /usr/local/opt/mysql-client/bin
     
+    # MacOS make, gcc etc
+    /Applications/Xcode.app/Contents/Developer/usr/bin(N-/)
+
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
     /usr/bin /bin /usr/sbin /sbin
+
 )
 
 source $DOTFILES/.zshrc.history
