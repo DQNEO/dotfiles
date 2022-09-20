@@ -48,7 +48,6 @@ source $DOTFILES/.zshrc.xenv
 source $DOTFILES/.zshrc.mac
 source $DOTFILES/.zshrc.peco
 source $DOTFILES/.zshrc.prompt
-source $DOTFILES/.zshrc.gcp
 source $DOTFILES/.zshrc.screen
 source $DOTFILES/.zshrc.perl
 
