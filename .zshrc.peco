@@ -29,7 +29,7 @@ zle -N peco-pstorm && bindkey '^x^p' peco-pstorm
 function peco-git-branch () {
     local selected=$(git branch | peco --query "$LBUFFER")
     if [ -n "$selected" ]; then
-        BUFFER="git checkout ${selected}"
+        BUFFER="git switch ${selected}"
         zle accept-line
     fi
     zle clear-screen
