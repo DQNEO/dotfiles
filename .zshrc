@@ -63,3 +63,5 @@ alias kclf="kubectl logs -f"
 [[ -f $HOME/google-cloud-sdk/path.zsh.inc ]]       && source $HOME/google-cloud-sdk/path.zsh.inc
 [[ -f $HOME/google-cloud-sdk/completion.zsh.inc ]] && source $HOME/google-cloud-sdk/completion.zsh.inc
 
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
