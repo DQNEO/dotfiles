@@ -13,11 +13,14 @@
 ;; Cask
 ;; OSX(Homebrew)の場合
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-;;(package-initialize)
+;; A workaround suggested by chatgpt
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+(unless (package-installed-p 'init-loader)
+  (package-refresh-contents)
+  (package-install 'init-loader))
+
 
 (setq warning-suppress-log-types '((package reinitialization)))
 
