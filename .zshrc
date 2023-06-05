@@ -65,3 +65,5 @@ alias kclf="kubectl logs -f"
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
