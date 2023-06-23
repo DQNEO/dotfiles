@@ -21,6 +21,9 @@ path=(
     # x-env
     $HOME/.phpenv/bin(N-/)
 
+    # perl5
+    $HOME/perl5/bin(N-/)
+
     # mysql
     /usr/local/opt/mysql-client/bin(N-/)
     
