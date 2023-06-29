@@ -4,3 +4,5 @@ type plenv  >/dev/null 2>&1  && eval "$(plenv  init - --no-rehash zsh)"
 type phpenv >/dev/null 2>&1  && eval "$(phpenv init - --no-rehash zsh)"
 #type ndenv  >/dev/null 2>&1  && eval "$(ndenv  init - --no-rehash zsh)"
 #type xcenv  >/dev/null 2>&1  && eval "$(xcenv  init - zsh)"
+
+type pyenv >/dev/null 2>&1 && eval "$(pyenv init --path)" && eval "$(pyenv init -)"
