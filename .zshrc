@@ -67,3 +67,7 @@ alias kclf="kubectl logs -f"
 [[ -f $HOME/google-cloud-sdk/completion.zsh.inc ]] && source $HOME/google-cloud-sdk/completion.zsh.inc
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# direnv
+# https://github.com/direnv/direnv
+eval "$(direnv hook zsh)"
