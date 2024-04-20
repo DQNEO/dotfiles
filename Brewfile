@@ -71,6 +71,6 @@ cask "karabiner-elements"
 
 ## cask for work
 #cask "aws-vpn-client"
-#cask "1password"
+
 
 ## cask for private
