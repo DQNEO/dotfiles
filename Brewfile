@@ -66,6 +66,8 @@ cask "goland"
 cask "google-japanese-ime"
 
 cask "docker"
+cask "karabiner-elements"
+
 
 ## cask for work
 #cask "aws-vpn-client"
