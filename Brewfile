@@ -60,11 +60,12 @@ brew "zsh"
 ## cask common
 cask "google-cloud-sdk"
 cask "visual-studio-code"
-cask "docker"
 cask "iterm2"
 cask "phpstorm"
 cask "goland"
 cask "google-japanese-ime"
+
+cask "docker"
 
 ## cask for work
 #cask "aws-vpn-client"
