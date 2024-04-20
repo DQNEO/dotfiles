@@ -8,5 +8,5 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 
 # z http://d.hatena.ne.jp/naoya/20130108/1357630895
-[[ /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
+[[ -f /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
 
