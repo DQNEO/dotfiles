@@ -19,6 +19,7 @@ git remote -v
 git remote remove origin
 git remote add origin git@github.com:DQNEO/dotfiles
 git pull --ff-only
+git push -u
 ```
 
 
