@@ -30,8 +30,13 @@ path=(
     # MacOS make, gcc etc
     /Applications/Xcode.app/Contents/Developer/usr/bin(N-/)
 
+    # homebrew bin
+    /opt/homebrew/bin(N-/)
+    /opt/homebrew/sbin(N-/)
+
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
+    
     /usr/bin /bin /usr/sbin /sbin
 
 )
