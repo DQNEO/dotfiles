@@ -1,3 +1,4 @@
+# https://github.com/Homebrew/homebrew-bundle
 tap "homebrew/bundle"
 brew "jpeg-xl"
 brew "aom"
@@ -56,6 +57,9 @@ brew "youtube-dl"
 brew "yq"
 brew "z"
 brew "zsh"
+
+# Cask
+# https://github.com/Homebrew/homebrew-cask
 
 ## cask common
 cask "google-cloud-sdk"
