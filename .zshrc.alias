@@ -1,7 +1,7 @@
 # General aliases
 
 # Aliases for Unix commands
-alias ls='ls -F --show-control-char --color=always'
+alias ls='ls -F --color=always'
 alias ll='ls -laF --show-control-char --color=always'
 alias grep='grep  --color=auto --exclude-dir={.git,.svn}'
 alias grepi='grep -i'
