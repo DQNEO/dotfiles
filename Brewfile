@@ -56,3 +56,18 @@ brew "youtube-dl"
 brew "yq"
 brew "z"
 brew "zsh"
+
+## cask common
+cask "google-cloud-sdk"
+cask "visual-studio-code"
+cask "docker"
+cask "iterm2"
+cask "phpstorm"
+cask "goland"
+cask "google-japanese-ime"
+
+## cask for work
+#cask "aws-vpn-client"
+#cask "1password"
+
+## cask for private
