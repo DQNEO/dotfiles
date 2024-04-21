@@ -11,8 +11,6 @@ brew "bat"
 brew "glib"
 brew "coreutils"
 brew "gnutls"
-brew "emacs"
-brew "cask"
 brew "clang-format"
 brew "colordiff"
 brew "gd"
@@ -78,3 +76,7 @@ cask "karabiner-elements"
 
 
 ## cask for private
+
+## cask experimental
+cask "emacs"
+
