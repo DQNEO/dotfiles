@@ -1,5 +1,0 @@
-#!/bin/bash
-# スクリーンショットのファイル名をカスタマイズ
-# http://ichitaso.com/mac/tips-for-os-x-screenshot/
-defaults write com.apple.screencapture name "SS"
-illall SystemUIServer
