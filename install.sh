@@ -1,6 +1,5 @@
 #!/bin/bash
-set -u
-#set -x
+set -uex
 
 THIS_DIR=$(cd $(dirname $0); pwd)
 
@@ -16,3 +15,5 @@ for file in .emacs.d .screenrc  .zshrc .gitconfig .gitignore
 do
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
+
+exit 0
