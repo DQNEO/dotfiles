@@ -13,7 +13,7 @@ cd $HOME
 
 for file in .emacs.d .screenrc  .zshrc .gitconfig .gitignore
 do
-  [ ! -e $file ] && ln -s dotfiles/$file .
+  [[ ! -e $file ]] && ln -s dotfiles/$file .
 done
 
 exit 0
