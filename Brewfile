@@ -55,7 +55,7 @@ brew "youtube-dl"
 brew "yq"
 brew "z"
 brew "zsh"
-
+brew "gnupg"
 # Cask
 # https://github.com/Homebrew/homebrew-cask
 
