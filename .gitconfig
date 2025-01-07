@@ -1,6 +1,7 @@
 [user]
         name  = DQNEO
         email = dqneoo@gmail.com
+	signingkey = 29C00D2767250C1C
 [include]
         path = .gitconfig.local # for private info
 
@@ -22,8 +23,8 @@
         b  = branch
         br = branch
         sp = show -p
-        amend = commit --amend
-        ci = commit
+        amend = commit -S --amend
+        ci = commit -S
         d  = diff
         a = add
         brr = branch -r
@@ -31,7 +32,7 @@
         rb = rebase
 
         # newly added
-        empty = commit --allow-empty -m 'empty commit'
+        empty = commit -S  --allow-empty -m 'empty commit'
         mom = merge origin/master
         rbom = rebase origin/master
         f = fetch
@@ -72,3 +73,5 @@
 
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
