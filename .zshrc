@@ -33,6 +33,7 @@ path=(
     # homebrew bin
     /opt/homebrew/bin(N-/)
     /opt/homebrew/sbin(N-/)
+    /opt/homebrew/opt/coreutils/libexec/gnubin(N-/)
 
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
