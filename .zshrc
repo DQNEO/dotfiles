@@ -9,6 +9,7 @@ path=(
 
     # Go tools
     $HOME/bin(N-/)
+    $HOME/.bin(N-/)
 
     # to build php
     /usr/local/opt/bison/bin(N-/)
