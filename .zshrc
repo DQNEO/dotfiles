@@ -38,7 +38,13 @@ path=(
 
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
-    
+
+    # for Cursor CLI
+    $HOME/.local/bin
+
+    # for Aqua
+     $HOME/.local/share/aquaproj-aqua/bin
+
     /usr/bin /bin /usr/sbin /sbin
 
 )
