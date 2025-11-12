@@ -29,8 +29,8 @@ alias amend='git commit -v --amend'
 alias amendc='git commit -v --amend --reuse-message=HEAD'
 alias prune='git remote prune origin'
 alias gsl='git stash list'
-alias ggrep='git grep -n'
-alias ggrepi='git grep -n -i'
+alias ggrep='rg -n'
+alias ggrepi='rg -n -i'
 
 # alias for options
 alias -g WDR="--word-diff-regex='\\w+|[^[:space:]]'"
