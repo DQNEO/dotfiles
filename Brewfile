@@ -63,7 +63,6 @@ brew "gnupg"
 cask "google-cloud-sdk"
 cask "visual-studio-code"
 cask "iterm2"
-cask "phpstorm"
 cask "goland"
 cask "google-japanese-ime"
 
