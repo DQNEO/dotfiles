@@ -58,13 +58,13 @@ brew "gnupg"
 # https://github.com/Homebrew/homebrew-cask
 
 ## cask common
-cask "google-cloud-sdk"
+cask "gcloud-cli"
 cask "visual-studio-code"
 cask "iterm2"
 cask "goland"
 cask "google-japanese-ime"
 
-cask "docker"
+cask "docker-desktop"
 cask "karabiner-elements"
 
 
@@ -75,5 +75,5 @@ cask "karabiner-elements"
 ## cask for private
 
 ## cask experimental
-cask "emacs"
+cask "emacs-app"
 
