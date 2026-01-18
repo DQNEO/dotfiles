@@ -1,5 +1,4 @@
 # https://github.com/Homebrew/homebrew-bundle
-tap "homebrew/bundle"
 brew "jpeg-xl"
 brew "aom"
 brew "asciinema"
