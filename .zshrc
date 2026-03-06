@@ -84,3 +84,4 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # direnv
 # https://github.com/direnv/direnv
 eval "$(direnv hook zsh)"
+export GPG_TTY=$(tty)
