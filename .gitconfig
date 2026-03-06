@@ -1,7 +1,7 @@
 [user]
         name  = DQNEO
         email = dqneoo@gmail.com
-	signingkey = 29C00D2767250C1C
+	# signingkey = xxxxxxx # this should be defined in .gitconfig.local
 [include]
         path = ~/.gitconfig.local # for machine specific info
 
