@@ -66,7 +66,7 @@ cask "google-japanese-ime"
 
 cask "docker-desktop"
 cask "karabiner-elements"
-
+cask "google-chrome"
 
 ## cask for work
 #cask "aws-vpn-client"
