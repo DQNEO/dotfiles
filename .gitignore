@@ -22,6 +22,9 @@ a.c
 # ignore PHPStorm dir
 /.idea/
 
+# ignore claude local settings
+/.claude/settings.local.json
+
 
 dqneoexample/
 /Brewfile.lock.json
