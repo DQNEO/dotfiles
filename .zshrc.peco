@@ -9,12 +9,14 @@ function repo-list() {
 }
 
 function repo-get () {
+    set -x
     local repo=$1
     local src_root=$HOME/src
     local ghbase=$src_root/github.com
     local target_dir=$ghbase/$repo
     git clone git@github.com:${repo}.git $target_dir
     cd $target_dir
+    set +x
 }
 
 # peco
