@@ -85,3 +85,10 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # https://github.com/direnv/direnv
 eval "$(direnv hook zsh)"
 export GPG_TTY=$(tty)
+
+# bun completions
+[ -s "/Users/dqneo/.bun/_bun" ] && source "/Users/dqneo/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
