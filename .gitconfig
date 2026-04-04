@@ -36,6 +36,8 @@
         mom = merge origin/master
         rbom = rebase origin/master
         f = fetch
+        wt = worktree
+
 
         # not used recently
         plf = pull --ff-only
