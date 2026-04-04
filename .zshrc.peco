@@ -8,13 +8,18 @@ function repo-list() {
     find $src_root -follow  -maxdepth 3 -mindepth 3 -type d
 }
 
+run() {
+  echo "  $@"
+  "$@"
+}
+
 function repo-get () {
     set -x
     local repo=$1
     local src_root=$HOME/src
     local ghbase=$src_root/github.com
     local target_dir=$ghbase/$repo
-    git clone git@github.com:${repo}.git $target_dir
+    run git clone git@github.com:${repo}.git $target_dir
     cd $target_dir
     set +x
 }
