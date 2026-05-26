@@ -70,6 +70,9 @@ source $DOTFILES/.zshrc.perl
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 source $DOTFILES/.zshrc.profile
 
+# claude code
+alias cl=claude
+
 # kubectl
 alias kc=kubectl
 alias k=kubectl
