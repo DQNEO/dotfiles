@@ -24,7 +24,7 @@ a.c
 
 # ignore claude local settings
 /.claude/settings.local.json
-
+/.claude/worktrees/
 
 dqneoexample/
 /Brewfile.lock.json
